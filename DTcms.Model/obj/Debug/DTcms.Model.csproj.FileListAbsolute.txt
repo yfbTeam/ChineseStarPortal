@@ -47,3 +47,10 @@ E:\动力启航\DTcms\发布源码\4.0\MSSQL\DTcms.Model\bin\Debug\DTcms.Common.
 E:\动力启航\DTcms\发布源码\4.0\MSSQL\DTcms.Model\obj\Debug\ResolveAssemblyReference.cache
 E:\动力启航\DTcms\发布源码\4.0\MSSQL\DTcms.Model\obj\Debug\DTcms.Model.dll
 E:\动力启航\DTcms\发布源码\4.0\MSSQL\DTcms.Model\obj\Debug\DTcms.Model.pdb
+C:\project\work\ChineseStarPortal\DTcms.Model\bin\Debug\DTcms.Model.dll
+C:\project\work\ChineseStarPortal\DTcms.Model\bin\Debug\DTcms.Model.pdb
+C:\project\work\ChineseStarPortal\DTcms.Model\bin\Debug\DTcms.Common.dll
+C:\project\work\ChineseStarPortal\DTcms.Model\bin\Debug\DTcms.Common.pdb
+C:\project\work\ChineseStarPortal\DTcms.Model\obj\Debug\DTcms.Model.csprojResolveAssemblyReference.cache
+C:\project\work\ChineseStarPortal\DTcms.Model\obj\Debug\DTcms.Model.dll
+C:\project\work\ChineseStarPortal\DTcms.Model\obj\Debug\DTcms.Model.pdb

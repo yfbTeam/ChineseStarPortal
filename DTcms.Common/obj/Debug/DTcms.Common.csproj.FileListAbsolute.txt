@@ -33,3 +33,8 @@ E:\动力启航\DTcms\发布源码\4.0\MSSQL\DTcms.Common\bin\Debug\DTcms.Common
 E:\动力启航\DTcms\发布源码\4.0\MSSQL\DTcms.Common\obj\Debug\ResolveAssemblyReference.cache
 E:\动力启航\DTcms\发布源码\4.0\MSSQL\DTcms.Common\obj\Debug\DTcms.Common.dll
 E:\动力启航\DTcms\发布源码\4.0\MSSQL\DTcms.Common\obj\Debug\DTcms.Common.pdb
+C:\project\work\ChineseStarPortal\DTcms.Common\bin\Debug\DTcms.Common.dll
+C:\project\work\ChineseStarPortal\DTcms.Common\bin\Debug\DTcms.Common.pdb
+C:\project\work\ChineseStarPortal\DTcms.Common\obj\Debug\DTcms.Common.csprojResolveAssemblyReference.cache
+C:\project\work\ChineseStarPortal\DTcms.Common\obj\Debug\DTcms.Common.dll
+C:\project\work\ChineseStarPortal\DTcms.Common\obj\Debug\DTcms.Common.pdb

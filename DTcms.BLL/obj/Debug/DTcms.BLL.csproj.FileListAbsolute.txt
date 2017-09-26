@@ -89,3 +89,16 @@ E:\动力启航\DTcms\发布源码\4.0\MSSQL\DTcms.BLL\bin\Debug\DTcms.DBUtility
 E:\动力启航\DTcms\发布源码\4.0\MSSQL\DTcms.BLL\obj\Debug\ResolveAssemblyReference.cache
 E:\动力启航\DTcms\发布源码\4.0\MSSQL\DTcms.BLL\obj\Debug\DTcms.BLL.dll
 E:\动力启航\DTcms\发布源码\4.0\MSSQL\DTcms.BLL\obj\Debug\DTcms.BLL.pdb
+C:\project\work\ChineseStarPortal\DTcms.BLL\bin\Debug\DTcms.BLL.dll
+C:\project\work\ChineseStarPortal\DTcms.BLL\bin\Debug\DTcms.BLL.pdb
+C:\project\work\ChineseStarPortal\DTcms.BLL\bin\Debug\DTcms.Common.dll
+C:\project\work\ChineseStarPortal\DTcms.BLL\bin\Debug\DTcms.DAL.dll
+C:\project\work\ChineseStarPortal\DTcms.BLL\bin\Debug\DTcms.Model.dll
+C:\project\work\ChineseStarPortal\DTcms.BLL\bin\Debug\DTcms.DBUtility.dll
+C:\project\work\ChineseStarPortal\DTcms.BLL\bin\Debug\DTcms.Common.pdb
+C:\project\work\ChineseStarPortal\DTcms.BLL\bin\Debug\DTcms.DAL.pdb
+C:\project\work\ChineseStarPortal\DTcms.BLL\bin\Debug\DTcms.Model.pdb
+C:\project\work\ChineseStarPortal\DTcms.BLL\bin\Debug\DTcms.DBUtility.pdb
+C:\project\work\ChineseStarPortal\DTcms.BLL\obj\Debug\DTcms.BLL.csprojResolveAssemblyReference.cache
+C:\project\work\ChineseStarPortal\DTcms.BLL\obj\Debug\DTcms.BLL.dll
+C:\project\work\ChineseStarPortal\DTcms.BLL\obj\Debug\DTcms.BLL.pdb
