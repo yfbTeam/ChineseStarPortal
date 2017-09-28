@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="renderer" content="webkit" />
+    <title>{site.seo_title}</title>
+    <meta name="keywords" content="{site.seo_keyword}" />
+    <meta name="description" content="{site.seo_description}" />
+    <link href="<%templateskin%>/css/layout.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" charset="utf-8" src="{config.webpath}scripts/jquery/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="<%templateskin%>/js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="<%templateskin%>/js/common.js"></script>
+    <style>
+        .case_ul li div{
+        width:100%;position: relative;height: 158px;overflow: hidden;
+    }
+        .case_ul li{
+            height:228px;
+        }
+    </style>
+</head>
+<body>
+<!--Header-->
+<%template src="_header.html"%>
+<!--/Header-->
+    <div class="main">
+        <div class="case_bg">
+            <img src="<%templateskin%>/images/case_bg.jpg" alt="" />
+        </div>
+        <ul class="w1200 clearfix case_ul mt30 mb30">
+            <%set DataTable successCase=get_article_list("Case", 55, "status=0")%>
+            <%foreach(DataRow dr in successCase.Rows)%>
+            <li>
+                <div><img src="{dr[img_url]}" alt="" /></div>
+                <p>{dr[zhaiyao]}</p>
+            </li>
+            <%/foreach%>
+        </ul>
+    </div>
+<!--Footer-->
+<%template src="_footer.html"%>
+<!--/Footer-->
+</body>
+</html>

@@ -1,0 +1,236 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="renderer" content="webkit" />
+    <title>华人启星</title>
+    <meta name="keywords" content="华人启星" />
+    <meta name="description" content="华人启星" />
+    <link href="/templates/main/css/layout.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" charset="utf-8" src="/scripts/jquery/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/templates/main/js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/templates/main/js/common.js"></script>
+    <script type="text/javascript">
+        $(function(){
+	        $(".focusbox").flexslider({
+		        directionNav: false,
+		        pauseOnAction: false
+	        });
+        });
+    </script>
+</head>
+<body>
+<!--Header-->
+<div class="header">
+    <div class="header-wrap">
+        <div class="w1200 clearfix">
+            <a class="logo left" href="">
+                <img src="/upload/201709/27/201709271127286724.png" />
+            </a>
+            <div class="nav right">
+                <ul class="clearfix">
+                    <li class="selected"><a target="_blank" href="/index.html">首页</a></li>
+                    <li><a target="_blank" href="/about.html">关于我们</a></li>
+                    <li><a target="_blank" href="/product.html">产品中心</a></li>
+                    <li><a target="_blank" href="/companynews.html">企业新闻</a></li>
+                    <li><a target="_blank" href="/case.html">成功案例</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var href = window.location.href;
+    var index = href.lastIndexOf('/');
+    href = href.slice(index);
+    console.log(href);
+    $('.nav ul li').each(function () {
+        
+        itemhref = $(this).children('a').attr('href');
+        if (href === itemhref) {
+            $(this).addClass('selected').siblings().removeClass('selected');
+        }
+    })
+</script>
+<!--/Header-->
+<div class="main">
+    <div class="banner">
+        <div class="focusbox">
+            <ul class="slides">
+                
+                <li>
+                    <img src="/upload/201709/27/banner_02.jpg" />
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+    <div class="productCenter">
+        <h1 class="title pt30">产品中心</h1>
+        <ul class="clearfix w1200">
+            
+            <li>
+                <div class="icon"><img src="/upload/201709/27/201709271557335513.png" /></div>
+                <p class="productName">排课吧云平台</p>
+                <div class="descration">帮助各校适应分类考试、综合评价、多元录取的新招考模式，个性化解决排选课难题，为教务减负，让学生更自主。</div>
+                <a href="http://192.168.1.141:9999" target="_blank" class="login" >登录</a>
+            </li>
+            
+            <li>
+                <div class="icon"><img src="/upload/201709/27/201709271559198804.png" /></div>
+                <p class="productName">教师成长档案</p>
+                <div class="descration">让教师成长档案管理电子化，教师考评更加科学公正，是教师成长的规划师、管理的参考表，更是教师互相学习的好平台。</div>
+                <a href="" target="_blank" class="login" >登录</a>
+            </li>
+            
+            <li>
+                <div class="icon"><img src="/upload/201709/27/201709271559467911.png" /></div>
+                <p class="productName">智慧校园</p>
+                <div class="descration">解决教学、行政管理、资源管理等问题，连接众多学校达到资源整合与共享，帮助学校减少统一管理难度，实现信息化。</div>
+                <a href="" target="_blank" class="login" >登录</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="userData">
+        <h1 class="title pt30">用户数据</h1>
+        <ul class="clearfix w1200">
+            
+            <li>
+                <div class="icon"><img src="/upload/201709/27/201709271619572952.png" /></div>
+                <p class="number">66%</p>
+                <div class="name">北京区域覆盖率</div>
+            </li>
+            
+            <li>
+                <div class="icon"><img src="/upload/201709/27/201709271620106152.png" /></div>
+                <p class="number">10,294</p>
+                <div class="name">名教师</div>
+            </li>
+            
+            <li>
+                <div class="icon"><img src="/upload/201709/27/201709271620415670.png" /></div>
+                <p class="number">10,294</p>
+                <div class="name">名学生</div>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="server">
+        <h1 class="title pt30">核心服务</h1>
+        <div class="descration">以提升教育信息化和打造教育数据云平台为主导，<br />注重对创新教育理念的探索，致力于打造服务学校教育教学工作的“智慧型软件产品”，已拥有多项国家级自主研发技术和产品专利，<br />目前产品已应用于全国各地基础教育学校及高等院校。</div>
+        <ul class="clearfix w1200 pt30">
+           <li>
+               <div class="icon icon1"></div>
+               <p class="name">为教务减负增效</p>
+           </li>
+            <li>
+                <div class="icon icon2"></div>
+                <p class="name">让教室智能有趣</p>
+            </li>
+            <li>
+                <div class="icon icon3"></div>
+                <p class="name">带学生快乐成长</p>
+            </li>
+            <li>
+                <div class="icon icon4"></div>
+                <p class="name">助学校快速发展</p>
+            </li>
+        </ul>
+    </div>
+    <div class="case">
+        <h1 class="title pt30">成功案例</h1>
+        <ul class="case_ul w1200 clearfix mt30">
+            
+            <li>
+                <div><img src="/upload/201709/27/201709271744393890.png" /></div>
+            </li>
+            
+            <li>
+                <div><img src="/upload/201709/27/201709271745377980.png" /></div>
+            </li>
+            
+            <li>
+                <div><img src="/upload/201709/27/201709271746202703.png" /></div>
+            </li>
+            
+            <li>
+                <div><img src="/upload/201709/27/201709271747214603.png" /></div>
+            </li>
+            
+            <li>
+                <div><img src="/upload/201709/27/201709271747439469.png" /></div>
+            </li>
+            
+            <li>
+                <div><img src="/upload/201709/27/201709271748144613.png" /></div>
+            </li>
+            
+        </ul>
+        <div class="more w1200"><a target="_blank" href="/case.html" >查看更多</a></div>
+    </div>
+    <div class="partner">
+        <h1 class="title pt30">合作伙伴</h1>
+        <ul class="w1200 clearfix">
+            
+            <li><a target="_blank" href="http://www.huawei.com" title="华为"><img src="/upload/201709/27/201709271814117653.jpg" /></a></li>
+            
+            <li><a target="_blank" href="http://www.honghe.com" title="鸿合"><img src="/upload/201709/27/201709271815217274.jpg" /></a></li>
+            
+            <li><a target="_blank" href="http://www.huipu.com" title="惠普"><img src="/upload/201709/27/201709271816070569.jpg" /></a></li>
+            
+            <li><a target="_blank" href="http://www.lenovo.com" title="联想"><img src="/upload/201709/27/201709271816283718.jpg" /></a></li>
+            
+            <li><a target="_blank" href="http://www.nec.com" title="新奥特"><img src="/upload/201709/27/201709271823573966.jpg" /></a></li>
+            
+            <li><a target="_blank" href="http://www.nec.com" title="crestron"><img src="/upload/201709/27/201709271820442926.jpg" /></a></li>
+            
+            <li><a target="_blank" href="http://www.nec.com" title="h3c"><img src="/upload/201709/27/201709271820573973.jpg" /></a></li>
+            
+            <li><a target="_blank" href="http://www.nec.com" title="sugon"><img src="/upload/201709/27/201709271821299809.jpg" /></a></li>
+            
+            <li><a target="_blank" href="http://www.nec.com" title="NEC"><img src="/upload/201709/27/201709271819409957.jpg" /></a></li>
+            
+            <li><a target="_blank" href="http://www.nec.com" title="锐捷"><img src="/upload/201709/27/201709271825260003.jpg" /></a></li>
+            
+        </ul>
+    </div>
+</div>
+<!--Footer-->
+<div class="footer clearfix">
+  <div class="footer-header">
+      <div class="w1200 clearfix">
+          <div class="footer-content left">
+              <div class="nav-footer clearfix">
+                  <a target="_blank" href="/index.html">首页</a>
+                  <a target="_blank" href="/about.html">关于我们</a>
+                  <a target="_blank" href="/product.html">产品中心</a>
+                  <a target="_blank" href="/companynews.html">企业新闻</a>
+                  <a target="_blank" href="/case.html">成功案例</a>
+              </div>
+          </div>
+          <div class="footer-content left footer-logo">
+              <img src="/templates/main/images/logo1.png" />
+          </div>
+          <div class="footer-content left wechat">
+              <img src="/templates/main/images/code.jpg" />
+              <p>微信公众号</p>
+          </div>
+      </div>
+  </div>
+  <div class="footer-footer">
+      版权所有 Copyright 2017 &copy; 北京市华人启星科技有限公司<span>|</span>地址：北京市丰台区南四环西路128号诺德中心3座7层<span>|</span>邮编：10070<span>|</span>联系电话：010-63781786<span>|</span>传真：010-63781786
+  </div>
+</div>
+<!--/Footer-->
+
+<!-- Visual Studio Browser Link -->
+<script type="application/json" id="__browserLink_initializationData">
+    {"appName":"Unknown","requestId":"c773f202281e4c82a1983ca970036214"}
+</script>
+<script type="text/javascript" src="http://localhost:55517/1623bcffcd51480c9eb6276fa85170fd/browserLink" async="async"></script>
+<!-- End Browser Link -->
+
+</body>
+</html>
+

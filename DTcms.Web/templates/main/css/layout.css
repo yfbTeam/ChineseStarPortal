@@ -1,0 +1,252 @@
+﻿@charset "utf-8";
+/*全局样式
+---------------------------------------------*/
+section,article,aside,header,footer,nav,figure{ display:block; }
+body,h1,h2,h3,h4,h5,h6,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td,figure{ margin:0; padding:0; }
+body,button,input,select,textarea{ font:12px/1.5 "Microsoft Yahei"; }
+h1,h2,h3,h4,h5,h6,button,input,select,textarea{ font-size:100%; }
+address,cite,dfn,em,var{ font-style:normal; }
+code,kbd,pre,samp{ font-family:courier new,courier,monospace; }
+p,ul,li,dl,dd,dt,form,h1,h2,h3,h4,h5,h6{ list-style:none; }
+a{ color:#666; text-decoration:none; }
+a:hover{ color:#0089CD; text-decoration:none; }
+fieldset,img{ border:0; }
+table{ border-collapse:collapse; border-spacing:0; }
+input::-moz-focus-inner,button::-moz-focus-inner{ border:0;padding:0;outline:0; }
+.clear{ clear:both; font-size:0px; height:0px; overflow:hidden; }
+.w1200{width:1200px;margin:0 auto;}
+/* Clear Fix */ 
+.clearfix:after{ content:"."; display:block; height:0; clear:both; visibility:hidden; }
+.clearfix{ display:inline-block; } 
+/* Hide from IE Mac */ 
+.clearfix { display:block; } 
+/* End hide from IE Mac */ 
+/* end of clearfix */ 
+.left{ float:left; }
+.right{ float:right; }
+
+/*站点样式*/
+/*底部样式*/
+.footer{width:100%;height:270px;}
+.footer-header{height:225px;background:#373f45;width:100%;}
+.footer-content{
+    width:33.3%;box-sizing:border-box;height:175px;border-right:1px solid #1b1f22;border-left:1px solid #535f68;margin:25px 0px;
+}
+.footer-content:first-child{border-left:none;}
+.footer-content:last-child{border-right:none;}
+.footer-footer{
+    height:45px;background:#2a3035;width:100%;text-align:center;line-height:45px;color:#fff;
+}
+.footer-footer span{
+    padding:0px 10px;
+}
+.nav-footer{
+    margin-top:28px;width:196px;margin-left:76px;
+}
+.nav-footer a{
+    color:#fff;display:block;float:left;line-height:40px;margin-left:50px;width:48px;
+}
+.nav-footer a:hover{
+    text-decoration:underline;
+}
+.footer-logo img{
+    width:166px;height:45px;margin: 65px auto;display:block;
+}
+.wechat{
+   text-align:center;
+}
+.wechat img{
+width:150px;height:150px;
+}
+.wechat  p {
+    height:30px;color:#fff;line-height:30px;
+}
+/*头部样式*/
+.header{
+    width:100%;height:80px;
+}
+.header-wrap{
+    width:100%;height:80px;position:fixed; top:0; left:0;  z-index:300;background:#fff;
+}
+.logo{
+    width:145px;height:40px;margin:20px 0px 20px 15px;display:block;
+}
+.nav ul li{
+    width:100px;height:80px;float:left;margin-left:60px;
+}
+.nav ul li a{
+    display:block;width:100%;height:80px;font-size:16px;color:#333333;text-align:center;line-height:80px;
+}
+.nav ul li:hover a{
+    color:#2293cb;
+}
+.nav ul li.selected a{
+    color:#2293cb;
+}
+/*幻灯片样式*/
+.banner{
+    width:100%;height:400px;position:relative;
+}
+.focusbox{ position:absolute; top:0; right:0; bottom:0; left:0;  overflow:hidden; _position:relative; }
+.focusbox .slides{ position:relative; display:block; width:100%; height:100%; zoom:1; overflow:hidden; }
+.focusbox .slides:after{ content:"."; display:block; height:0; clear:both; visibility:hidden; }
+.focusbox .slides li{ width:100%; height:100%; overflow:hidden; }
+.focusbox .slides li img{ min-width:100%; min-height:100%; _width:100%; _height:100%;}
+.focusbox .slides li .note-bg{ position:absolute; left:0; right:0; bottom:0; width:100%; height:125px; background:url(../images/pic-bg.png) 0 bottom repeat-x; _height:50px; _background:url(none) 0 0 repeat #000; }
+.focusbox .slides li .note-txt{ position:absolute; left:0; right:0; bottom:0; display:block; padding:10px; height:24px; line-height:24px; color:#fff; font-size:16px; white-space:nowrap; text-overflow:ellipsis; overflow:hidden; }
+	
+.focusbox .flex-control-nav{ position:absolute;display:inline-block;left:0px;right:0px; z-index:4;bottom:18px;text-align:center; }
+.focusbox .flex-control-nav li{ margin:0 5px 0 0; display:inline-block; zoom:1; *display:inline; }
+.focusbox .flex-control-nav li a{ display:block; width:8px; height:8px; text-indent:-9999px; border:1px solid #999; border-radius:8px; cursor:pointer; overflow:hidden; }
+.focusbox .flex-control-paging li a:hover { background:#333; }
+.focusbox .flex-control-paging li a.flex-active { background:#f90; border-color:#f90; cursor:default; }
+
+/*产品中心*/
+.mt30{
+    margin-top:30px;
+}
+.mb30{
+    margin-bottom:30px;
+}
+.pt30{
+    padding-top:30px;
+}
+.productCenter{
+    width:100%;height:565px;
+}
+
+.productCenter ul li{
+    width:290px;height:320px;margin:25px 15px 40px 15px;float:left;background:#f3f5f7;border-radius:5px;padding:40px;
+}
+.productCenter .icon{
+    width:90px;height:90px;border-radius:50%;overflow:hidden;margin:0 auto;
+}
+.productCenter .productName{
+    font-size:24px;color:#333;text-align:center;line-height:60px;
+}
+.productCenter .descration{
+    font-size:16px;color:#666;line-height:30px;height:130px;overflow:hidden;
+}
+.productCenter .login{
+    width:126px;height:38px;border-radius:3px;background:#666666;display:block;margin:0 auto;color:#fff;line-height:38px;text-align:center;font-size:16px;
+}
+/*用户数据*/
+.userData{
+    height:445px;width:100%;background:url(../images/data.jpg) no-repeat center;
+}
+.title{
+    height:70px;font-size:36px;color:#333333;text-align:center;background:url(../images/dian.png) no-repeat center bottom;font-weight:normal;
+}
+.userData ul li{
+    width:33.3%;float:left;
+}
+.userData .icon{
+    width:72px;height:72px;margin:0 auto;margin-top:50px;
+}
+.userData .number{
+    text-align:center;font-size:64px;color:#fff;text-align:center;line-height:88px;font-weight:bold;
+}
+.userData .name{
+    text-align:center;font-size:30px;color:#fff;text-align:center;line-height:70px;
+}
+/*核心服务*/
+.server{
+    height:460px;width:100%;
+}
+.server .descration{
+    font-size:16px;line-height:30px;text-align:center;color:#666;margin:20px 0px;
+}
+.server ul li{
+    width:25%;float:left;
+}
+.server .icon{
+    width:90px;height:90px;border-radius:50%;overflow:hidden;margin:0 auto;background:url(../images/server.png) no-repeat;
+}
+.server .name{
+    color:#333;font-size:24px;text-align:center;line-height:60px;
+}
+.server .icon1{
+    background-position:0px 0px;
+}
+.server .icon2{
+    background-position:-90px 0px;
+}
+.server .icon3{
+    background-position:-180px 0px;
+}
+.server .icon4{
+    background-position:-270px 0px;
+}
+/*case*/
+.case{
+    width:100%;height:575px;background:url(../images/case.jpg) no-repeat center;
+}
+.case_ul li {
+    width: 33.3%;
+    float: left;
+    box-sizing: border-box;
+    border-bottom: 1px solid #c4c4c4;
+    border-right: 1px solid #c4c4c4;
+    min-height: 178px;
+    overflow: hidden;
+    
+}
+.case_ul li div{
+    width:100%;position: relative;height: 178px;overflow: hidden;
+}
+.case_ul li div img{
+    position:absolute;left:0px;right:0px;bottom:0px;top:0px;margin:auto;
+}
+.case_ul li p{
+    line-height:30px;font-size:14px;color:#666;padding:0px 15px;
+}
+.case_ul li:nth-child(3n){
+    border-right:none;
+}
+.case_ul li:nth-child(1), .case_ul li:nth-child(2), .case_ul li:nth-child(3) {border-top:1px solid #c4c4c4;}
+.more{
+    height:19px;border-bottom:1px solid #fff;position:relative;top:25px;
+}
+.more a{
+    width:248px;height:38px;border:1px solid #c4c4c4;line-height:38px;text-align:center;display:block;position:absolute;left:0px;right:0px;top:18px;bottom:0px;margin: auto;color:#666;font-size:16px;background:#fff;border-radius:3px;
+}
+.partner{
+    width:100%;height:340px;
+}
+.partner ul li{
+    width:220px;height:80px;border:1px solid #dbdbdb;float:left;margin-top:15px;margin-left:15px;
+}
+.partner ul li a{
+    display:block;width:100%;height:80px;overflow:hidden;position: relative;
+}
+.partner ul li img{
+    position:absolute;left:0px;right:0px;bottom:0px;top:0px;margin:auto;
+}
+.case_bg{
+    width:100%;height:400px;overflow:hidden;
+}
+/*about*/
+.jianjie{
+    height:470px;width:100%;
+}
+.mt20{
+    margin-top:20px;
+}
+.company_img{
+    width:494px;height:294px;border:3px solid #4da9d5;
+}
+.company_img img{
+    width:494px;height:294px;margin:13px;border-radius:3px;overflow:hidden;
+}
+.company_desc{
+    width:657px;
+}
+.company_desc p{
+    font-size:16px;color:#333;line-height:39px;text-indent:2em;
+}
+.zizhi{
+    width:100%;height:678px;background:url(../images/as_04.jpg) no-repeat center; text-align:center;
+}
+.zhi_img img{
+  
+}

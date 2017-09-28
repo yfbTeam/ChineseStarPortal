@@ -1,4 +1,15 @@
-﻿/* 
+﻿$(function () {
+    function initHegiht() {
+        var header = $('.header'), footer = $('.footer'), winHeight = $(window).height();;
+        if (header || footer) {
+            var curHegiht = winHeight - header.height() - footer.height() - 17 + 'px';
+            $('.main').css({ 'minHeight': curHegiht })
+        }
+    }
+    $(window).resize(initHegiht);
+    initHegiht()
+})
+/* 
 *作者：一些事情
 *时间：2015-4-17
 *需要结合jquery和Validform和artdialog一起使用

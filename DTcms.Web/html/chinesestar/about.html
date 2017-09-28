@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="renderer" content="webkit" />
+    <title>华人启星</title>
+    <meta name="keywords" content="华人启星" />
+    <meta name="description" content="华人启星" />
+    <link href="/templates/main/css/layout.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" charset="utf-8" src="/scripts/jquery/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/templates/main/js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/templates/main/js/common.js"></script></head>
+<body>
+<!--Header-->
+<div class="header">
+    <div class="header-wrap">
+        <div class="w1200 clearfix">
+            <a class="logo left" href="">
+                <img src="/upload/201709/27/201709271127286724.png" />
+            </a>
+            <div class="nav right">
+                <ul class="clearfix">
+                    <li class="selected"><a target="_blank" href="/index.html">首页</a></li>
+                    <li><a target="_blank" href="/about.html">关于我们</a></li>
+                    <li><a target="_blank" href="/product.html">产品中心</a></li>
+                    <li><a target="_blank" href="/companynews.html">企业新闻</a></li>
+                    <li><a target="_blank" href="/case.html">成功案例</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var href = window.location.href;
+    var index = href.lastIndexOf('/');
+    href = href.slice(index);
+    console.log(href);
+    $('.nav ul li').each(function () {
+        
+        itemhref = $(this).children('a').attr('href');
+        if (href === itemhref) {
+            $(this).addClass('selected').siblings().removeClass('selected');
+        }
+    })
+</script>
+<!--/Header-->
+    <div class="main">
+        <div class="case_bg">
+            <img src="/templates/main/images/about.jpg" alt="" />
+        </div>
+        <div class="jianjie">
+            <h1 class="title pt30">公司简介</h1>
+            <div class="w1200 clearfix mt20">
+                <div class="company_img left">
+                    <img src="/templates/main/images/about.jpg" alt="" />
+                </div>
+                <div class="company_desc right">
+                    <p>北京华人启星科技有限公司位于北京丰台科技园区诺德中心，汇集了一批多年扎根教育体制改革、“想为教育做点什么”的高精尖人才、首席框架师及来自教育教学一线的管理者，致力于为教育行业提供个性化的综合应用解决方案。不断深化智能校园建设，增加研发投入，凭借专业技术水平和大量国家专利优势，已圆满完成一系列创新型教学项目，触及全国各地多个行业，逐渐形成集科研、生产、经销、咨询、培训、服务为一体的专业型团队。</p>
+                    <p>深耕细作，开启未来，华人启星将与合作伙伴携手搭建多层次的交流平台，继续贯彻“以技术为依托向各行业拓展，以北京市场为中心向全国市场拓展”的发展理念，让新思路、新理念真正落地，以卓越的信誉和品牌树立行业典范。</p>
+                </div>
+            </div>
+        </div>
+        <div class="zizhi">
+            <h1 class="title pt30">荣誉资质</h1>
+            <div class="zhi_img w1200 mt20">
+                <img src="/templates/main/images/ss_03.jpg" alt="" />
+            </div>
+        </div>
+        <div class="">
+            <h1 class="title pt30">企业愿景</h1>
+            <div class="zhi_img w1200 mt30 mb30">
+                <img src="/templates/main/images/as_07.jpg" alt="" />
+            </div>
+        </div>
+    </div>
+<!--Footer-->
+<div class="footer clearfix">
+  <div class="footer-header">
+      <div class="w1200 clearfix">
+          <div class="footer-content left">
+              <div class="nav-footer clearfix">
+                  <a target="_blank" href="/index.html">首页</a>
+                  <a target="_blank" href="/about.html">关于我们</a>
+                  <a target="_blank" href="/product.html">产品中心</a>
+                  <a target="_blank" href="/companynews.html">企业新闻</a>
+                  <a target="_blank" href="/case.html">成功案例</a>
+              </div>
+          </div>
+          <div class="footer-content left footer-logo">
+              <img src="/templates/main/images/logo1.png" />
+          </div>
+          <div class="footer-content left wechat">
+              <img src="/templates/main/images/code.jpg" />
+              <p>微信公众号</p>
+          </div>
+      </div>
+  </div>
+  <div class="footer-footer">
+      版权所有 Copyright 2017 &copy; 北京市华人启星科技有限公司<span>|</span>地址：北京市丰台区南四环西路128号诺德中心3座7层<span>|</span>邮编：10070<span>|</span>联系电话：010-63781786<span>|</span>传真：010-63781786
+  </div>
+</div>
+<!--/Footer-->
+
+<!-- Visual Studio Browser Link -->
+<script type="application/json" id="__browserLink_initializationData">
+    {"appName":"Unknown","requestId":"ee3ea590e8104fc5a0a56cf66cce95db"}
+</script>
+<script type="text/javascript" src="http://localhost:55517/1623bcffcd51480c9eb6276fa85170fd/browserLink" async="async"></script>
+<!-- End Browser Link -->
+
+</body>
+</html>
+

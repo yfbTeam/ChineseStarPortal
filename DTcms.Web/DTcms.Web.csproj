@@ -24,6 +24,11 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -120,7 +125,7 @@
     <Content Include="admin\skin\base.css" />
     <Content Include="admin\skin\default\ie_update.jpg" />
     <Content Include="admin\skin\default\loadimg.gif" />
-    <Content Include="admin\skin\default\logo.png" />
+    <Content Include="admin\skin\default\logo1.png" />
     <Content Include="admin\skin\default\nav\home.png" />
     <Content Include="admin\skin\default\nav\order.png" />
     <Content Include="admin\skin\default\nav\pus.png" />
@@ -130,6 +135,7 @@
     <Content Include="admin\skin\default\skin_icons.png" />
     <Content Include="admin\skin\default\style.css" />
     <Content Include="admin\skin\default\valid_icons.png" />
+    <Content Include="admin\skin\default\logo.png" />
     <Content Include="admin\skin\layout.css" />
     <Content Include="admin\users\amount_log.aspx" />
     <Content Include="admin\users\group_edit.aspx" />
@@ -472,11 +478,83 @@
     <Content Include="scripts\jquery\Validform_v5.3.2_min.js" />
     <Content Include="scripts\webuploader\uploader.swf" />
     <Content Include="scripts\webuploader\webuploader.min.js" />
+    <Content Include="templates\main1\about.png" />
+    <Content Include="templates\main1\about.xml" />
+    <Content Include="templates\main1\cart.html" />
+    <Content Include="templates\main1\content.html" />
+    <Content Include="templates\main1\css\flexslider.css" />
+    <Content Include="templates\main1\css\lightbox.css" />
+    <Content Include="templates\main1\css\style.css" />
+    <Content Include="templates\main1\down.html" />
+    <Content Include="templates\main1\down_list.html" />
+    <Content Include="templates\main1\down_show.html" />
+    <Content Include="templates\main1\error.html" />
+    <Content Include="templates\main1\goods.html" />
+    <Content Include="templates\main1\goods_list.html" />
+    <Content Include="templates\main1\goods_show.html" />
+    <Content Include="templates\main1\images\avatar-bg.png" />
+    <Content Include="templates\main1\images\cart-arrow.gif" />
+    <Content Include="templates\main1\images\close.png" />
+    <Content Include="templates\main1\images\delivery.png" />
+    <Content Include="templates\main1\images\icon-tips.png" />
+    <Content Include="templates\main1\images\line-1.png" />
+    <Content Include="templates\main1\images\line.png" />
+    <Content Include="templates\main1\images\loading.gif" />
+    <Content Include="templates\main1\images\login-bg.png" />
+    <Content Include="templates\main1\images\logo.png" />
+    <Content Include="templates\main1\images\next.png" />
+    <Content Include="templates\main1\images\pic-bg.png" />
+    <Content Include="templates\main1\images\prev.png" />
+    <Content Include="templates\main1\images\search.png" />
+    <Content Include="templates\main1\images\slider.png" />
+    <Content Include="templates\main1\images\sprite.gif" />
+    <Content Include="templates\main1\images\user-avatar.png" />
+    <Content Include="templates\main1\images\user.png" />
+    <Content Include="templates\main1\index.html" />
+    <Content Include="templates\main1\js\avatar.js" />
+    <Content Include="templates\main1\js\cart.js" />
+    <Content Include="templates\main1\js\common.js" />
+    <Content Include="templates\main1\js\jquery.flexslider-min.js" />
+    <Content Include="templates\main1\js\lightbox.min.js" />
+    <Content Include="templates\main1\js\login-validate.js" />
+    <Content Include="templates\main1\js\picture.js" />
+    <Content Include="templates\main1\js\register-validate.js" />
+    <Content Include="templates\main1\login.html" />
+    <Content Include="templates\main1\news.html" />
+    <Content Include="templates\main1\news_list.html" />
+    <Content Include="templates\main1\news_show.html" />
+    <Content Include="templates\main1\oauth_login.html" />
+    <Content Include="templates\main1\payment.html" />
+    <Content Include="templates\main1\photo.html" />
+    <Content Include="templates\main1\photo_list.html" />
+    <Content Include="templates\main1\photo_show.html" />
+    <Content Include="templates\main1\register.html" />
+    <Content Include="templates\main1\repassword.html" />
+    <Content Include="templates\main1\search.html" />
+    <Content Include="templates\main1\shopping.html" />
+    <Content Include="templates\main1\useramount.html" />
+    <Content Include="templates\main1\usercenter.html" />
+    <Content Include="templates\main1\usermessage.html" />
+    <Content Include="templates\main1\usermessage_show.html" />
+    <Content Include="templates\main1\userorder.html" />
+    <Content Include="templates\main1\userorder_show.html" />
+    <Content Include="templates\main1\userpoint.html" />
+    <Content Include="templates\main1\video.html" />
+    <Content Include="templates\main1\video_list.html" />
+    <Content Include="templates\main1\video_show.html" />
+    <Content Include="templates\main1\_comment_box.html" />
+    <Content Include="templates\main1\_footer.html" />
+    <Content Include="templates\main1\_header.html" />
+    <Content Include="templates\main1\_share_js.html" />
+    <Content Include="templates\main1\_ucenter_nav.html" />
+    <Content Include="templates\main\about.html" />
     <Content Include="templates\main\about.png" />
     <Content Include="templates\main\about.xml" />
     <Content Include="templates\main\cart.html" />
+    <Content Include="templates\main\case.html" />
     <Content Include="templates\main\content.html" />
     <Content Include="templates\main\css\flexslider.css" />
+    <Content Include="templates\main\css\layout.css" />
     <Content Include="templates\main\css\lightbox.css" />
     <Content Include="templates\main\css\style.css" />
     <Content Include="templates\main\down.html" />
@@ -487,19 +565,36 @@
     <Content Include="templates\main\goods_list.html" />
     <Content Include="templates\main\goods_show.html" />
     <Content Include="templates\main\images\avatar-bg.png" />
+    <Content Include="templates\main\images\banner1.jpg" />
+    <Content Include="templates\main\images\banner2.jpg" />
+    <Content Include="templates\main\images\banner3.jpg" />
+    <Content Include="templates\main\images\banner_01.jpg" />
     <Content Include="templates\main\images\cart-arrow.gif" />
+    <Content Include="templates\main\images\case.jpg" />
+    <Content Include="templates\main\images\case_bg.jpg" />
     <Content Include="templates\main\images\close.png" />
+    <Content Include="templates\main\images\code.jpg" />
+    <Content Include="templates\main\images\data.jpg" />
+    <Content Include="templates\main\images\data1.png" />
+    <Content Include="templates\main\images\data2.png" />
+    <Content Include="templates\main\images\data3.png" />
     <Content Include="templates\main\images\delivery.png" />
+    <Content Include="templates\main\images\dian.png" />
     <Content Include="templates\main\images\icon-tips.png" />
     <Content Include="templates\main\images\line-1.png" />
     <Content Include="templates\main\images\line.png" />
     <Content Include="templates\main\images\loading.gif" />
     <Content Include="templates\main\images\login-bg.png" />
     <Content Include="templates\main\images\logo.png" />
+    <Content Include="templates\main\images\logo1.png" />
     <Content Include="templates\main\images\next.png" />
     <Content Include="templates\main\images\pic-bg.png" />
     <Content Include="templates\main\images\prev.png" />
+    <Content Include="templates\main\images\product_01.png" />
+    <Content Include="templates\main\images\product_02.png" />
+    <Content Include="templates\main\images\product_03.png" />
     <Content Include="templates\main\images\search.png" />
+    <Content Include="templates\main\images\server.png" />
     <Content Include="templates\main\images\slider.png" />
     <Content Include="templates\main\images\sprite.gif" />
     <Content Include="templates\main\images\user-avatar.png" />
@@ -513,6 +608,7 @@
     <Content Include="templates\main\js\login-validate.js" />
     <Content Include="templates\main\js\picture.js" />
     <Content Include="templates\main\js\register-validate.js" />
+    <Content Include="templates\main\companynews.html" />
     <Content Include="templates\main\login.html" />
     <Content Include="templates\main\news.html" />
     <Content Include="templates\main\news_list.html" />
@@ -522,6 +618,7 @@
     <Content Include="templates\main\photo.html" />
     <Content Include="templates\main\photo_list.html" />
     <Content Include="templates\main\photo_show.html" />
+    <Content Include="templates\main\product.html" />
     <Content Include="templates\main\register.html" />
     <Content Include="templates\main\repassword.html" />
     <Content Include="templates\main\search.html" />
@@ -541,6 +638,7 @@
     <Content Include="templates\main\_header.html" />
     <Content Include="templates\main\_share_js.html" />
     <Content Include="templates\main\_ucenter_nav.html" />
+    <Content Include="upload\201709\27\banner_02.jpg" />
     <Content Include="watermark.png" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -1142,9 +1240,8 @@
     <Content Include="xmlconfig\urls.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="html\" />
+    <Folder Include="html\chinesestar\" />
     <Folder Include="plugins\" />
-    <Folder Include="upload\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="tools\admin_ajax.ashx" />
