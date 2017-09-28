@@ -182,39 +182,43 @@
     <Content Include="api\payment\tenpaypc\index.aspx" />
     <Content Include="api\payment\tenpaypc\notify_url.aspx" />
     <Content Include="api\payment\tenpaypc\return_url.aspx" />
-    <Content Include="aspx\main\cart.aspx" />
-    <Content Include="aspx\main\content.aspx" />
-    <Content Include="aspx\main\down.aspx" />
-    <Content Include="aspx\main\down_list.aspx" />
-    <Content Include="aspx\main\down_show.aspx" />
-    <Content Include="aspx\main\error.aspx" />
-    <Content Include="aspx\main\goods.aspx" />
-    <Content Include="aspx\main\goods_list.aspx" />
-    <Content Include="aspx\main\goods_show.aspx" />
-    <Content Include="aspx\main\index.aspx" />
-    <Content Include="aspx\main\login.aspx" />
-    <Content Include="aspx\main\news.aspx" />
-    <Content Include="aspx\main\news_list.aspx" />
-    <Content Include="aspx\main\news_show.aspx" />
-    <Content Include="aspx\main\oauth_login.aspx" />
-    <Content Include="aspx\main\payment.aspx" />
-    <Content Include="aspx\main\photo.aspx" />
-    <Content Include="aspx\main\photo_list.aspx" />
-    <Content Include="aspx\main\photo_show.aspx" />
-    <Content Include="aspx\main\register.aspx" />
-    <Content Include="aspx\main\repassword.aspx" />
-    <Content Include="aspx\main\search.aspx" />
-    <Content Include="aspx\main\shopping.aspx" />
-    <Content Include="aspx\main\useramount.aspx" />
-    <Content Include="aspx\main\usercenter.aspx" />
-    <Content Include="aspx\main\usermessage.aspx" />
-    <Content Include="aspx\main\usermessage_show.aspx" />
-    <Content Include="aspx\main\userorder.aspx" />
-    <Content Include="aspx\main\userorder_show.aspx" />
-    <Content Include="aspx\main\userpoint.aspx" />
-    <Content Include="aspx\main\video.aspx" />
-    <Content Include="aspx\main\video_list.aspx" />
-    <Content Include="aspx\main\video_show.aspx" />
+    <Content Include="aspx\chinesestar\about.aspx" />
+    <Content Include="aspx\chinesestar\cart.aspx" />
+    <Content Include="aspx\chinesestar\case.aspx" />
+    <Content Include="aspx\chinesestar\companynews.aspx" />
+    <Content Include="aspx\chinesestar\content.aspx" />
+    <Content Include="aspx\chinesestar\down.aspx" />
+    <Content Include="aspx\chinesestar\down_list.aspx" />
+    <Content Include="aspx\chinesestar\down_show.aspx" />
+    <Content Include="aspx\chinesestar\error.aspx" />
+    <Content Include="aspx\chinesestar\goods.aspx" />
+    <Content Include="aspx\chinesestar\goods_list.aspx" />
+    <Content Include="aspx\chinesestar\goods_show.aspx" />
+    <Content Include="aspx\chinesestar\index.aspx" />
+    <Content Include="aspx\chinesestar\login.aspx" />
+    <Content Include="aspx\chinesestar\news.aspx" />
+    <Content Include="aspx\chinesestar\news_list.aspx" />
+    <Content Include="aspx\chinesestar\news_show.aspx" />
+    <Content Include="aspx\chinesestar\oauth_login.aspx" />
+    <Content Include="aspx\chinesestar\payment.aspx" />
+    <Content Include="aspx\chinesestar\photo.aspx" />
+    <Content Include="aspx\chinesestar\photo_list.aspx" />
+    <Content Include="aspx\chinesestar\photo_show.aspx" />
+    <Content Include="aspx\chinesestar\product.aspx" />
+    <Content Include="aspx\chinesestar\register.aspx" />
+    <Content Include="aspx\chinesestar\repassword.aspx" />
+    <Content Include="aspx\chinesestar\search.aspx" />
+    <Content Include="aspx\chinesestar\shopping.aspx" />
+    <Content Include="aspx\chinesestar\useramount.aspx" />
+    <Content Include="aspx\chinesestar\usercenter.aspx" />
+    <Content Include="aspx\chinesestar\usermessage.aspx" />
+    <Content Include="aspx\chinesestar\usermessage_show.aspx" />
+    <Content Include="aspx\chinesestar\userorder.aspx" />
+    <Content Include="aspx\chinesestar\userorder_show.aspx" />
+    <Content Include="aspx\chinesestar\userpoint.aspx" />
+    <Content Include="aspx\chinesestar\video.aspx" />
+    <Content Include="aspx\chinesestar\video_list.aspx" />
+    <Content Include="aspx\chinesestar\video_show.aspx" />
     <Content Include="aspx\plugin\feedback.aspx" />
     <Content Include="aspx\plugin\link.aspx" />
     <Content Include="crossdomain.xml" />
@@ -564,6 +568,9 @@
     <Content Include="templates\main\goods.html" />
     <Content Include="templates\main\goods_list.html" />
     <Content Include="templates\main\goods_show.html" />
+    <Content Include="templates\main\images\about.jpg" />
+    <Content Include="templates\main\images\as_04.jpg" />
+    <Content Include="templates\main\images\as_07.jpg" />
     <Content Include="templates\main\images\avatar-bg.png" />
     <Content Include="templates\main\images\banner1.jpg" />
     <Content Include="templates\main\images\banner2.jpg" />
@@ -574,6 +581,7 @@
     <Content Include="templates\main\images\case_bg.jpg" />
     <Content Include="templates\main\images\close.png" />
     <Content Include="templates\main\images\code.jpg" />
+    <Content Include="templates\main\images\company_img.jpg" />
     <Content Include="templates\main\images\data.jpg" />
     <Content Include="templates\main\images\data1.png" />
     <Content Include="templates\main\images\data2.png" />
@@ -597,6 +605,7 @@
     <Content Include="templates\main\images\server.png" />
     <Content Include="templates\main\images\slider.png" />
     <Content Include="templates\main\images\sprite.gif" />
+    <Content Include="templates\main\images\ss_03.jpg" />
     <Content Include="templates\main\images\user-avatar.png" />
     <Content Include="templates\main\images\user.png" />
     <Content Include="templates\main\index.html" />
@@ -1269,6 +1278,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="xmlconfig\alipaypc.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\配置文件1.pubxml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

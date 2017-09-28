@@ -1,0 +1,11 @@
+C:\project\work\ChineseStarPortal\DTcms.DAL\bin\Release\DTcms.DAL.dll
+C:\project\work\ChineseStarPortal\DTcms.DAL\bin\Release\DTcms.DAL.pdb
+C:\project\work\ChineseStarPortal\DTcms.DAL\bin\Release\DTcms.Common.dll
+C:\project\work\ChineseStarPortal\DTcms.DAL\bin\Release\DTcms.DBUtility.dll
+C:\project\work\ChineseStarPortal\DTcms.DAL\bin\Release\DTcms.Model.dll
+C:\project\work\ChineseStarPortal\DTcms.DAL\bin\Release\DTcms.Common.pdb
+C:\project\work\ChineseStarPortal\DTcms.DAL\bin\Release\DTcms.DBUtility.pdb
+C:\project\work\ChineseStarPortal\DTcms.DAL\bin\Release\DTcms.Model.pdb
+C:\project\work\ChineseStarPortal\DTcms.DAL\obj\Release\DTcms.DAL.csprojResolveAssemblyReference.cache
+C:\project\work\ChineseStarPortal\DTcms.DAL\obj\Release\DTcms.DAL.dll
+C:\project\work\ChineseStarPortal\DTcms.DAL\obj\Release\DTcms.DAL.pdb

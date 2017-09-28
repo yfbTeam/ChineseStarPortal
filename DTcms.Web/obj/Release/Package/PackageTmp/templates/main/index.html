@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="renderer" content="webkit" />
+    <title>{site.seo_title}</title>
+    <meta name="keywords" content="{site.seo_keyword}" />
+    <meta name="description" content="{site.seo_description}" />
+    <link href="<%templateskin%>/css/layout.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" charset="utf-8" src="{config.webpath}scripts/jquery/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="<%templateskin%>/js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="<%templateskin%>/js/common.js"></script>
+    <script type="text/javascript">
+        $(function(){
+	        $(".focusbox").flexslider({
+		        directionNav: false,
+		        pauseOnAction: false
+	        });
+        });
+    </script>
+</head>
+<body>
+<!--Header-->
+<%template src="_header.html"%>
+<!--/Header-->
+<div class="main">
+    <div class="banner">
+        <div class="focusbox">
+            <ul class="slides">
+                <%set DataTable focusNews=get_article_list("index", 52, 8, "status=0 and is_slide=1 and img_url<>''")%>
+                <%foreach(DataRow dr in focusNews.Rows)%>
+                <li>
+                    <img src="{dr[img_url]}" />
+                </li>
+                <%/foreach%>
+            </ul>
+        </div>
+    </div>
+    <div class="productCenter">
+        <h1 class="title pt30">产品中心</h1>
+        <ul class="clearfix w1200">
+            <%set DataTable products=get_article_list("index", 53, 3, "status=0")%>
+            <%foreach(DataRow dr in products.Rows)%>
+            <li>
+                <div class="icon"><img src="{dr[img_url]}" /></div>
+                <p class="productName">{dr[title]}</p>
+                <div class="descration">{dr[zhaiyao]}</div>
+                <a href="{dr[link_url]}" target="_blank" class="login" >登录</a>
+            </li>
+            <%/foreach%>
+        </ul>
+    </div>
+    <div class="userData">
+        <h1 class="title pt30">用户数据</h1>
+        <ul class="clearfix w1200">
+            <%set DataTable userData=get_article_list("index", 54, 3, "status=0")%>
+            <%foreach(DataRow dr in userData.Rows)%>
+            <li>
+                <div class="icon"><img src="{dr[img_url]}" /></div>
+                <p class="number">{dr[zhaiyao]}</p>
+                <div class="name">{dr[title]}</div>
+            </li>
+            <%/foreach%>
+        </ul>
+    </div>
+    <div class="server">
+        <h1 class="title pt30">核心服务</h1>
+        <div class="descration">以提升教育信息化和打造教育数据云平台为主导，<br />注重对创新教育理念的探索，致力于打造服务学校教育教学工作的“智慧型软件产品”，已拥有多项国家级自主研发技术和产品专利，<br />目前产品已应用于全国各地基础教育学校及高等院校。</div>
+        <ul class="clearfix w1200 pt30">
+           <li>
+               <div class="icon icon1"></div>
+               <p class="name">为教务减负增效</p>
+           </li>
+            <li>
+                <div class="icon icon2"></div>
+                <p class="name">让教室智能有趣</p>
+            </li>
+            <li>
+                <div class="icon icon3"></div>
+                <p class="name">带学生快乐成长</p>
+            </li>
+            <li>
+                <div class="icon icon4"></div>
+                <p class="name">助学校快速发展</p>
+            </li>
+        </ul>
+    </div>
+    <div class="case">
+        <h1 class="title pt30">成功案例</h1>
+        <ul class="case_ul w1200 clearfix mt30">
+            <%set DataTable cases=get_article_list("case", 55, 6, "status=0")%>
+            <%foreach(DataRow dr in cases.Rows)%>
+            <li>
+                <div><img src="{dr[img_url]}" /></div>
+            </li>
+            <%/foreach%>
+        </ul>
+        <div class="more w1200"><a target="_blank" href="<%linkurl("case")%>" >查看更多</a></div>
+    </div>
+    <div class="partner">
+        <h1 class="title pt30">合作伙伴</h1>
+        <ul class="w1200 clearfix">
+            <%set DataTable linkList=get_plugin_method("DTcms.Web.Plugin.Link", "link", "get_link_list", 10, "is_lock=0 and is_image=1 and is_red=1")%>
+            <%foreach(DataRow dr in linkList.Rows)%>
+            <li><a target="_blank" href="{dr[site_url]}" title="{dr[title]}"><img src="{dr[img_url]}" /></a></li>
+            <%/foreach%>
+        </ul>
+    </div>
+</div>
+<!--Footer-->
+<%template src="_footer.html"%>
+<!--/Footer-->
+</body>
+</html>

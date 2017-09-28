@@ -1,0 +1,15 @@
+C:\project\work\ChineseStarPortal\DTcms.Web.UI\bin\Release\DTcms.Web.UI.dll
+C:\project\work\ChineseStarPortal\DTcms.Web.UI\bin\Release\DTcms.Web.UI.pdb
+C:\project\work\ChineseStarPortal\DTcms.Web.UI\bin\Release\DTcms.BLL.dll
+C:\project\work\ChineseStarPortal\DTcms.Web.UI\bin\Release\DTcms.Common.dll
+C:\project\work\ChineseStarPortal\DTcms.Web.UI\bin\Release\DTcms.Model.dll
+C:\project\work\ChineseStarPortal\DTcms.Web.UI\bin\Release\DTcms.DAL.dll
+C:\project\work\ChineseStarPortal\DTcms.Web.UI\bin\Release\DTcms.DBUtility.dll
+C:\project\work\ChineseStarPortal\DTcms.Web.UI\bin\Release\DTcms.BLL.pdb
+C:\project\work\ChineseStarPortal\DTcms.Web.UI\bin\Release\DTcms.Common.pdb
+C:\project\work\ChineseStarPortal\DTcms.Web.UI\bin\Release\DTcms.Model.pdb
+C:\project\work\ChineseStarPortal\DTcms.Web.UI\bin\Release\DTcms.DAL.pdb
+C:\project\work\ChineseStarPortal\DTcms.Web.UI\bin\Release\DTcms.DBUtility.pdb
+C:\project\work\ChineseStarPortal\DTcms.Web.UI\obj\Release\DTcms.Web.UI.csprojResolveAssemblyReference.cache
+C:\project\work\ChineseStarPortal\DTcms.Web.UI\obj\Release\DTcms.Web.UI.dll
+C:\project\work\ChineseStarPortal\DTcms.Web.UI\obj\Release\DTcms.Web.UI.pdb
