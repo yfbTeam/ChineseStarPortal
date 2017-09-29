@@ -332,11 +332,6 @@ width:150px;height:150px;
     .digg{
         display:inline-block;
     }
-    /*.meta h1{
-        font-size:20px;text-align:center;line-height:50px;
-    }
-    .meta-info{line-height:30px;text-align:center;font-size:14px;color:#666;}
-     .meta-info span{padding:0px 10px;font-size:14px;color:#666;}*/
     /*内容标题样式*/
 .meta{ text-align:center; padding:10px 0 15px 0; border-bottom:1px solid #f0f0f0; }
 	.meta:after{ clear:none; content:""; display:block; height:0; visibility:hidden; }

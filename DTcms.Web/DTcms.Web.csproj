@@ -125,6 +125,7 @@
     <Content Include="admin\skin\base.css" />
     <Content Include="admin\skin\default\ie_update.jpg" />
     <Content Include="admin\skin\default\loadimg.gif" />
+    <Content Include="admin\skin\default\logo.png" />
     <Content Include="admin\skin\default\logo1.png" />
     <Content Include="admin\skin\default\nav\home.png" />
     <Content Include="admin\skin\default\nav\order.png" />
@@ -135,7 +136,6 @@
     <Content Include="admin\skin\default\skin_icons.png" />
     <Content Include="admin\skin\default\style.css" />
     <Content Include="admin\skin\default\valid_icons.png" />
-    <Content Include="admin\skin\default\logo.png" />
     <Content Include="admin\skin\layout.css" />
     <Content Include="admin\users\amount_log.aspx" />
     <Content Include="admin\users\group_edit.aspx" />
