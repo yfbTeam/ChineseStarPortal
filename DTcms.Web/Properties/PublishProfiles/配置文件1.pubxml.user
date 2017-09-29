@@ -343,16 +343,22 @@
       <publishTime>05/02/2015 02:12:24</publishTime>
     </File>
     <File Include="aspx/chinesestar/about.aspx">
-      <publishTime>09/28/2017 13:56:47</publishTime>
+      <publishTime>09/29/2017 10:48:45</publishTime>
     </File>
     <File Include="aspx/chinesestar/cart.aspx">
-      <publishTime>09/28/2017 13:56:47</publishTime>
+      <publishTime>09/29/2017 10:48:45</publishTime>
     </File>
     <File Include="aspx/chinesestar/case.aspx">
-      <publishTime>09/28/2017 13:56:47</publishTime>
+      <publishTime>09/29/2017 10:48:45</publishTime>
     </File>
     <File Include="aspx/chinesestar/companynews.aspx">
-      <publishTime>09/28/2017 13:56:47</publishTime>
+      <publishTime>09/29/2017 10:48:45</publishTime>
+    </File>
+    <File Include="aspx/chinesestar/companynews_list.aspx">
+      <publishTime>09/29/2017 10:48:45</publishTime>
+    </File>
+    <File Include="aspx/chinesestar/companynews_show.aspx">
+      <publishTime>09/29/2017 10:48:45</publishTime>
     </File>
     <File Include="aspx/chinesestar/content.aspx">
       <publishTime>09/28/2017 13:56:47</publishTime>
@@ -367,7 +373,7 @@
       <publishTime>09/28/2017 13:56:47</publishTime>
     </File>
     <File Include="aspx/chinesestar/error.aspx">
-      <publishTime>09/28/2017 13:56:47</publishTime>
+      <publishTime>09/29/2017 10:48:45</publishTime>
     </File>
     <File Include="aspx/chinesestar/goods.aspx">
       <publishTime>09/28/2017 13:56:47</publishTime>
@@ -379,10 +385,10 @@
       <publishTime>09/28/2017 13:56:47</publishTime>
     </File>
     <File Include="aspx/chinesestar/index.aspx">
-      <publishTime>09/28/2017 13:56:47</publishTime>
+      <publishTime>09/29/2017 10:48:45</publishTime>
     </File>
     <File Include="aspx/chinesestar/login.aspx">
-      <publishTime>09/28/2017 13:56:47</publishTime>
+      <publishTime>09/29/2017 10:48:45</publishTime>
     </File>
     <File Include="aspx/chinesestar/news.aspx">
       <publishTime>09/28/2017 13:56:47</publishTime>
@@ -394,10 +400,10 @@
       <publishTime>09/28/2017 13:56:47</publishTime>
     </File>
     <File Include="aspx/chinesestar/oauth_login.aspx">
-      <publishTime>09/28/2017 13:56:47</publishTime>
+      <publishTime>09/29/2017 10:48:45</publishTime>
     </File>
     <File Include="aspx/chinesestar/payment.aspx">
-      <publishTime>09/28/2017 13:56:47</publishTime>
+      <publishTime>09/29/2017 10:48:45</publishTime>
     </File>
     <File Include="aspx/chinesestar/photo.aspx">
       <publishTime>09/28/2017 13:56:47</publishTime>
@@ -409,40 +415,40 @@
       <publishTime>09/28/2017 13:56:47</publishTime>
     </File>
     <File Include="aspx/chinesestar/product.aspx">
-      <publishTime>09/28/2017 13:56:47</publishTime>
+      <publishTime>09/29/2017 10:48:45</publishTime>
     </File>
     <File Include="aspx/chinesestar/register.aspx">
-      <publishTime>09/28/2017 13:56:47</publishTime>
+      <publishTime>09/29/2017 10:48:45</publishTime>
     </File>
     <File Include="aspx/chinesestar/repassword.aspx">
-      <publishTime>09/28/2017 13:56:47</publishTime>
+      <publishTime>09/29/2017 10:48:45</publishTime>
     </File>
     <File Include="aspx/chinesestar/search.aspx">
-      <publishTime>09/28/2017 13:56:47</publishTime>
+      <publishTime>09/29/2017 10:48:45</publishTime>
     </File>
     <File Include="aspx/chinesestar/shopping.aspx">
-      <publishTime>09/28/2017 13:56:47</publishTime>
+      <publishTime>09/29/2017 10:48:45</publishTime>
     </File>
     <File Include="aspx/chinesestar/useramount.aspx">
-      <publishTime>09/28/2017 13:56:47</publishTime>
+      <publishTime>09/29/2017 10:48:45</publishTime>
     </File>
     <File Include="aspx/chinesestar/usercenter.aspx">
-      <publishTime>09/28/2017 13:56:47</publishTime>
+      <publishTime>09/29/2017 10:48:45</publishTime>
     </File>
     <File Include="aspx/chinesestar/usermessage.aspx">
-      <publishTime>09/28/2017 13:56:47</publishTime>
+      <publishTime>09/29/2017 10:48:45</publishTime>
     </File>
     <File Include="aspx/chinesestar/usermessage_show.aspx">
-      <publishTime>09/28/2017 13:56:47</publishTime>
+      <publishTime>09/29/2017 10:48:45</publishTime>
     </File>
     <File Include="aspx/chinesestar/userorder.aspx">
-      <publishTime>09/28/2017 13:56:47</publishTime>
+      <publishTime>09/29/2017 10:48:45</publishTime>
     </File>
     <File Include="aspx/chinesestar/userorder_show.aspx">
-      <publishTime>09/28/2017 13:56:47</publishTime>
+      <publishTime>09/29/2017 10:48:45</publishTime>
     </File>
     <File Include="aspx/chinesestar/userpoint.aspx">
-      <publishTime>09/28/2017 13:56:47</publishTime>
+      <publishTime>09/29/2017 10:48:45</publishTime>
     </File>
     <File Include="aspx/chinesestar/video.aspx">
       <publishTime>09/28/2017 13:56:47</publishTime>
@@ -452,6 +458,117 @@
     </File>
     <File Include="aspx/chinesestar/video_show.aspx">
       <publishTime>09/28/2017 13:56:47</publishTime>
+    </File>
+    <File Include="aspx/mobile/about.aspx">
+      <publishTime>09/28/2017 13:42:08</publishTime>
+    </File>
+    <File Include="aspx/mobile/cart.aspx">
+      <publishTime>09/28/2017 13:42:08</publishTime>
+    </File>
+    <File Include="aspx/mobile/case.aspx">
+      <publishTime>09/28/2017 13:42:08</publishTime>
+    </File>
+    <File Include="aspx/mobile/companynews.aspx">
+      <publishTime>09/28/2017 13:42:08</publishTime>
+    </File>
+    <File Include="aspx/mobile/content.aspx">
+      <publishTime>09/28/2017 13:42:08</publishTime>
+    </File>
+    <File Include="aspx/mobile/down.aspx">
+      <publishTime>09/28/2017 13:42:08</publishTime>
+    </File>
+    <File Include="aspx/mobile/down_list.aspx">
+      <publishTime>09/28/2017 13:42:08</publishTime>
+    </File>
+    <File Include="aspx/mobile/down_show.aspx">
+      <publishTime>09/28/2017 13:42:08</publishTime>
+    </File>
+    <File Include="aspx/mobile/error.aspx">
+      <publishTime>09/28/2017 13:42:08</publishTime>
+    </File>
+    <File Include="aspx/mobile/goods.aspx">
+      <publishTime>09/28/2017 13:42:08</publishTime>
+    </File>
+    <File Include="aspx/mobile/goods_list.aspx">
+      <publishTime>09/28/2017 13:42:08</publishTime>
+    </File>
+    <File Include="aspx/mobile/goods_show.aspx">
+      <publishTime>09/28/2017 13:42:08</publishTime>
+    </File>
+    <File Include="aspx/mobile/index.aspx">
+      <publishTime>09/28/2017 13:42:08</publishTime>
+    </File>
+    <File Include="aspx/mobile/login.aspx">
+      <publishTime>09/28/2017 13:42:08</publishTime>
+    </File>
+    <File Include="aspx/mobile/news.aspx">
+      <publishTime>09/28/2017 13:42:08</publishTime>
+    </File>
+    <File Include="aspx/mobile/news_list.aspx">
+      <publishTime>09/28/2017 13:42:08</publishTime>
+    </File>
+    <File Include="aspx/mobile/news_show.aspx">
+      <publishTime>09/28/2017 13:42:08</publishTime>
+    </File>
+    <File Include="aspx/mobile/oauth_login.aspx">
+      <publishTime>09/28/2017 13:42:08</publishTime>
+    </File>
+    <File Include="aspx/mobile/payment.aspx">
+      <publishTime>09/28/2017 13:42:08</publishTime>
+    </File>
+    <File Include="aspx/mobile/photo.aspx">
+      <publishTime>09/28/2017 13:42:08</publishTime>
+    </File>
+    <File Include="aspx/mobile/photo_list.aspx">
+      <publishTime>09/28/2017 13:42:08</publishTime>
+    </File>
+    <File Include="aspx/mobile/photo_show.aspx">
+      <publishTime>09/28/2017 13:42:08</publishTime>
+    </File>
+    <File Include="aspx/mobile/product.aspx">
+      <publishTime>09/28/2017 13:42:08</publishTime>
+    </File>
+    <File Include="aspx/mobile/register.aspx">
+      <publishTime>09/28/2017 13:42:08</publishTime>
+    </File>
+    <File Include="aspx/mobile/repassword.aspx">
+      <publishTime>09/28/2017 13:42:08</publishTime>
+    </File>
+    <File Include="aspx/mobile/search.aspx">
+      <publishTime>09/28/2017 13:42:08</publishTime>
+    </File>
+    <File Include="aspx/mobile/shopping.aspx">
+      <publishTime>09/28/2017 13:42:08</publishTime>
+    </File>
+    <File Include="aspx/mobile/useramount.aspx">
+      <publishTime>09/28/2017 13:42:08</publishTime>
+    </File>
+    <File Include="aspx/mobile/usercenter.aspx">
+      <publishTime>09/28/2017 13:42:08</publishTime>
+    </File>
+    <File Include="aspx/mobile/usermessage.aspx">
+      <publishTime>09/28/2017 13:42:08</publishTime>
+    </File>
+    <File Include="aspx/mobile/usermessage_show.aspx">
+      <publishTime>09/28/2017 13:42:08</publishTime>
+    </File>
+    <File Include="aspx/mobile/userorder.aspx">
+      <publishTime>09/28/2017 13:42:08</publishTime>
+    </File>
+    <File Include="aspx/mobile/userorder_show.aspx">
+      <publishTime>09/28/2017 13:42:08</publishTime>
+    </File>
+    <File Include="aspx/mobile/userpoint.aspx">
+      <publishTime>09/28/2017 13:42:08</publishTime>
+    </File>
+    <File Include="aspx/mobile/video.aspx">
+      <publishTime>09/28/2017 13:42:08</publishTime>
+    </File>
+    <File Include="aspx/mobile/video_list.aspx">
+      <publishTime>09/28/2017 13:42:08</publishTime>
+    </File>
+    <File Include="aspx/mobile/video_show.aspx">
+      <publishTime>09/28/2017 13:42:08</publishTime>
     </File>
     <File Include="aspx/plugin/feedback.aspx">
       <publishTime>05/03/2015 14:45:05</publishTime>
@@ -478,7 +595,7 @@
       <publishTime>09/28/2017 14:08:01</publishTime>
     </File>
     <File Include="bin/DTcms.Web.dll">
-      <publishTime>09/28/2017 14:08:04</publishTime>
+      <publishTime>09/29/2017 12:43:21</publishTime>
     </File>
     <File Include="bin/DTcms.Web.UI.dll">
       <publishTime>09/28/2017 14:08:03</publishTime>
@@ -1285,7 +1402,13 @@
       <publishTime>09/28/2017 13:56:38</publishTime>
     </File>
     <File Include="templates/main/companynews.html">
-      <publishTime>09/27/2017 12:15:50</publishTime>
+      <publishTime>09/29/2017 09:28:04</publishTime>
+    </File>
+    <File Include="templates/main/companynews_list.html">
+      <publishTime>09/29/2017 10:25:26</publishTime>
+    </File>
+    <File Include="templates/main/companynews_show.html">
+      <publishTime>09/29/2017 10:48:33</publishTime>
     </File>
     <File Include="templates/main/content.html">
       <publishTime>09/28/2017 09:59:44</publishTime>
@@ -1294,7 +1417,7 @@
       <publishTime>01/27/2015 14:55:13</publishTime>
     </File>
     <File Include="templates/main/css/layout.css">
-      <publishTime>09/28/2017 12:16:03</publishTime>
+      <publishTime>09/29/2017 10:51:03</publishTime>
     </File>
     <File Include="templates/main/css/lightbox.css">
       <publishTime>04/09/2015 00:52:32</publishTime>
@@ -1383,6 +1506,12 @@
     <File Include="templates/main/images/dian.png">
       <publishTime>09/27/2017 15:29:19</publishTime>
     </File>
+    <File Include="templates/main/images/dong_03.jpg">
+      <publishTime>09/29/2017 09:27:21</publishTime>
+    </File>
+    <File Include="templates/main/images/dong_07.jpg">
+      <publishTime>09/29/2017 09:27:21</publishTime>
+    </File>
     <File Include="templates/main/images/icon-tips.png">
       <publishTime>12/06/2013 13:13:20</publishTime>
     </File>
@@ -1403,6 +1532,12 @@
     </File>
     <File Include="templates/main/images/logo1.png">
       <publishTime>09/27/2017 10:45:39</publishTime>
+    </File>
+    <File Include="templates/main/images/news-bg_02.jpg">
+      <publishTime>09/29/2017 09:57:02</publishTime>
+    </File>
+    <File Include="templates/main/images/news_bg.jpg">
+      <publishTime>09/28/2017 15:34:31</publishTime>
     </File>
     <File Include="templates/main/images/next.png">
       <publishTime>03/30/2014 09:45:10</publishTime>
@@ -1453,7 +1588,7 @@
       <publishTime>05/15/2015 01:17:18</publishTime>
     </File>
     <File Include="templates/main/js/common.js">
-      <publishTime>09/27/2017 14:01:47</publishTime>
+      <publishTime>09/28/2017 16:34:27</publishTime>
     </File>
     <File Include="templates/main/js/jquery.flexslider-min.js">
       <publishTime>06/30/2014 09:09:44</publishTime>
@@ -1477,10 +1612,10 @@
       <publishTime>09/28/2017 09:59:46</publishTime>
     </File>
     <File Include="templates/main/news_list.html">
-      <publishTime>09/28/2017 09:59:46</publishTime>
+      <publishTime>09/29/2017 09:26:24</publishTime>
     </File>
     <File Include="templates/main/news_show.html">
-      <publishTime>09/28/2017 09:59:46</publishTime>
+      <publishTime>09/28/2017 17:59:56</publishTime>
     </File>
     <File Include="templates/main/oauth_login.html">
       <publishTime>09/28/2017 09:59:46</publishTime>
@@ -1546,10 +1681,10 @@
       <publishTime>09/28/2017 09:59:44</publishTime>
     </File>
     <File Include="templates/main/_footer.html">
-      <publishTime>09/28/2017 11:21:44</publishTime>
+      <publishTime>09/29/2017 09:10:55</publishTime>
     </File>
     <File Include="templates/main/_header.html">
-      <publishTime>09/28/2017 11:21:59</publishTime>
+      <publishTime>09/29/2017 10:21:20</publishTime>
     </File>
     <File Include="templates/main/_share_js.html">
       <publishTime>09/28/2017 09:59:44</publishTime>
@@ -1795,13 +1930,13 @@
       <publishTime>05/14/2015 23:12:22</publishTime>
     </File>
     <File Include="xmlconfig/site.config">
-      <publishTime>09/28/2017 10:19:26</publishTime>
+      <publishTime>09/29/2017 10:38:18</publishTime>
     </File>
     <File Include="xmlconfig/tenpaypc.config">
       <publishTime>06/16/2015 11:19:34</publishTime>
     </File>
     <File Include="xmlconfig/urls.config">
-      <publishTime>09/28/2017 10:38:18</publishTime>
+      <publishTime>09/29/2017 10:37:53</publishTime>
     </File>
     <File Include="xmlconfig/user.config">
       <publishTime>05/03/2015 18:47:41</publishTime>

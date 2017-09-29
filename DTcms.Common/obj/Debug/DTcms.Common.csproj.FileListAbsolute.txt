@@ -37,3 +37,4 @@ C:\project\work\ChineseStarPortal\DTcms.Common\bin\Debug\DTcms.Common.dll
 C:\project\work\ChineseStarPortal\DTcms.Common\bin\Debug\DTcms.Common.pdb
 C:\project\work\ChineseStarPortal\DTcms.Common\obj\Debug\DTcms.Common.dll
 C:\project\work\ChineseStarPortal\DTcms.Common\obj\Debug\DTcms.Common.pdb
+C:\project\work\ChineseStarPortal\DTcms.Common\obj\Debug\DTcms.Common.csprojResolveAssemblyReference.cache

@@ -1,4 +1,8 @@
-﻿$(function () {
+﻿var pageNum = 1;
+function pageIndex() {
+    return pageNum++;
+}
+$(function () {
     function initHegiht() {
         var header = $('.header'), footer = $('.footer'), winHeight = $(window).height();;
         if (header || footer) {
