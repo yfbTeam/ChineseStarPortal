@@ -17,32 +17,33 @@
     <!--/Header-->
 
     <div class="main">
-        
+        <div class="news-bg">
+            <img src="<%templateskin%>/images/news-bg_02.jpg" alt="" />
+        </div>
+        <div class="ntitle">
+            <div class="w1200">
+               
+                <span>当前位置：<a href="<%linkurl("companynews")%>" style="color:#2293cb;">企业新闻</a> &gt; <a>新闻详情</a></span>
+            </div>
+        </div>
         <!--左边-->
-        <div class="list-auto">
-
+        <div class="list-auto w1200" style="padding:20px 0px;">
             <div class="meta">
                 <h1>{model.title}</h1>
                 <p class="meta-info">
                     <span class="time">{model.add_time}</span>
                     <span class="view">
-                    <script type="text/javascript" src="{config.webpath}tools/submit_ajax.ashx?action=view_article_click&id={model.id}&click=1"></script>次浏览</span>
+                        <script type="text/javascript" src="{config.webpath}tools/submit_ajax.ashx?action=view_article_click&id={model.id}&click=1"></script>次浏览
+                    </span>
                     分类：{category_title}
                 </p>
             </div>
-
             <div class="entry">
                 {model.content}
             </div>
-
-           
-            
-
         </div>
         <!--/左边-->
-
     </div>
-
     <!--Footer-->
     <%template src="_footer.html"%>
     <!--/Footer-->

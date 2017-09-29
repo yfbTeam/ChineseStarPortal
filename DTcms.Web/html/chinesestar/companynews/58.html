@@ -1,18 +1,19 @@
-﻿<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="renderer" content="webkit" />
-    <title>华人启星</title>
-    <meta name="keywords" content="华人启星" />
-    <meta name="description" content="华人启星" />
+    <title>产品动态 - 华人启星</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link href="/css/pagination.css" rel="stylesheet" />
     <link href="/templates/main/css/layout.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" charset="utf-8" src="/scripts/jquery/jquery-1.11.2.min.js"></script>
-    <script type="text/javascript" charset="utf-8" src="/templates/main/js/jquery.flexslider-min.js"></script>
-    <script type="text/javascript" charset="utf-8" src="/templates/main/js/common.js"></script></head>
+    <script type="text/javascript" charset="utf-8" src="/templates/main/js/common.js"></script>
+</head>
+
 <body>
-<!--Header-->
-<div class="header">
+    <!--Header-->
+    <div class="header">
     <div class="header-wrap">
         <div class="w1200 clearfix">
             <a class="logo left" href="">
@@ -36,44 +37,51 @@
 
         itemhref = $(this).children('a').attr('href');
         itemhref = itemhref.slice(0, itemhref.lastIndexOf('.'))
-        debugger;
         if (href.indexOf(itemhref) > 1) {
             $(this).addClass('selected').siblings().removeClass('selected');
         }
     })
 </script>
-<!--/Header-->
+    <!--/Header-->
+
     <div class="main">
-        <div class="case_bg">
-            <img src="/templates/main/images/about.jpg" alt="" />
+        <div class="news-bg">
+            <img src="/templates/main/images/news-bg_02.jpg" alt="" />
         </div>
-        <div class="jianjie">
-            <h1 class="title pt30">公司简介</h1>
-            <div class="w1200 clearfix mt20">
-                <div class="company_img left">
-                    <img src="/templates/main/images/about.jpg" alt="" />
-                </div>
-                <div class="company_desc right">
-                    <p>北京华人启星科技有限公司位于北京丰台科技园区诺德中心，汇集了一批多年扎根教育体制改革、“想为教育做点什么”的高精尖人才、首席框架师及来自教育教学一线的管理者，致力于为教育行业提供个性化的综合应用解决方案。不断深化智能校园建设，增加研发投入，凭借专业技术水平和大量国家专利优势，已圆满完成一系列创新型教学项目，触及全国各地多个行业，逐渐形成集科研、生产、经销、咨询、培训、服务为一体的专业型团队。</p>
-                    <p>深耕细作，开启未来，华人启星将与合作伙伴携手搭建多层次的交流平台，继续贯彻“以技术为依托向各行业拓展，以北京市场为中心向全国市场拓展”的发展理念，让新思路、新理念真正落地，以卓越的信誉和品牌树立行业典范。</p>
-                </div>
+        <div class="ntitle">
+            <div class="w1200">
+                
+                <span>当前位置：<a href="/companynews.html" style="color:#2293cb;">企业新闻</a>&nbsp;&gt;&nbsp;<a href="/companynews/58/1.html">产品动态</a></span>
             </div>
         </div>
-        <div class="zizhi">
-            <h1 class="title pt30">荣誉资质</h1>
-            <div class="zhi_img w1200 mt20">
-                <img src="/templates/main/images/ss_03.jpg" alt="" />
+        <div class="list-auto w1200">
+            <ul class="n-list">
+                <!--取得一个分页DataTable-->
+                
+                <li>
+                    <a href="/companynews/show-125.html" target="_blank">
+                        
+                        <b><img src="/upload/201709/28/201709281652534392.jpg" /></b>
+                        
+                        <div class="desc">
+                            <h2 class="clearfix"><span class="name">高教展精英同赴 华人启星创辉煌</span><span class="time">2017-09-28</span></h2>
+                            <div class="note">
+                                为顺应新的招生考试制度改革以及由其引发的学校管理模式、教学模式的变革，北京华人启星科技有限公司于2016年初投入大量资金，潜心致力于以排选课为核心的教育综合改革系列产品研发…
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                
+            </ul>
+            <!--页码列表-->
+            <div class="page-box">
+                <div class="digg clearfix"></div>
             </div>
-        </div>
-        <div class="">
-            <h1 class="title pt30">企业愿景</h1>
-            <div class="zhi_img w1200 mt30 mb30">
-                <img src="/templates/main/images/as_07.jpg" alt="" />
-            </div>
+            <!--/页码列表-->
         </div>
     </div>
-<!--Footer-->
-<div class="footer clearfix">
+    <!--Footer-->
+    <div class="footer clearfix">
   <div class="footer-header">
       <div class="w1200 clearfix">
           <div class="footer-content left">
@@ -98,15 +106,14 @@
       版权所有 Copyright 2017 &copy; 北京市华人启星科技有限公司<span>|</span>地址：北京市丰台区南四环西路128号诺德中心3座7层<span>|</span>邮编：10070<span>|</span>联系电话：010-63781786<span>|</span>传真：010-63781786
   </div>
 </div>
-<!--/Footer-->
+    <!--/Footer-->
 
 <!-- Visual Studio Browser Link -->
 <script type="application/json" id="__browserLink_initializationData">
-    {"appName":"Unknown","requestId":"5892558b9d914129b38e3f1f8a9bd159"}
+    {"appName":"Unknown","requestId":"d258fc50fa554f2d9055efbf444a1754"}
 </script>
 <script type="text/javascript" src="http://localhost:8118/fc090950c0b94d4dbd8e4817ed3e416c/browserLink" async="async"></script>
 <!-- End Browser Link -->
 
 </body>
 </html>
-

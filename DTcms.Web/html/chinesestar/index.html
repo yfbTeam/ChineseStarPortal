@@ -29,11 +29,11 @@
             </a>
             <div class="nav right">
                 <ul class="clearfix">
-                    <li class="selected"><a target="_blank" href="/index.html">首页</a></li>
-                    <li><a target="_blank" href="/about.html">关于我们</a></li>
-                    <li><a target="_blank" href="/product.html">产品中心</a></li>
-                    <li><a target="_blank" href="/companynews.html">企业新闻</a></li>
-                    <li><a target="_blank" href="/case.html">成功案例</a></li>
+                    <li class="selected"><a  href="/index.html">首页</a></li>
+                    <li><a  href="/about.html">关于我们</a></li>
+                    <li><a  href="/product.html">产品中心</a></li>
+                    <li><a  href="/companynews.html">企业新闻</a></li>
+                    <li><a href="/case.html">成功案例</a></li>
                 </ul>
             </div>
         </div>
@@ -41,13 +41,12 @@
 </div>
 <script>
     var href = window.location.href;
-    var index = href.lastIndexOf('/');
-    href = href.slice(index);
-    console.log(href);
     $('.nav ul li').each(function () {
-        
+
         itemhref = $(this).children('a').attr('href');
-        if (href === itemhref) {
+        itemhref = itemhref.slice(0, itemhref.lastIndexOf('.'))
+        debugger;
+        if (href.indexOf(itemhref) > 1) {
             $(this).addClass('selected').siblings().removeClass('selected');
         }
     })
@@ -143,27 +142,27 @@
         <ul class="case_ul w1200 clearfix mt30">
             
             <li>
-                <div><img src="/upload/201709/27/201709271744393890.png" /></div>
+                <div><img src="/upload/201709/28/201709281049511671.png" /></div>
             </li>
             
             <li>
-                <div><img src="/upload/201709/27/201709271745377980.png" /></div>
+                <div><img src="/upload/201709/28/201709281048351418.png" /></div>
             </li>
             
             <li>
-                <div><img src="/upload/201709/27/201709271746202703.png" /></div>
+                <div><img src="/upload/201709/28/201709281042410747.png" /></div>
             </li>
             
             <li>
-                <div><img src="/upload/201709/27/201709271747214603.png" /></div>
+                <div><img src="/upload/201709/28/201709281041563285.png" /></div>
             </li>
             
             <li>
-                <div><img src="/upload/201709/27/201709271747439469.png" /></div>
+                <div><img src="/upload/201709/28/201709281041127012.png" /></div>
             </li>
             
             <li>
-                <div><img src="/upload/201709/27/201709271748144613.png" /></div>
+                <div><img src="/upload/201709/28/201709281040179378.png" /></div>
             </li>
             
         </ul>
@@ -202,11 +201,11 @@
       <div class="w1200 clearfix">
           <div class="footer-content left">
               <div class="nav-footer clearfix">
-                  <a target="_blank" href="/index.html">首页</a>
-                  <a target="_blank" href="/about.html">关于我们</a>
-                  <a target="_blank" href="/product.html">产品中心</a>
-                  <a target="_blank" href="/companynews.html">企业新闻</a>
-                  <a target="_blank" href="/case.html">成功案例</a>
+                  <a href="/index.html">首页</a>
+                  <a  href="/about.html">关于我们</a>
+                  <a  href="/product.html">产品中心</a>
+                  <a  href="/companynews.html">企业新闻</a>
+                  <a  href="/case.html">成功案例</a>
               </div>
           </div>
           <div class="footer-content left footer-logo">
@@ -226,9 +225,9 @@
 
 <!-- Visual Studio Browser Link -->
 <script type="application/json" id="__browserLink_initializationData">
-    {"appName":"Unknown","requestId":"309fed0cee66487c94023efdd5712e2a"}
+    {"appName":"Unknown","requestId":"cb4d45f2b45d453cb4721e99e503884a"}
 </script>
-<script type="text/javascript" src="http://localhost:55517/1623bcffcd51480c9eb6276fa85170fd/browserLink" async="async"></script>
+<script type="text/javascript" src="http://localhost:8118/fc090950c0b94d4dbd8e4817ed3e416c/browserLink" async="async"></script>
 <!-- End Browser Link -->
 
 </body>

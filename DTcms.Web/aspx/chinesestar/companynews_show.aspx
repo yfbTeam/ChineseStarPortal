@@ -9,8 +9,8 @@ override protected void OnInit(EventArgs e)
 {
 
 	/* 
-		This page was created by DTcms Template Engine at 2017/9/29 9:08:56.
-		本页面代码由DTcms模板引擎生成于 2017/9/29 9:08:56. 
+		This page was created by DTcms Template Engine at 2017/9/29 10:48:45.
+		本页面代码由DTcms模板引擎生成于 2017/9/29 10:48:45. 
 	*/
 
 	base.OnInit(e);
@@ -46,53 +46,58 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("\">\r\n                <img src=\"");
 	templateBuilder.Append(site.logo.ToString());
 
-	templateBuilder.Append("\" />\r\n            </a>\r\n            <div class=\"nav right\">\r\n                <ul class=\"clearfix\">\r\n                    <li class=\"selected\"><a target=\"_blank\" href=\"");
+	templateBuilder.Append("\" />\r\n            </a>\r\n            <div class=\"nav right\">\r\n                <ul class=\"clearfix\">\r\n                    <li class=\"selected\"><a  href=\"");
 	templateBuilder.Append(linkurl("index"));
 
-	templateBuilder.Append("\">首页</a></li>\r\n                    <li><a target=\"_blank\" href=\"");
+	templateBuilder.Append("\">首页</a></li>\r\n                    <li><a  href=\"");
 	templateBuilder.Append(linkurl("about"));
 
-	templateBuilder.Append("\">关于我们</a></li>\r\n                    <li><a target=\"_blank\" href=\"");
+	templateBuilder.Append("\">关于我们</a></li>\r\n                    <li><a  href=\"");
 	templateBuilder.Append(linkurl("product"));
 
-	templateBuilder.Append("\">产品中心</a></li>\r\n                    <li><a target=\"_blank\" href=\"");
+	templateBuilder.Append("\">产品中心</a></li>\r\n                    <li><a  href=\"");
 	templateBuilder.Append(linkurl("companynews"));
 
-	templateBuilder.Append("\">企业新闻</a></li>\r\n                    <li><a target=\"_blank\" href=\"");
+	templateBuilder.Append("\">企业新闻</a></li>\r\n                    <li><a href=\"");
 	templateBuilder.Append(linkurl("case"));
 
-	templateBuilder.Append("\">成功案例</a></li>\r\n                </ul>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n<script>\r\n    var href = window.location.href;\r\n    $('.nav ul li').each(function () {\r\n\r\n        itemhref = $(this).children('a').attr('href');\r\n        itemhref = itemhref.slice(0, itemhref.lastIndexOf('.'))\r\n        debugger;\r\n        if (href.indexOf(itemhref) > 1) {\r\n            $(this).addClass('selected').siblings().removeClass('selected');\r\n        }\r\n    })\r\n</");
+	templateBuilder.Append("\">成功案例</a></li>\r\n                </ul>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n<script>\r\n    var href = window.location.href;\r\n    $('.nav ul li').each(function () {\r\n\r\n        itemhref = $(this).children('a').attr('href');\r\n        itemhref = itemhref.slice(0, itemhref.lastIndexOf('.'))\r\n        if (href.indexOf(itemhref) > 1) {\r\n            $(this).addClass('selected').siblings().removeClass('selected');\r\n        }\r\n    })\r\n</");
 	templateBuilder.Append("script>");
 
 
-	templateBuilder.Append("\r\n    <!--/Header-->\r\n\r\n    <div class=\"main\">\r\n        \r\n        <!--左边-->\r\n        <div class=\"list-auto\">\r\n\r\n            <div class=\"meta\">\r\n                <h1>");
+	templateBuilder.Append("\r\n    <!--/Header-->\r\n\r\n    <div class=\"main\">\r\n        <div class=\"news-bg\">\r\n            <img src=\"");
+	templateBuilder.Append("/templates/main");
+	templateBuilder.Append("/images/news-bg_02.jpg\" alt=\"\" />\r\n        </div>\r\n        <div class=\"ntitle\">\r\n            <div class=\"w1200\">\r\n               \r\n                <span>当前位置：<a href=\"");
+	templateBuilder.Append(linkurl("companynews"));
+
+	templateBuilder.Append("\" style=\"color:#2293cb;\">企业新闻</a> &gt; <a>新闻详情</a></span>\r\n            </div>\r\n        </div>\r\n        <!--左边-->\r\n        <div class=\"list-auto w1200\" style=\"padding:20px 0px;\">\r\n            <div class=\"meta\">\r\n                <h1>");
 	templateBuilder.Append(Utils.ObjectToStr(model.title));
 	templateBuilder.Append("</h1>\r\n                <p class=\"meta-info\">\r\n                    <span class=\"time\">");
 	templateBuilder.Append(Utils.ObjectToStr(model.add_time));
-	templateBuilder.Append("</span>\r\n                    <span class=\"view\">\r\n                    <script type=\"text/javascript\" src=\"");
+	templateBuilder.Append("</span>\r\n                    <span class=\"view\">\r\n                        <script type=\"text/javascript\" src=\"");
 	templateBuilder.Append(Utils.ObjectToStr(config.webpath));
 	templateBuilder.Append("tools/submit_ajax.ashx?action=view_article_click&id=");
 	templateBuilder.Append(Utils.ObjectToStr(model.id));
 	templateBuilder.Append("&click=1\"></");
-	templateBuilder.Append("script>次浏览</span>\r\n                    分类：");
+	templateBuilder.Append("script>次浏览\r\n                    </span>\r\n                    分类：");
 	templateBuilder.Append(Utils.ObjectToStr(category_title));
-	templateBuilder.Append("\r\n                </p>\r\n            </div>\r\n\r\n            <div class=\"entry\">\r\n                ");
+	templateBuilder.Append("\r\n                </p>\r\n            </div>\r\n            <div class=\"entry\">\r\n                ");
 	templateBuilder.Append(Utils.ObjectToStr(model.content));
-	templateBuilder.Append("\r\n            </div>\r\n\r\n           \r\n            \r\n\r\n        </div>\r\n        <!--/左边-->\r\n\r\n    </div>\r\n\r\n    <!--Footer-->\r\n    ");
+	templateBuilder.Append("\r\n            </div>\r\n        </div>\r\n        <!--/左边-->\r\n    </div>\r\n    <!--Footer-->\r\n    ");
 
-	templateBuilder.Append("<div class=\"footer clearfix\">\r\n  <div class=\"footer-header\">\r\n      <div class=\"w1200 clearfix\">\r\n          <div class=\"footer-content left\">\r\n              <div class=\"nav-footer clearfix\">\r\n                  <a target=\"_blank\" href=\"");
+	templateBuilder.Append("<div class=\"footer clearfix\">\r\n  <div class=\"footer-header\">\r\n      <div class=\"w1200 clearfix\">\r\n          <div class=\"footer-content left\">\r\n              <div class=\"nav-footer clearfix\">\r\n                  <a href=\"");
 	templateBuilder.Append(linkurl("index"));
 
-	templateBuilder.Append("\">首页</a>\r\n                  <a target=\"_blank\" href=\"");
+	templateBuilder.Append("\">首页</a>\r\n                  <a  href=\"");
 	templateBuilder.Append(linkurl("about"));
 
-	templateBuilder.Append("\">关于我们</a>\r\n                  <a target=\"_blank\" href=\"");
+	templateBuilder.Append("\">关于我们</a>\r\n                  <a  href=\"");
 	templateBuilder.Append(linkurl("product"));
 
-	templateBuilder.Append("\">产品中心</a>\r\n                  <a target=\"_blank\" href=\"");
+	templateBuilder.Append("\">产品中心</a>\r\n                  <a  href=\"");
 	templateBuilder.Append(linkurl("companynews"));
 
-	templateBuilder.Append("\">企业新闻</a>\r\n                  <a target=\"_blank\" href=\"");
+	templateBuilder.Append("\">企业新闻</a>\r\n                  <a  href=\"");
 	templateBuilder.Append(linkurl("case"));
 
 	templateBuilder.Append("\">成功案例</a>\r\n              </div>\r\n          </div>\r\n          <div class=\"footer-content left footer-logo\">\r\n              <img src=\"");

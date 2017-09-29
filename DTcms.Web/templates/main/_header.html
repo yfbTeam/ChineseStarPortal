@@ -22,7 +22,6 @@
 
         itemhref = $(this).children('a').attr('href');
         itemhref = itemhref.slice(0, itemhref.lastIndexOf('.'))
-        debugger;
         if (href.indexOf(itemhref) > 1) {
             $(this).addClass('selected').siblings().removeClass('selected');
         }

@@ -9,8 +9,8 @@ override protected void OnInit(EventArgs e)
 {
 
 	/* 
-		This page was created by DTcms Template Engine at 2017/9/29 9:08:56.
-		本页面代码由DTcms模板引擎生成于 2017/9/29 9:08:56. 
+		This page was created by DTcms Template Engine at 2017/9/29 10:48:45.
+		本页面代码由DTcms模板引擎生成于 2017/9/29 10:48:45. 
 	*/
 
 	base.OnInit(e);
@@ -42,22 +42,22 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("\">\r\n                <img src=\"");
 	templateBuilder.Append(site.logo.ToString());
 
-	templateBuilder.Append("\" />\r\n            </a>\r\n            <div class=\"nav right\">\r\n                <ul class=\"clearfix\">\r\n                    <li class=\"selected\"><a target=\"_blank\" href=\"");
+	templateBuilder.Append("\" />\r\n            </a>\r\n            <div class=\"nav right\">\r\n                <ul class=\"clearfix\">\r\n                    <li class=\"selected\"><a  href=\"");
 	templateBuilder.Append(linkurl("index"));
 
-	templateBuilder.Append("\">首页</a></li>\r\n                    <li><a target=\"_blank\" href=\"");
+	templateBuilder.Append("\">首页</a></li>\r\n                    <li><a  href=\"");
 	templateBuilder.Append(linkurl("about"));
 
-	templateBuilder.Append("\">关于我们</a></li>\r\n                    <li><a target=\"_blank\" href=\"");
+	templateBuilder.Append("\">关于我们</a></li>\r\n                    <li><a  href=\"");
 	templateBuilder.Append(linkurl("product"));
 
-	templateBuilder.Append("\">产品中心</a></li>\r\n                    <li><a target=\"_blank\" href=\"");
+	templateBuilder.Append("\">产品中心</a></li>\r\n                    <li><a  href=\"");
 	templateBuilder.Append(linkurl("companynews"));
 
-	templateBuilder.Append("\">企业新闻</a></li>\r\n                    <li><a target=\"_blank\" href=\"");
+	templateBuilder.Append("\">企业新闻</a></li>\r\n                    <li><a href=\"");
 	templateBuilder.Append(linkurl("case"));
 
-	templateBuilder.Append("\">成功案例</a></li>\r\n                </ul>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n<script>\r\n    var href = window.location.href;\r\n    $('.nav ul li').each(function () {\r\n\r\n        itemhref = $(this).children('a').attr('href');\r\n        itemhref = itemhref.slice(0, itemhref.lastIndexOf('.'))\r\n        debugger;\r\n        if (href.indexOf(itemhref) > 1) {\r\n            $(this).addClass('selected').siblings().removeClass('selected');\r\n        }\r\n    })\r\n</");
+	templateBuilder.Append("\">成功案例</a></li>\r\n                </ul>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n<script>\r\n    var href = window.location.href;\r\n    $('.nav ul li').each(function () {\r\n\r\n        itemhref = $(this).children('a').attr('href');\r\n        itemhref = itemhref.slice(0, itemhref.lastIndexOf('.'))\r\n        if (href.indexOf(itemhref) > 1) {\r\n            $(this).addClass('selected').siblings().removeClass('selected');\r\n        }\r\n    })\r\n</");
 	templateBuilder.Append("script>");
 
 
@@ -72,7 +72,21 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("\r\n               <a href=\"");
 	templateBuilder.Append(linkurl("companynews_show",Utils.ObjectToStr(dr["id"])));
 
-	templateBuilder.Append("\" target=\"_blank\">\r\n                   <div class=\"news_img\">\r\n                       <img src=\"" + Utils.ObjectToStr(dr["img_url"]) + "\" />\r\n                   </div>\r\n                   <h2>" + Utils.ObjectToStr(dr["title"]) + "</h2>\r\n                   <div class=\"desc\">\r\n                       " + Utils.ObjectToStr(dr["zhaiyao"]) + "\r\n                   </div>\r\n               </a>\r\n               ");
+	templateBuilder.Append("\" target=\"_blank\">\r\n                   ");
+	if (Utils.ObjectToStr(dr["img_url"])!="")
+	{
+
+	templateBuilder.Append("\r\n                   <div class=\"news_img\">\r\n                       <img src=\"" + Utils.ObjectToStr(dr["img_url"]) + "\" />\r\n                   </div>\r\n                   ");
+	}
+	else
+	{
+
+	templateBuilder.Append("\r\n                   <div class=\"news_img\">\r\n                       <img src=\"");
+	templateBuilder.Append("/templates/main");
+	templateBuilder.Append("/images/dong_03.jpg\" />\r\n                   </div>\r\n                   ");
+	}	//end for if
+
+	templateBuilder.Append("\r\n                  \r\n                   <h2>" + Utils.ObjectToStr(dr["title"]) + "</h2>\r\n                   <div class=\"desc\">\r\n                       " + Utils.ObjectToStr(dr["zhaiyao"]) + "\r\n                   </div>\r\n               </a>\r\n               ");
 	}	//end for if
 
 	templateBuilder.Append("\r\n              \r\n           </div>\r\n            <div class=\"news_right right\">\r\n                <ul>\r\n                    ");
@@ -107,7 +121,21 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("\r\n                <a href=\"");
 	templateBuilder.Append(linkurl("companynews_show",Utils.ObjectToStr(dr["id"])));
 
-	templateBuilder.Append("\r\n                    \" target=\"_blank\">\r\n                    <div class=\"news_img\">\r\n                        <img src=\"" + Utils.ObjectToStr(dr["img_url"]) + "\" />\r\n                    </div>\r\n                    <h2>" + Utils.ObjectToStr(dr["title"]) + "</h2>\r\n                    <div class=\"desc\">\r\n                        " + Utils.ObjectToStr(dr["zhaiyao"]) + "\r\n                    </div>\r\n                    ");
+	templateBuilder.Append("\r\n                    \" target=\"_blank\">\r\n                    ");
+	if (Utils.ObjectToStr(dr["img_url"])!="")
+	{
+
+	templateBuilder.Append("\r\n                    <div class=\"news_img\">\r\n                        <img src=\"" + Utils.ObjectToStr(dr["img_url"]) + "\" />\r\n                    </div>\r\n                    ");
+	}
+	else
+	{
+
+	templateBuilder.Append("\r\n                    <div class=\"news_img\">\r\n                        <img src=\"");
+	templateBuilder.Append("/templates/main");
+	templateBuilder.Append("/images/dong_07.jpg\" />\r\n                    </div>\r\n                    ");
+	}	//end for if
+
+	templateBuilder.Append("\r\n                    <h2>" + Utils.ObjectToStr(dr["title"]) + "</h2>\r\n                    <div class=\"desc\">\r\n                        " + Utils.ObjectToStr(dr["zhaiyao"]) + "\r\n                    </div>\r\n                    ");
 	}	//end for if
 
 	templateBuilder.Append("\r\n               </a>\r\n            </div>\r\n            <div class=\"news_right right news_right1\">\r\n                <ul>\r\n                    ");
@@ -135,19 +163,19 @@ override protected void OnInit(EventArgs e)
 
 	templateBuilder.Append("\">查看更多</a></div>\r\n    </div>\r\n</div>\r\n<!--Footer-->\r\n");
 
-	templateBuilder.Append("<div class=\"footer clearfix\">\r\n  <div class=\"footer-header\">\r\n      <div class=\"w1200 clearfix\">\r\n          <div class=\"footer-content left\">\r\n              <div class=\"nav-footer clearfix\">\r\n                  <a target=\"_blank\" href=\"");
+	templateBuilder.Append("<div class=\"footer clearfix\">\r\n  <div class=\"footer-header\">\r\n      <div class=\"w1200 clearfix\">\r\n          <div class=\"footer-content left\">\r\n              <div class=\"nav-footer clearfix\">\r\n                  <a href=\"");
 	templateBuilder.Append(linkurl("index"));
 
-	templateBuilder.Append("\">首页</a>\r\n                  <a target=\"_blank\" href=\"");
+	templateBuilder.Append("\">首页</a>\r\n                  <a  href=\"");
 	templateBuilder.Append(linkurl("about"));
 
-	templateBuilder.Append("\">关于我们</a>\r\n                  <a target=\"_blank\" href=\"");
+	templateBuilder.Append("\">关于我们</a>\r\n                  <a  href=\"");
 	templateBuilder.Append(linkurl("product"));
 
-	templateBuilder.Append("\">产品中心</a>\r\n                  <a target=\"_blank\" href=\"");
+	templateBuilder.Append("\">产品中心</a>\r\n                  <a  href=\"");
 	templateBuilder.Append(linkurl("companynews"));
 
-	templateBuilder.Append("\">企业新闻</a>\r\n                  <a target=\"_blank\" href=\"");
+	templateBuilder.Append("\">企业新闻</a>\r\n                  <a  href=\"");
 	templateBuilder.Append(linkurl("case"));
 
 	templateBuilder.Append("\">成功案例</a>\r\n              </div>\r\n          </div>\r\n          <div class=\"footer-content left footer-logo\">\r\n              <img src=\"");

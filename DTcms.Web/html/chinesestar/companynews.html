@@ -27,11 +27,11 @@
             </a>
             <div class="nav right">
                 <ul class="clearfix">
-                    <li class="selected"><a target="_blank" href="/index.html">首页</a></li>
-                    <li><a target="_blank" href="/about.html">关于我们</a></li>
-                    <li><a target="_blank" href="/product.html">产品中心</a></li>
-                    <li><a target="_blank" href="/companynews.html">企业新闻</a></li>
-                    <li><a target="_blank" href="/case.html">成功案例</a></li>
+                    <li class="selected"><a  href="/index.html">首页</a></li>
+                    <li><a  href="/about.html">关于我们</a></li>
+                    <li><a  href="/product.html">产品中心</a></li>
+                    <li><a  href="/companynews.html">企业新闻</a></li>
+                    <li><a href="/case.html">成功案例</a></li>
                 </ul>
             </div>
         </div>
@@ -39,13 +39,11 @@
 </div>
 <script>
     var href = window.location.href;
-    var index = href.lastIndexOf('/');
-    href = href.slice(index);
-    console.log(href);
     $('.nav ul li').each(function () {
-        
+
         itemhref = $(this).children('a').attr('href');
-        if (href === itemhref) {
+        itemhref = itemhref.slice(0, itemhref.lastIndexOf('.'))
+        if (href.indexOf(itemhref) > 1) {
             $(this).addClass('selected').siblings().removeClass('selected');
         }
     })
@@ -60,13 +58,18 @@
         <div class="w1200 clearfix mt30">
            <div class="news_left left">
                
-               <div class="news_img">
-                   <img src="/upload/201709/28/201709281628331581.jpg" />
-               </div>
-               <h2>高教展精英同赴 华人启星创辉煌</h2>
-               <div class="desc">
-                   2016年10月19日，翘首等待了数月的第48届全国高教仪器设备展示会终于正式拉开帷幕，为此精心筹备了数月的北京华人启星科技有限公司携团队精英奔赴成都，与业内伙伴共襄此盛举…
-               </div>
+               <a href="/companynews/show-124.html" target="_blank">
+                   
+                   <div class="news_img">
+                       <img src="/templates/main/images/dong_03.jpg" />
+                   </div>
+                   
+                  
+                   <h2>华人启星助力《北京联合大学旅游学院毕业典礼》</h2>
+                   <div class="desc">
+                       时间：2016年6月18日至19日（周六、周日全天）地点：北师大心理学院1...
+                   </div>
+               </a>
                
               
            </div>
@@ -74,21 +77,8 @@
                 <ul>
                     
                     <li>
-                        <a href="" class="clearfix">
+                        <a href="/companynews/show-124.html" target="_blank" class="clearfix">
                             <span class="left num">01</span>
-                            <div class="right">
-                                <p class="clearfix">
-                                    <span class="name">高教展精英同赴 华人启星创辉煌</span>
-                                    <span class="date">2017-09-28</span>
-                                </p>
-                                <p class="desc">2016年10月19日，翘首等待了数月的第48届全国高教仪器设备展示会终于正式拉开帷幕，为此精心筹备了数月的北京华人启星科技有限公司携团队精英奔赴成都，与业内伙伴共襄此盛举…</p>
-                            </div>
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a href="" class="clearfix">
-                            <span class="left num">02</span>
                             <div class="right">
                                 <p class="clearfix">
                                     <span class="name">华人启星助力《北京联合大学旅游学院毕业典礼》</span>
@@ -99,31 +89,48 @@
                         </a>
                     </li>
                     
+                    <li>
+                        <a href="/companynews/show-123.html" target="_blank" class="clearfix">
+                            <span class="left num">02</span>
+                            <div class="right">
+                                <p class="clearfix">
+                                    <span class="name">高教展精英同赴 华人启星创辉煌</span>
+                                    <span class="date">2017-09-28</span>
+                                </p>
+                                <p class="desc">2016年10月19日，翘首等待了数月的第48届全国高教仪器设备展示会终于正式拉开帷幕，为此精心筹备了数月的北京华人启星科技有限公司携团队精英奔赴成都，与业内伙伴共襄此盛举…</p>
+                            </div>
+                        </a>
+                    </li>
+                    
                 </ul>
             </div>
         </div>
-        <div class="more w1200"><a target="_blank" href="/case.html">查看更多</a></div>
+        <div class="more w1200"><a target="_blank" href="/companynews/57.html">查看更多</a></div>
     </div>
     <div class="pb75" style="background:#f2f2f4;">
         <h1 class="title pt30">产品动态</h1>
         <div class="w1200 clearfix mt30">
             <div class="news_left left">
                 
-                <div class="news_img">
-                    <img src="/upload/201709/28/201709281652534392.jpg" />
-                </div>
-                <h2>高教展精英同赴 华人启星创辉煌</h2>
-                <div class="desc">
-                    为顺应新的招生考试制度改革以及由其引发的学校管理模式、教学模式的变革，北京华人启星科技有限公司于2016年初投入大量资金，潜心致力于以排选课为核心的教育综合改革系列产品研发…
-                </div>
-                
-
+                <a href="/companynews/show-125.html
+                    " target="_blank">
+                    
+                    <div class="news_img">
+                        <img src="/upload/201709/28/201709281652534392.jpg" />
+                    </div>
+                    
+                    <h2>高教展精英同赴 华人启星创辉煌</h2>
+                    <div class="desc">
+                        为顺应新的招生考试制度改革以及由其引发的学校管理模式、教学模式的变革，北京华人启星科技有限公司于2016年初投入大量资金，潜心致力于以排选课为核心的教育综合改革系列产品研发…
+                    </div>
+                    
+               </a>
             </div>
             <div class="news_right right news_right1">
                 <ul>
                     
                     <li>
-                        <a href="" class="clearfix">
+                        <a href="/companynews/show-125.html" target="_blank" class="clearfix">
                             <span class="left num">01</span>
                             <div class="right">
                                 <p class="clearfix">
@@ -138,7 +145,7 @@
                 </ul>
             </div>
         </div>
-        <div class="more w1200"><a target="_blank" href="/case.html">查看更多</a></div>
+        <div class="more w1200"><a target="_blank" href="/companynews/58.html">查看更多</a></div>
     </div>
 </div>
 <!--Footer-->
@@ -147,11 +154,11 @@
       <div class="w1200 clearfix">
           <div class="footer-content left">
               <div class="nav-footer clearfix">
-                  <a target="_blank" href="/index.html">首页</a>
-                  <a target="_blank" href="/about.html">关于我们</a>
-                  <a target="_blank" href="/product.html">产品中心</a>
-                  <a target="_blank" href="/companynews.html">企业新闻</a>
-                  <a target="_blank" href="/case.html">成功案例</a>
+                  <a href="/index.html">首页</a>
+                  <a  href="/about.html">关于我们</a>
+                  <a  href="/product.html">产品中心</a>
+                  <a  href="/companynews.html">企业新闻</a>
+                  <a  href="/case.html">成功案例</a>
               </div>
           </div>
           <div class="footer-content left footer-logo">
@@ -171,7 +178,7 @@
 
 <!-- Visual Studio Browser Link -->
 <script type="application/json" id="__browserLink_initializationData">
-    {"appName":"Unknown","requestId":"f7f2bcafd28e473f951ce83dab3356b4"}
+    {"appName":"Unknown","requestId":"bbb68cf8b9a1457dbed4533cda604496"}
 </script>
 <script type="text/javascript" src="http://localhost:8118/fc090950c0b94d4dbd8e4817ed3e416c/browserLink" async="async"></script>
 <!-- End Browser Link -->

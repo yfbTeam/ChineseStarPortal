@@ -17,38 +17,39 @@
     <!--/Header-->
 
     <div class="main">
-        <div class="ntitle">
-            <h2>
-                <a href="javascript:;">{model.title}</a>
-            </h2>
-            <%set string category_nav=get_category_menu("companynews_list", category_id)%>
-            <span>当前位置：<a href="<%linkurl(" index")%>">首页</a> &gt; <a href="<%linkurl(" news")%>">新闻资讯</a>{category_nav}</span>
+        <div class="news-bg">
+            <img src="<%templateskin%>/images/news-bg_02.jpg" alt="" />
         </div>
-        <div class="list-auto">
+        <div class="ntitle">
+            <div class="w1200">
+                <%set string category_nav=get_category_menu("companynews_list", category_id)%>
+                <span>当前位置：<a href="<%linkurl("companynews")%>" style="color:#2293cb;">企业新闻</a>{category_nav}</span>
+            </div>
+        </div>
+        <div class="list-auto w1200">
             <ul class="n-list">
                 <%set DataTable newsList=get_article_list(channel, category_id, pagesize, page, "status=0", out totalcount, out pagelist, "news_list", category_id, "__id__")%><!--取得一个分页DataTable-->
                 <%foreach(DataRow dr in newsList.Rows)%>
                 <li>
-                    <h2><a href="<%linkurl("companynews_show",{dr[id]})%>">{dr[title]}</a></h2>
-                    <div class="note">
+                    <a href="<%linkurl("companynews_show",{dr[id]})%>" target="_blank">
                         <%if({dr[img_url]}!="")%>
                         <b><img src="{dr[img_url]}" /></b>
+                        <%else%>
+                        <b><img src="<%templateskin%>/images/dong_07.jpg" /></b>
                         <%/if%>
-                        <p>{dr[zhaiyao]}</p>
-                        <div class="info">
-                            <span class="time">{dr[add_time]}</span>
-                           
-                            <span class="view">
-                            <script type="text/javascript" src="{config.webpath}tools/submit_ajax.ashx?action=view_article_click&id={dr[id]}"></script>次浏览</span>
+                        <div class="desc">
+                            <h2 class="clearfix"><span class="name">{dr[title]}</span><span class="time"><%datetostr({dr[add_time]},yyyy-MM-dd)%></span></h2>
+                            <div class="note">
+                                {dr[zhaiyao]}
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </li>
                 <%/foreach%>
             </ul>
-
             <!--页码列表-->
             <div class="page-box">
-                <div class="digg">{pagelist}</div>
+                <div class="digg clearfix">{pagelist}</div>
             </div>
             <!--/页码列表-->
         </div>

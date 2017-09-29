@@ -32,9 +32,16 @@
                <%set DataTable companynews1=get_article_list("companynews", 57, 1, "status=0")%>
                <%foreach(DataRow dr in companynews1.Rows)%>
                <a href="<%linkurl("companynews_show",{dr[id]})%>" target="_blank">
+                   <%if({dr[img_url]}!="")%>
                    <div class="news_img">
                        <img src="{dr[img_url]}" />
                    </div>
+                   <%else%>
+                   <div class="news_img">
+                       <img src="<%templateskin%>/images/dong_03.jpg" />
+                   </div>
+                   <%/if%>
+                  
                    <h2>{dr[title]}</h2>
                    <div class="desc">
                        {dr[zhaiyao]}
@@ -73,9 +80,15 @@
                 <%foreach(DataRow dr in productnews1.Rows)%>
                 <a href="<%linkurl("companynews_show",{dr[id]})%>
                     " target="_blank">
+                    <%if({dr[img_url]}!="")%>
                     <div class="news_img">
                         <img src="{dr[img_url]}" />
                     </div>
+                    <%else%>
+                    <div class="news_img">
+                        <img src="<%templateskin%>/images/dong_07.jpg" />
+                    </div>
+                    <%/if%>
                     <h2>{dr[title]}</h2>
                     <div class="desc">
                         {dr[zhaiyao]}
