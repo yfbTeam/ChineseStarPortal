@@ -10,11 +10,102 @@
     <script type="text/javascript" charset="utf-8" src="{config.webpath}scripts/jquery/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" charset="utf-8" src="<%templateskin%>/js/jquery.flexslider-min.js"></script>
     <script type="text/javascript" charset="utf-8" src="<%templateskin%>/js/common.js"></script>
+    <style>
+        .more{
+            border-bottom:1px solid #ccc;
+        }
+       
+    </style>
 </head>
 <body>
 <!--Header-->
 <%template src="_header.html"%>
 <!--/Header-->
+<div class="main">
+    <div class="case_bg">
+        <img src="<%templateskin%>/images/news_bg.jpg" alt="" />
+    </div>
+    <div class="pb75">
+        <h1 class="title pt30">企业动态</h1>
+        <div class="w1200 clearfix mt30">
+           <div class="news_left left">
+               <%set DataTable companynews1=get_article_list("companynews", 57, 1, "status=0")%>
+               <%foreach(DataRow dr in companynews1.Rows)%>
+               <a href="<%linkurl("companynews_show",{dr[id]})%>" target="_blank">
+                   <div class="news_img">
+                       <img src="{dr[img_url]}" />
+                   </div>
+                   <h2>{dr[title]}</h2>
+                   <div class="desc">
+                       {dr[zhaiyao]}
+                   </div>
+               </a>
+               <%/foreach%>
+              
+           </div>
+            <div class="news_right right">
+                <ul>
+                    <%set DataTable companynews2=get_article_list("companynews", 57, 4, "status=0")%>
+                    <%loop hotdr1 companynews2%>
+                    <li>
+                        <a href="<%linkurl("companynews_show",{hotdr1[id]})%>" target="_blank" class="clearfix">
+                            <span class="left num">0<%= hotdr1__loop__id%></span>
+                            <div class="right">
+                                <p class="clearfix">
+                                    <span class="name">{hotdr1[title]}</span>
+                                    <span class="date"><%datetostr({hotdr1[add_time]},yyyy-MM-dd)%></span>
+                                </p>
+                                <p class="desc">{hotdr1[zhaiyao]}</p>
+                            </div>
+                        </a>
+                    </li>
+                    <%/loop%>
+                </ul>
+            </div>
+        </div>
+        <div class="more w1200"><a target="_blank" href="<%linkurl("companynews_list",{57})%>">查看更多</a></div>
+    </div>
+    <div class="pb75" style="background:#f2f2f4;">
+        <h1 class="title pt30">产品动态</h1>
+        <div class="w1200 clearfix mt30">
+            <div class="news_left left">
+                <%set DataTable productnews1=get_article_list("companynews", 58, 1, "status=0")%>
+                <%foreach(DataRow dr in productnews1.Rows)%>
+                <a href="<%linkurl("companynews_show",{dr[id]})%>
+                    " target="_blank">
+                    <div class="news_img">
+                        <img src="{dr[img_url]}" />
+                    </div>
+                    <h2>{dr[title]}</h2>
+                    <div class="desc">
+                        {dr[zhaiyao]}
+                    </div>
+                    <%/foreach%>
+               </a>
+            </div>
+            <div class="news_right right news_right1">
+                <ul>
+                    <%set DataTable productnews2=get_article_list("companynews", 58, 4, "status=0")%>
+                    <%loop hotdr2 productnews2%>
+                    <li>
+                        <a href="<%linkurl("companynews_show",{hotdr2[id]})%>" target="_blank" class="clearfix">
+                            <span class="left num">0<%=hotdr2__loop__id%></span>
+                            <div class="right">
+                                <p class="clearfix">
+                                    <span class="name">{hotdr2[title]}</span>
+                                    <span class="date"><%datetostr({hotdr2[add_time]},yyyy-MM-dd)%></span>
+                                </p>
+                                <p class="desc">{hotdr2[zhaiyao]}</p>
+                            </div>
+                        </a>
+                    </li>
+                    <%/loop%>
+                </ul>
+            </div>
+        </div>
+        <div class="more w1200"><a target="_blank" href="<%linkurl("companynews_list",{58})%>">查看更多</a></div>
+    </div>
+</div>
 <!--Footer-->
 <%template src="_footer.html"%>
 <!--/Footer-->

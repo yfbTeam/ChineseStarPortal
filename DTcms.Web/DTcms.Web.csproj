@@ -595,6 +595,7 @@
     <Content Include="templates\main\images\login-bg.png" />
     <Content Include="templates\main\images\logo.png" />
     <Content Include="templates\main\images\logo1.png" />
+    <Content Include="templates\main\images\news_bg.jpg" />
     <Content Include="templates\main\images\next.png" />
     <Content Include="templates\main\images\pic-bg.png" />
     <Content Include="templates\main\images\prev.png" />

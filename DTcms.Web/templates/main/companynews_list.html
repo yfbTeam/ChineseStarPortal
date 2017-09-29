@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{model.title} - {site.name}</title>
+    <meta name="keywords" content="{model.seo_keywords}" />
+    <meta name="description" content="{model.seo_description}" />
+    <link href="{config.webpath}css/pagination.css" rel="stylesheet" />
+    <link href="<%templateskin%>/css/layout.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" charset="utf-8" src="{config.webpath}scripts/jquery/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="<%templateskin%>/js/common.js"></script>
+</head>
+
+<body>
+    <!--Header-->
+    <%template src="_header.html"%>
+    <!--/Header-->
+
+    <div class="main">
+        <div class="ntitle">
+            <h2>
+                <a href="javascript:;">{model.title}</a>
+            </h2>
+            <%set string category_nav=get_category_menu("companynews_list", category_id)%>
+            <span>当前位置：<a href="<%linkurl(" index")%>">首页</a> &gt; <a href="<%linkurl(" news")%>">新闻资讯</a>{category_nav}</span>
+        </div>
+        <div class="list-auto">
+            <ul class="n-list">
+                <%set DataTable newsList=get_article_list(channel, category_id, pagesize, page, "status=0", out totalcount, out pagelist, "news_list", category_id, "__id__")%><!--取得一个分页DataTable-->
+                <%foreach(DataRow dr in newsList.Rows)%>
+                <li>
+                    <h2><a href="<%linkurl("companynews_show",{dr[id]})%>">{dr[title]}</a></h2>
+                    <div class="note">
+                        <%if({dr[img_url]}!="")%>
+                        <b><img src="{dr[img_url]}" /></b>
+                        <%/if%>
+                        <p>{dr[zhaiyao]}</p>
+                        <div class="info">
+                            <span class="time">{dr[add_time]}</span>
+                           
+                            <span class="view">
+                            <script type="text/javascript" src="{config.webpath}tools/submit_ajax.ashx?action=view_article_click&id={dr[id]}"></script>次浏览</span>
+                        </div>
+                    </div>
+                </li>
+                <%/foreach%>
+            </ul>
+
+            <!--页码列表-->
+            <div class="page-box">
+                <div class="digg">{pagelist}</div>
+            </div>
+            <!--/页码列表-->
+        </div>
+    </div>
+    <!--Footer-->
+    <%template src="_footer.html"%>
+    <!--/Footer-->
+</body>
+</html>

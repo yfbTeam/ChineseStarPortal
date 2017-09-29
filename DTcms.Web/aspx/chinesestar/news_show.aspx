@@ -9,8 +9,8 @@ override protected void OnInit(EventArgs e)
 {
 
 	/* 
-		This page was created by DTcms Template Engine at 2017/9/28 13:56:47.
-		本页面代码由DTcms模板引擎生成于 2017/9/28 13:56:47. 
+		This page was created by DTcms Template Engine at 2017/9/29 9:08:56.
+		本页面代码由DTcms模板引擎生成于 2017/9/29 9:08:56. 
 	*/
 
 	base.OnInit(e);
@@ -61,7 +61,7 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("\">企业新闻</a></li>\r\n                    <li><a target=\"_blank\" href=\"");
 	templateBuilder.Append(linkurl("case"));
 
-	templateBuilder.Append("\">成功案例</a></li>\r\n                </ul>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n<script>\r\n    var href = window.location.href;\r\n    var index = href.lastIndexOf('/');\r\n    href = href.slice(index);\r\n    console.log(href);\r\n    $('.nav ul li').each(function () {\r\n        \r\n        itemhref = $(this).children('a').attr('href');\r\n        if (href === itemhref) {\r\n            $(this).addClass('selected').siblings().removeClass('selected');\r\n        }\r\n    })\r\n</");
+	templateBuilder.Append("\">成功案例</a></li>\r\n                </ul>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n<script>\r\n    var href = window.location.href;\r\n    $('.nav ul li').each(function () {\r\n\r\n        itemhref = $(this).children('a').attr('href');\r\n        itemhref = itemhref.slice(0, itemhref.lastIndexOf('.'))\r\n        debugger;\r\n        if (href.indexOf(itemhref) > 1) {\r\n            $(this).addClass('selected').siblings().removeClass('selected');\r\n        }\r\n    })\r\n</");
 	templateBuilder.Append("script>");
 
 
