@@ -21,10 +21,10 @@
             </a>
             <div class="nav right">
                 <ul class="clearfix">
-                    <li class="selected"><a href="/index.html">首页</a></li>
-                    <li><a href="/about.html">关于我们</a></li>
-                    <li><a href="/product.html">产品中心</a></li>
-                    <li><a href="/companynews.html">企业新闻</a></li>
+                    <li class="selected"><a  href="/index.html">首页</a></li>
+                    <li><a  href="/about.html">关于我们</a></li>
+                    <li><a  href="/product.html">产品中心</a></li>
+                    <li><a  href="/companynews.html">企业新闻</a></li>
                     <li><a href="/case.html">成功案例</a></li>
                 </ul>
             </div>
@@ -33,18 +33,22 @@
 </div>
 <script>
     var href = window.location.href;
-    var index = href.lastIndexOf('/');
-    href = href.slice(index);
-    console.log(href);
     $('.nav ul li').each(function () {
-        
+
         itemhref = $(this).children('a').attr('href');
-        if (href === itemhref) {
+        itemhref = itemhref.slice(0, itemhref.lastIndexOf('.'))
+        if (href.indexOf(itemhref) > 1) {
             $(this).addClass('selected').siblings().removeClass('selected');
         }
     })
 </script>
 <!--/Header-->
+    <div class="main">
+        <div class="case_bg">
+            <img src="/templates/main/images/case_bg.jpg" alt="" />
+        </div>
+        <div style="margin:0 auto;padding:150px 0px;text-align:center;font-size:24px;">网站建设中</div>
+    </div>
 <!--Footer-->
 <div class="footer clearfix">
   <div class="footer-header">
@@ -52,10 +56,10 @@
           <div class="footer-content left">
               <div class="nav-footer clearfix">
                   <a href="/index.html">首页</a>
-                  <a href="/about.html">关于我们</a>
-                  <a href="/product.html">产品中心</a>
-                  <a href="/companynews.html">企业新闻</a>
-                  <a href="/case.html">成功案例</a>
+                  <a  href="/about.html">关于我们</a>
+                  <a  href="/product.html">产品中心</a>
+                  <a  href="/companynews.html">企业新闻</a>
+                  <a  href="/case.html">成功案例</a>
               </div>
           </div>
           <div class="footer-content left footer-logo">
@@ -75,9 +79,9 @@
 
 <!-- Visual Studio Browser Link -->
 <script type="application/json" id="__browserLink_initializationData">
-    {"appName":"Unknown","requestId":"f9acdab02f724151a72430cffe2dc2a3"}
+    {"appName":"Unknown","requestId":"57a8bcd1093c4fd7a4ce56ada03f323c"}
 </script>
-<script type="text/javascript" src="http://localhost:55517/1623bcffcd51480c9eb6276fa85170fd/browserLink" async="async"></script>
+<script type="text/javascript" src="http://localhost:36110/da24f701c246411baeb7b527c516c26f/browserLink" async="async"></script>
 <!-- End Browser Link -->
 
 </body>
