@@ -2,7 +2,7 @@
 /*全局样式
 ---------------------------------------------*/
 section,article,aside,header,footer,nav,figure{ display:block; }
-body,h1,h2,h3,h4,h5,h6,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td,figure{ margin:0; padding:0; }
+html,body,h1,h2,h3,h4,h5,h6,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td,figure{ margin:0; padding:0; }
 body,button,input,select,textarea{ font:12px/1.5 "Microsoft Yahei"; }
 h1,h2,h3,h4,h5,h6,button,input,select,textarea{ font-size:100%; }
 address,cite,dfn,em,var{ font-style:normal; }
