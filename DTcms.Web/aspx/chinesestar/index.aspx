@@ -9,8 +9,8 @@ override protected void OnInit(EventArgs e)
 {
 
 	/* 
-		This page was created by DTcms Template Engine at 2017/9/29 16:10:02.
-		本页面代码由DTcms模板引擎生成于 2017/9/29 16:10:02. 
+		This page was created by DTcms Template Engine at 2017/10/19 16:16:34.
+		本页面代码由DTcms模板引擎生成于 2017/10/19 16:16:34. 
 	*/
 
 	base.OnInit(e);
@@ -149,7 +149,7 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("\r\n  </div>\r\n</div>");
 
 
-	templateBuilder.Append("\r\n<!--/Footer-->\r\n</body>\r\n</html>\r\n");
+	templateBuilder.Append("\r\n<!--/Footer-->\r\n</body>\r\n</html>");
 	Response.Write(templateBuilder.ToString());
 }
 </script>
