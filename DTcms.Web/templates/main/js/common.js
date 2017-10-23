@@ -6,7 +6,7 @@ $(function () {
     function initHegiht() {
         var header = $('.header'), footer = $('.footer'), winHeight = $(window).height();;
         if (header || footer) {
-            var curHegiht = winHeight - header.height() - footer.height() - 17 + 'px';
+            var curHegiht = winHeight - header.height() - footer.height() + 'px';
             $('.main').css({ 'minHeight': curHegiht })
         }
     }
