@@ -9,8 +9,8 @@ override protected void OnInit(EventArgs e)
 {
 
 	/* 
-		This page was created by DTcms Template Engine at 2017/9/29 16:10:02.
-		本页面代码由DTcms模板引擎生成于 2017/9/29 16:10:02. 
+		This page was created by DTcms Template Engine at 2017/10/23 10:16:11.
+		本页面代码由DTcms模板引擎生成于 2017/10/23 10:16:11. 
 	*/
 
 	base.OnInit(e);
@@ -18,7 +18,7 @@ override protected void OnInit(EventArgs e)
 	const string channel = "companynews";
 
 	templateBuilder.Append("<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\r\n    ");
-	string category_title = get_category_title(model.category_id,"新闻资讯");
+	string category_title = get_category_title(model.category_id,"企业新闻");
 
 	templateBuilder.Append("\r\n    <title>");
 	templateBuilder.Append(Utils.ObjectToStr(model.title));
@@ -85,7 +85,7 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append(Utils.ObjectToStr(model.content));
 	templateBuilder.Append("\r\n            </div>\r\n        </div>\r\n        <!--/左边-->\r\n    </div>\r\n    <!--Footer-->\r\n    ");
 
-	templateBuilder.Append("<div class=\"footer clearfix\">\r\n  <div class=\"footer-header\">\r\n      <div class=\"w1200 clearfix\">\r\n          <div class=\"footer-content left\">\r\n              <div class=\"nav-footer clearfix\">\r\n                  <a href=\"");
+	templateBuilder.Append("<div class=\"footer\">\r\n  <div class=\"footer-header\">\r\n      <div class=\"w1200 clearfix\">\r\n          <div class=\"footer-content left\">\r\n              <div class=\"nav-footer clearfix\">\r\n                  <a href=\"");
 	templateBuilder.Append(linkurl("index"));
 
 	templateBuilder.Append("\">首页</a>\r\n                  <a  href=\"");

@@ -9,8 +9,8 @@ override protected void OnInit(EventArgs e)
 {
 
 	/* 
-		This page was created by DTcms Template Engine at 2017/10/19 16:16:34.
-		本页面代码由DTcms模板引擎生成于 2017/10/19 16:16:34. 
+		This page was created by DTcms Template Engine at 2017/10/23 10:16:11.
+		本页面代码由DTcms模板引擎生成于 2017/10/23 10:16:11. 
 	*/
 
 	base.OnInit(e);
@@ -64,17 +64,20 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("\r\n<!--/Header-->\r\n    <div class=\"main\">\r\n        <div class=\"case_bg\">\r\n            <img src=\"");
 	templateBuilder.Append("/templates/main");
 	templateBuilder.Append("/images/case_bg.jpg\" alt=\"\" />\r\n        </div>\r\n        <ul class=\"w1200 clearfix case_ul mt30 mb30\">\r\n            ");
-	DataTable successCase = get_article_list("Case", 55, "status=0");
+	DataTable successCase = get_article_list("case", 55, "status=0");
 
 	foreach(DataRow dr in successCase.Rows)
 	{
 
-	templateBuilder.Append("\r\n            <li>\r\n                <div><img src=\"" + Utils.ObjectToStr(dr["img_url"]) + "\" alt=\"\" /></div>\r\n                <p>" + Utils.ObjectToStr(dr["zhaiyao"]) + "</p>\r\n            </li>\r\n            ");
+	templateBuilder.Append("\r\n            <li>\r\n                <a href=\"");
+	templateBuilder.Append(linkurl("case_show",Utils.ObjectToStr(dr["id"])));
+
+	templateBuilder.Append("\" target=\"_blank\">\r\n                    <div><img src=\"" + Utils.ObjectToStr(dr["img_url"]) + "\" alt=\"\" /></div>\r\n                    <p>" + Utils.ObjectToStr(dr["zhaiyao"]) + "</p>\r\n                </a>\r\n            </li>\r\n            ");
 	}	//end for if
 
 	templateBuilder.Append("\r\n        </ul>\r\n    </div>\r\n<!--Footer-->\r\n");
 
-	templateBuilder.Append("<div class=\"footer clearfix\">\r\n  <div class=\"footer-header\">\r\n      <div class=\"w1200 clearfix\">\r\n          <div class=\"footer-content left\">\r\n              <div class=\"nav-footer clearfix\">\r\n                  <a href=\"");
+	templateBuilder.Append("<div class=\"footer\">\r\n  <div class=\"footer-header\">\r\n      <div class=\"w1200 clearfix\">\r\n          <div class=\"footer-content left\">\r\n              <div class=\"nav-footer clearfix\">\r\n                  <a href=\"");
 	templateBuilder.Append(linkurl("index"));
 
 	templateBuilder.Append("\">首页</a>\r\n                  <a  href=\"");

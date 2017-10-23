@@ -28,11 +28,13 @@
             <img src="<%templateskin%>/images/case_bg.jpg" alt="" />
         </div>
         <ul class="w1200 clearfix case_ul mt30 mb30">
-            <%set DataTable successCase=get_article_list("Case", 55, "status=0")%>
+            <%set DataTable successCase=get_article_list("case", 55, "status=0")%>
             <%foreach(DataRow dr in successCase.Rows)%>
             <li>
-                <div><img src="{dr[img_url]}" alt="" /></div>
-                <p>{dr[zhaiyao]}</p>
+                <a href="<%linkurl("case_show",{dr[id]})%>" target="_blank">
+                    <div><img src="{dr[img_url]}" alt="" /></div>
+                    <p>{dr[zhaiyao]}</p>
+                </a>
             </li>
             <%/foreach%>
         </ul>

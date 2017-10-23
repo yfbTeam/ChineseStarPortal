@@ -2,7 +2,7 @@
 /*全局样式
 ---------------------------------------------*/
 section,article,aside,header,footer,nav,figure{ display:block; }
-body,h1,h2,h3,h4,h5,h6,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td,figure{ margin:0; padding:0; }
+html,body,h1,h2,h3,h4,h5,h6,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td,figure{ margin:0; padding:0; }
 body,button,input,select,textarea{ font:12px/1.5 "Microsoft Yahei"; }
 h1,h2,h3,h4,h5,h6,button,input,select,textarea{ font-size:100%; }
 address,cite,dfn,em,var{ font-style:normal; }
@@ -24,7 +24,7 @@ input::-moz-focus-inner,button::-moz-focus-inner{ border:0;padding:0;outline:0; 
 /* end of clearfix */ 
 .left{ float:left; }
 .right{ float:right; }
-
+img{max-width:100%;}
 /*站点样式*/
 /*底部样式*/
 .footer{width:100%;height:270px;}
@@ -181,6 +181,9 @@ width:150px;height:150px;
 .case{
     width:100%;height:575px;background:url(../images/case.jpg) no-repeat center;
 }
+.case_bg img{
+    width:100%;
+}
 .case_ul li {
     width: 33.3%;
     float: left;
@@ -223,7 +226,7 @@ width:150px;height:150px;
     position:absolute;left:0px;right:0px;bottom:0px;top:0px;margin:auto;
 }
 .case_bg{
-    width:100%;height:400px;overflow:hidden;
+    width:100%;overflow:hidden;
 }
 /*about*/
 .jianjie{

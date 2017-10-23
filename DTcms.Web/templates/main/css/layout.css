@@ -181,6 +181,9 @@ width:150px;height:150px;
 .case{
     width:100%;height:575px;background:url(../images/case.jpg) no-repeat center;
 }
+.case_bg img{
+    width:100%;
+}
 .case_ul li {
     width: 33.3%;
     float: left;

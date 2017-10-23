@@ -472,6 +472,7 @@
     <Content Include="templates\main\about.png" />
     <Content Include="templates\main\about.xml" />
     <Content Include="templates\main\case.html" />
+    <Content Include="templates\main\case_show.html" />
     <Content Include="templates\main\companynews_list.html" />
     <Content Include="templates\main\companynews_show.html" />
     <Content Include="templates\main\css\flexslider.css" />
