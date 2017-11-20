@@ -21,9 +21,16 @@
             </a>
             <div class="nav right">
                 <ul class="clearfix">
-                    <li class="selected"><a  href="/index.html">首页</a></li>
+                    <li><a  href="/index.html">首页</a></li>
                     <li><a  href="/about.html">关于我们</a></li>
-                    <li><a  href="/product.html">产品中心</a></li>
+                    <li>
+                        <a>产品中心</a>
+                        <div class="drop-down">
+                            <a href="">排课吧</a>
+                            <a href="">教师成长档案</a>
+                            <a href="">智慧校园</a>
+                        </div>
+                    </li>
                     <li><a  href="/companynews.html">企业新闻</a></li>
                     <li><a href="/case.html">成功案例</a></li>
                 </ul>
@@ -32,15 +39,15 @@
     </div>
 </div>
 <script>
-    var href = window.location.href;
-    $('.nav ul li').each(function () {
+    //var href = window.location.href;
+    //$('.nav ul li').each(function () {
 
-        itemhref = $(this).children('a').attr('href');
-        itemhref = itemhref.slice(0, itemhref.lastIndexOf('.'))
-        if (href.indexOf(itemhref) > 1) {
-            $(this).addClass('selected').siblings().removeClass('selected');
-        }
-    })
+    //    itemhref = $(this).children('a').attr('href');
+    //    itemhref = itemhref.slice(0, itemhref.lastIndexOf('.'))
+    //    if (href.indexOf(itemhref) > 1) {
+    //        $(this).addClass('selected').siblings().removeClass('selected');
+    //    }
+    //})
 </script>
     <!--/Header-->
 
@@ -51,7 +58,7 @@
         <div class="ntitle">
             <div class="w1200">
 
-                <span>当前位置：<a href="/companynews.html" style="color:#2293cb;">成功案例</a> &gt; <a>案例详情</a></span>
+                <span>当前位置：<a href="/case.html" style="color:#2293cb;">成功案例</a> &gt; <a>案例详情</a></span>
             </div>
         </div>
         <!--左边-->
@@ -67,7 +74,56 @@
                 </p>
             </div>
             <div class="entry">
-                中国劳动关系学院（China Institute of Industrial Relations）为中华全国总工会所属的普通高等学校...
+                <p class="MsoNormal">
+	<b><span style="font-size:16px;">学校简介</span></b><b></b>
+</p>
+<p class="p">
+	<span style="font-size:14px;">中国劳动关系学院是中华全国总工会直属的唯一一所普通本科院校，</span><span style="font-size:14px;">自建校以来，学校始终受到党和国家领导人的高度重视。</span><span style="font-size:14px;">学校</span><span style="font-size:14px;">占地面积</span><span style="font-size:14px;">630亩</span><span style="font-size:14px;">，共有</span><span style="font-size:14px;">14个</span><span style="font-size:14px;">院（系、部）</span><span style="font-size:14px;">，</span><span style="font-size:14px;">全日制在校生</span><span style="font-size:14px;">6442人，年均培训工会干部近6000人次。先后与美国、加拿大、德国、英国、俄罗斯等近20个国家和地区的高等院校、科研机构以及国际劳工组织等开展合作与学术交流活动。</span>
+</p>
+<p class="p">
+	<span style="font-size:14px;"><br />
+</span>
+</p>
+<p class="MsoNormal">
+	<b><span style="font-size:16px;">教师成长档案（教学质量评价和反馈系统）</span></b><b></b>
+</p>
+<p class="MsoNormal">
+	<span style="font-size:14px;">教学质量评价和反馈系统</span><span style="font-size:14px;">能够解决纸质文档的多项不足</span><span style="font-size:14px;">，</span><span style="font-size:14px;">通过信息采集及汇总可以最大限度实现信息公开化，提高信息传输速度和教学工作效率，从而</span><span style="font-size:14px;">促进教师各项综合业务能力的发展，</span><span style="font-size:14px;">规范教师业务能力评测体制，提高教师教学管理效率。</span>
+</p>
+<p class="MsoNormal" style="text-align:center;">
+	<span style="font-size:14px;"><img src="/upload/201711/09/201711091631091435.png" alt="" /><br />
+</span>
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<span style="font-size:14px;"></span>
+</p>
+<p class="MsoNormal">
+	<b>评价类型</b><b></b>
+</p>
+<p class="MsoNormal">
+	支持根据业务需求，自定义评价种类<b></b>
+</p>
+<div style="text-align:center;">
+	<img src="/upload/201711/09/201711091632577203.png" alt="" />
+</div>
+<p>
+	<br />
+</p>
+<p class="MsoNormal">
+	<span style="font-size:14px;"></span>
+</p>
+<h4 style="text-indent:21.1000pt;">
+	<b>课堂</b><b><span>扫码评价</span></b><b></b>
+</h4>
+<p class="MsoNormal" style="text-indent:20.0000pt;">
+	教师可根据课堂授课情况，当场进行评价表设计，以二维码形式展现给其他人，通过扫码形式完成评价。具有评价即时性。
+</p>
+<div style="text-align:center;">
+	<img src="/upload/201711/09/201711091634233442.png" alt="" />
+</div>
+<p>
+	<br />
+</p>
             </div>
         </div>
         <!--/左边-->
@@ -102,9 +158,9 @@
 
 <!-- Visual Studio Browser Link -->
 <script type="application/json" id="__browserLink_initializationData">
-    {"appName":"Unknown","requestId":"0e12abf383d3419083131a3decc92f23"}
+    {"appName":"Unknown","requestId":"916760f41540423b982f054af20dd8fd"}
 </script>
-<script type="text/javascript" src="http://localhost:21839/006473a0609c4f6da29f84fd90d37fca/browserLink" async="async"></script>
+<script type="text/javascript" src="http://localhost:32461/083b53d0d83c40cf8356cb83b35ab362/browserLink" async="async"></script>
 <!-- End Browser Link -->
 
 </body>

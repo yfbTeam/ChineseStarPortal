@@ -475,6 +475,7 @@
     <Content Include="templates\main\case_show.html" />
     <Content Include="templates\main\companynews_list.html" />
     <Content Include="templates\main\companynews_show.html" />
+    <Content Include="templates\main\css\animate.css" />
     <Content Include="templates\main\css\flexslider.css" />
     <Content Include="templates\main\css\layout.css" />
     <Content Include="templates\main\css\lightbox.css" />
@@ -528,7 +529,9 @@
     <Content Include="templates\main\js\avatar.js" />
     <Content Include="templates\main\js\cart.js" />
     <Content Include="templates\main\js\common.js" />
+    <Content Include="templates\main\js\index.js" />
     <Content Include="templates\main\js\jquery.flexslider-min.js" />
+    <Content Include="templates\main\js\jquery.waypoints.min.js" />
     <Content Include="templates\main\js\lightbox.min.js" />
     <Content Include="templates\main\js\login-validate.js" />
     <Content Include="templates\main\js\picture.js" />

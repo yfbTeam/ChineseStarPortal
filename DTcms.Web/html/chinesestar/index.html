@@ -7,9 +7,12 @@
     <meta name="keywords" content="华人启星" />
     <meta name="description" content="华人启星" />
     <link href="/templates/main/css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="/templates/main/css/animate.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" charset="utf-8" src="/scripts/jquery/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" charset="utf-8" src="/templates/main/js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/templates/main/js/jquery.waypoints.min.js"></script>
     <script type="text/javascript" charset="utf-8" src="/templates/main/js/common.js"></script>
+   
     <script type="text/javascript">
         $(function(){
 	        $(".focusbox").flexslider({
@@ -29,9 +32,16 @@
             </a>
             <div class="nav right">
                 <ul class="clearfix">
-                    <li class="selected"><a  href="/index.html">首页</a></li>
+                    <li><a  href="/index.html">首页</a></li>
                     <li><a  href="/about.html">关于我们</a></li>
-                    <li><a  href="/product.html">产品中心</a></li>
+                    <li>
+                        <a>产品中心</a>
+                        <div class="drop-down">
+                            <a href="">排课吧</a>
+                            <a href="">教师成长档案</a>
+                            <a href="">智慧校园</a>
+                        </div>
+                    </li>
                     <li><a  href="/companynews.html">企业新闻</a></li>
                     <li><a href="/case.html">成功案例</a></li>
                 </ul>
@@ -40,15 +50,15 @@
     </div>
 </div>
 <script>
-    var href = window.location.href;
-    $('.nav ul li').each(function () {
+    //var href = window.location.href;
+    //$('.nav ul li').each(function () {
 
-        itemhref = $(this).children('a').attr('href');
-        itemhref = itemhref.slice(0, itemhref.lastIndexOf('.'))
-        if (href.indexOf(itemhref) > 1) {
-            $(this).addClass('selected').siblings().removeClass('selected');
-        }
-    })
+    //    itemhref = $(this).children('a').attr('href');
+    //    itemhref = itemhref.slice(0, itemhref.lastIndexOf('.'))
+    //    if (href.indexOf(itemhref) > 1) {
+    //        $(this).addClass('selected').siblings().removeClass('selected');
+    //    }
+    //})
 </script>
 <!--/Header-->
 <div class="main">
@@ -60,6 +70,10 @@
                     <img src="/upload/201709/27/banner_02.jpg" />
                 </li>
                 
+                <li>
+                    <img src="/upload/201604/21/201604211004086927.jpg" />
+                </li>
+                
             </ul>
         </div>
     </div>
@@ -67,25 +81,25 @@
         <h1 class="title pt30">产品中心</h1>
         <ul class="clearfix w1200">
             
-            <li>
+            <li class="animate-box">
                 <div class="icon"><img src="/upload/201709/27/201709271557335513.png" /></div>
                 <p class="productName">排课吧云平台</p>
                 <div class="descration">帮助各校适应分类考试、综合评价、多元录取的新招考模式，个性化解决排选课难题，为教务减负，让学生更自主。</div>
-                <a href="http://192.168.1.141:9999" target="_blank" class="login" >登录</a>
+                <a href="http://192.168.1.141:9999" target="_blank" class="login" >立即体验</a>
             </li>
             
-            <li>
+            <li class="animate-box">
                 <div class="icon"><img src="/upload/201709/27/201709271559198804.png" /></div>
                 <p class="productName">教师成长档案</p>
                 <div class="descration">让教师成长档案管理电子化，教师考评更加科学公正，是教师成长的规划师、管理的参考表，更是教师互相学习的好平台。</div>
-                <a href="" target="_blank" class="login" >登录</a>
+                <a href="" target="_blank" class="login" >立即体验</a>
             </li>
             
-            <li>
+            <li class="animate-box">
                 <div class="icon"><img src="/upload/201709/27/201709271559467911.png" /></div>
                 <p class="productName">智慧校园</p>
                 <div class="descration">解决教学、行政管理、资源管理等问题，连接众多学校达到资源整合与共享，帮助学校减少统一管理难度，实现信息化。</div>
-                <a href="" target="_blank" class="login" >登录</a>
+                <a href="" target="_blank" class="login" >立即体验</a>
             </li>
             
         </ul>
@@ -94,21 +108,21 @@
         <h1 class="title pt30">用户数据</h1>
         <ul class="clearfix w1200">
             
-            <li>
+            <li class="animate-box">
                 <div class="icon"><img src="/upload/201709/27/201709271619572952.png" /></div>
-                <p class="number">66%</p>
+                <div class="number timer"  id="count-number" data-to="66" data-speed="1500">66</div>
                 <div class="name">北京区域覆盖率</div>
             </li>
             
-            <li>
+            <li class="animate-box">
                 <div class="icon"><img src="/upload/201709/27/201709271620106152.png" /></div>
-                <p class="number">10,294</p>
+                <div class="number timer"  id="count-number" data-to="10294" data-speed="1500">10294</div>
                 <div class="name">名教师</div>
             </li>
             
-            <li>
+            <li class="animate-box">
                 <div class="icon"><img src="/upload/201709/27/201709271620415670.png" /></div>
-                <p class="number">10,294</p>
+                <div class="number timer"  id="count-number" data-to="10294" data-speed="1500">10294</div>
                 <div class="name">名学生</div>
             </li>
             
@@ -116,21 +130,21 @@
     </div>
     <div class="server">
         <h1 class="title pt30">核心服务</h1>
-        <div class="descration">以提升教育信息化和打造教育数据云平台为主导，<br />注重对创新教育理念的探索，致力于打造服务学校教育教学工作的“智慧型软件产品”，已拥有多项国家级自主研发技术和产品专利，<br />目前产品已应用于全国各地基础教育学校及高等院校。</div>
+        <div class="descration animate-box">以提升教育信息化和打造教育数据云平台为主导，<br />注重对创新教育理念的探索，致力于打造服务学校教育教学工作的“智慧型软件产品”，已拥有多项国家级自主研发技术和产品专利，<br />目前产品已应用于全国各地基础教育学校及高等院校。</div>
         <ul class="clearfix w1200 pt30">
-           <li>
+           <li class="animate-box">
                <div class="icon icon1"></div>
                <p class="name">为教务减负增效</p>
            </li>
-            <li>
+            <li class="animate-box">
                 <div class="icon icon2"></div>
                 <p class="name">让教室智能有趣</p>
             </li>
-            <li>
+            <li class="animate-box">
                 <div class="icon icon3"></div>
                 <p class="name">带学生快乐成长</p>
             </li>
-            <li>
+            <li class="animate-box">
                 <div class="icon icon4"></div>
                 <p class="name">助学校快速发展</p>
             </li>
@@ -140,28 +154,46 @@
         <h1 class="title pt30">成功案例</h1>
         <ul class="case_ul w1200 clearfix mt30">
             
-            <li>
-                <div><img src="/upload/201709/28/201709281049511671.png" /></div>
+            <li >
+                <a href="/case/show-122.html
+                    " target="_blank" class="animate-box">
+                    <div><img src="/upload/201709/28/201709281049511671.png" /></div>
+                </a>
             </li>
             
-            <li>
-                <div><img src="/upload/201709/28/201709281048351418.png" /></div>
+            <li >
+                <a href="/case/show-121.html
+                    " target="_blank" class="animate-box">
+                    <div><img src="/upload/201709/28/201709281048351418.png" /></div>
+                </a>
             </li>
             
-            <li>
-                <div><img src="/upload/201709/28/201709281042410747.png" /></div>
+            <li >
+                <a href="/case/show-119.html
+                    " target="_blank" class="animate-box">
+                    <div><img src="/upload/201709/28/201709281042410747.png" /></div>
+                </a>
             </li>
             
-            <li>
-                <div><img src="/upload/201709/28/201709281041563285.png" /></div>
+            <li >
+                <a href="/case/show-118.html
+                    " target="_blank" class="animate-box">
+                    <div><img src="/upload/201709/28/201709281041563285.png" /></div>
+                </a>
             </li>
             
-            <li>
-                <div><img src="/upload/201709/28/201709281041127012.png" /></div>
+            <li >
+                <a href="/case/show-117.html
+                    " target="_blank" class="animate-box">
+                    <div><img src="/upload/201709/28/201709281041127012.png" /></div>
+                </a>
             </li>
             
-            <li>
-                <div><img src="/upload/201709/28/201709281040179378.png" /></div>
+            <li >
+                <a href="/case/show-116.html
+                    " target="_blank" class="animate-box">
+                    <div><img src="/upload/201709/28/201709281040179378.png" /></div>
+                </a>
             </li>
             
         </ul>
@@ -221,12 +253,67 @@
   </div>
 </div>
 <!--/Footer-->
+    <script type="text/javascript" charset="utf-8" src="/templates/main/js/index.js"></script>
+    <script>
+        function contentWayPoint() {
+        
+        $('.animate-box').waypoint(function (direction) {
+            $('body .animate-box').removeClass('fadeInUp fadeInDown fadeIn animated')
+            if (direction === 'down' && !$(this.element).hasClass('animated')) {
+                $(this.element).addClass('item-animate');
+              
+                setTimeout(function () {
+
+                    $('body .animate-box.item-animate').each(function (k) {
+                        var el = $(this);
+                        setTimeout(function () {
+                           
+                            if(k==11||k==12||k==13||k==14||k==15||k==16) {
+                                el.addClass('fadeIn animated');
+                            } else {
+                                el.addClass('fadeInUp animated');
+                            }
+                           
+                            el.removeClass('item-animate');
+                        }, k * 200, 'easeInOutExpo');
+                    });
+
+                }, 100);
+
+            } else if (direction == 'up') {
+                
+                $(this.element).addClass('item-animate');
+
+                setTimeout(function () {
+
+                    $('body .animate-box.item-animate').each(function (k) {
+                        var el = $(this);
+                        setTimeout(function () {
+                            if (k == 11 || k == 12 || k == 13 || k == 14 || k == 15 || k == 16) {
+                                el.addClass('fadeIn animated');
+                            } else {
+                                el.addClass('fadeInDown animated');
+                            }
+                            el.removeClass('item-animate');
+                        }, k * 200, 'easeInOutExpo');
+                    });
+
+                }, 100);
+            }
+
+        }, { offset: '60%' });
+        };
+        $(function () {
+            contentWayPoint();
+        })
+    
+    </script>
 
 <!-- Visual Studio Browser Link -->
 <script type="application/json" id="__browserLink_initializationData">
-    {"appName":"Unknown","requestId":"cb33690361e94a98ab4632c7f4d26e17"}
+    {"appName":"Unknown","requestId":"eee582d47923486f82689c5782442e74"}
 </script>
-<script type="text/javascript" src="http://localhost:21839/006473a0609c4f6da29f84fd90d37fca/browserLink" async="async"></script>
+<script type="text/javascript" src="http://localhost:32461/083b53d0d83c40cf8356cb83b35ab362/browserLink" async="async"></script>
 <!-- End Browser Link -->
 
 </body>

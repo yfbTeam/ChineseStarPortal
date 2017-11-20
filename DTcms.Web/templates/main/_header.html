@@ -6,9 +6,16 @@
             </a>
             <div class="nav right">
                 <ul class="clearfix">
-                    <li class="selected"><a  href="<%linkurl("index")%>">首页</a></li>
+                    <li><a  href="<%linkurl("index")%>">首页</a></li>
                     <li><a  href="<%linkurl("about")%>">关于我们</a></li>
-                    <li><a  href="<%linkurl("product")%>">产品中心</a></li>
+                    <li>
+                        <a>产品中心</a>
+                        <div class="drop-down">
+                            <a href="">排课吧</a>
+                            <a href="">教师成长档案</a>
+                            <a href="">智慧校园</a>
+                        </div>
+                    </li>
                     <li><a  href="<%linkurl("companynews")%>">企业新闻</a></li>
                     <li><a href="<%linkurl("case")%>">成功案例</a></li>
                 </ul>
@@ -17,13 +24,13 @@
     </div>
 </div>
 <script>
-    var href = window.location.href;
-    $('.nav ul li').each(function () {
+    //var href = window.location.href;
+    //$('.nav ul li').each(function () {
 
-        itemhref = $(this).children('a').attr('href');
-        itemhref = itemhref.slice(0, itemhref.lastIndexOf('.'))
-        if (href.indexOf(itemhref) > 1) {
-            $(this).addClass('selected').siblings().removeClass('selected');
-        }
-    })
+    //    itemhref = $(this).children('a').attr('href');
+    //    itemhref = itemhref.slice(0, itemhref.lastIndexOf('.'))
+    //    if (href.indexOf(itemhref) > 1) {
+    //        $(this).addClass('selected').siblings().removeClass('selected');
+    //    }
+    //})
 </script>

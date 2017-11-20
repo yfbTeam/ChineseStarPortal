@@ -61,6 +61,9 @@ width:150px;height:150px;
 .wechat  p {
     height:30px;color:#fff;line-height:30px;
 }
+/*.animate-box{
+    opacity:0
+}*/
 /*头部样式*/
 .header{
     width:100%;height:80px;
@@ -71,17 +74,29 @@ width:150px;height:150px;
 .logo{
     width:145px;height:40px;margin:20px 0px 20px 15px;display:block;
 }
-.nav ul li{
-    width:100px;height:80px;float:left;margin-left:60px;
+.nav>ul>li{
+    width:120px;height:80px;float:left;margin-left:50px;position:relative;
 }
-.nav ul li a{
+.nav>ul>li>a{
     display:block;width:100%;height:80px;font-size:16px;color:#333333;text-align:center;line-height:80px;
 }
-.nav ul li:hover a{
-    color:#2293cb;
+.nav>ul>li:hover>a{
+    color:#fff;background:#6CA8D1;
 }
-.nav ul li.selected a{
-    color:#2293cb;
+.nav>ul>li.selected>a{
+     color:#fff;background:#6CA8D1;
+}
+.nav>ul>li:hover .drop-down{
+    display:block;
+}
+.drop-down{
+    position:absolute;width:100%;top:100%;background:#579DCF;z-index:999;display:none;
+}
+.drop-down a{
+    height:40px;display:block;line-height:40px;color:#fff;text-align:center;font-size:16px;
+}
+.drop-down a:hover{
+    background:#fff;color:#579DCF;
 }
 /*幻灯片样式*/
 .banner{
@@ -144,7 +159,7 @@ width:150px;height:150px;
     width:72px;height:72px;margin:0 auto;margin-top:50px;
 }
 .userData .number{
-    text-align:center;font-size:64px;color:#fff;text-align:center;line-height:88px;font-weight:bold;
+    text-align:center;font-size:48px;color:#fff;text-align:center;line-height:88px;font-family: Arial;
 }
 .userData .name{
     text-align:center;font-size:30px;color:#fff;text-align:center;line-height:70px;
@@ -193,6 +208,9 @@ width:150px;height:150px;
     min-height: 178px;
     overflow: hidden;
     
+}
+.case_ul li a{
+    display:block;width:100%; min-height: 178px;
 }
 .case_ul li div{
     width:100%;position: relative;height: 178px;overflow: hidden;
@@ -281,7 +299,7 @@ width:150px;height:150px;
     width:395px;line-height:35px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:14px;display:inline-block;float:left;
 }
 .news_right ul li .date{
-    width:80px;color:#999;font-size:14px;display:inline-block;float:left;line-height:35px;
+    color:#999;font-size:14px;float:right;line-height:35px;
 }
 .news_right ul li .desc{
     line-height:25px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#999;font-size:14px;

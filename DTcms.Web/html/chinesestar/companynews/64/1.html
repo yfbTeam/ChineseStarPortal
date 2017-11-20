@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>软件研发中心 - 华人启星</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link href="/css/pagination.css" rel="stylesheet" />
+    <link href="/templates/main/css/layout.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" charset="utf-8" src="/scripts/jquery/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/templates/main/js/common.js"></script>
+</head>
+
+<body>
+    <!--Header-->
+    <div class="header">
+    <div class="header-wrap">
+        <div class="w1200 clearfix">
+            <a class="logo left" href="">
+                <img src="/upload/201709/27/201709271127286724.png" />
+            </a>
+            <div class="nav right">
+                <ul class="clearfix">
+                    <li class="selected"><a  href="/index.html">首页</a></li>
+                    <li><a  href="/about.html">关于我们</a></li>
+                    <li><a  href="/product.html">产品中心</a></li>
+                    <li><a  href="/companynews.html">企业新闻</a></li>
+                    <li><a href="/case.html">成功案例</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var href = window.location.href;
+    $('.nav ul li').each(function () {
+
+        itemhref = $(this).children('a').attr('href');
+        itemhref = itemhref.slice(0, itemhref.lastIndexOf('.'))
+        if (href.indexOf(itemhref) > 1) {
+            $(this).addClass('selected').siblings().removeClass('selected');
+        }
+    })
+</script>
+    <!--/Header-->
+
+    <div class="main">
+        <div class="news-bg">
+            <img src="/templates/main/images/news-bg_02.jpg" alt="" />
+        </div>
+        <div class="ntitle">
+            <div class="w1200">
+                
+                <span>当前位置：<a href="/companynews.html" style="color:#2293cb;">企业新闻</a>&nbsp;&gt;&nbsp;<a href="/companynews/64/1.html">软件研发中心</a></span>
+            </div>
+        </div>
+        <div class="list-auto w1200">
+            <ul class="n-list">
+                <!--取得一个分页DataTable-->
+                
+                <li>
+                    <a href="/companynews/show-147.html" target="_blank">
+                        
+                        <b><img src="/upload/201604/20/201604201757273916.jpg" /></b>
+                        
+                        <div class="desc">
+                            <h2 class="clearfix"><span class="name">职位：软件测试工程师</span><span class="time">2017-03-16</span></h2>
+                            <div class="note">
+                                工作职责：1、负责大型系统的测试工作，参与测试需求分析、测试用例设计;2、执行测试用例，记录测试结果，分折测试发现的问题，跟踪并验证Bug并确认问题，编写测试报告;3、按时、保质、保量地完成各项分配的任务;4、编写自动化测试及性能测试脚本，开发辅助测试工具;5、负责搭…
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="/companynews/show-148.html" target="_blank">
+                        
+                        <b><img src="/upload/201604/20/201604201757039547.jpg" /></b>
+                        
+                        <div class="desc">
+                            <h2 class="clearfix"><span class="name">职位：.NET软件研发工程师</span><span class="time">2016-04-20</span></h2>
+                            <div class="note">
+                                岗位职责： 1．参与软件产品的需求分析工作 2．完成软件产品的开发编码工作3．负责代码的单元测试与质量保证4．编写相关技术文档岗位要求：1.正规院校计算机及软件工程相关专业毕业，大学本科以上学历；2.深刻理解面向对象的思想，对平台有一定的了解； 3.精通C#语言编程和.NE…
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                
+            </ul>
+            <!--页码列表-->
+            <div class="page-box">
+                <div class="digg clearfix"></div>
+            </div>
+            <!--/页码列表-->
+        </div>
+    </div>
+    <!--Footer-->
+    <div class="footer">
+  <div class="footer-header">
+      <div class="w1200 clearfix">
+          <div class="footer-content left">
+              <div class="nav-footer clearfix">
+                  <a href="/index.html">首页</a>
+                  <a  href="/about.html">关于我们</a>
+                  <a  href="/product.html">产品中心</a>
+                  <a  href="/companynews.html">企业新闻</a>
+                  <a  href="/case.html">成功案例</a>
+              </div>
+          </div>
+          <div class="footer-content left footer-logo">
+              <img src="/templates/main/images/logo1.png" />
+          </div>
+          <div class="footer-content left wechat">
+              <img src="/templates/main/images/code.jpg" />
+              <p>微信公众号</p>
+          </div>
+      </div>
+  </div>
+  <div class="footer-footer">
+      版权所有 Copyright 2017 &copy; 北京市华人启星科技有限公司<span>|</span>地址：北京市丰台区南四环西路128号诺德中心3座7层<span>|</span>邮编：10070<span>|</span>联系电话：010-63781786<span>|</span>传真：010-63781786
+  </div>
+</div>
+    <!--/Footer-->
+
+<!-- Visual Studio Browser Link -->
+<script type="application/json" id="__browserLink_initializationData">
+    {"appName":"Unknown","requestId":"fe24218350974a6792ee90604f341ff3"}
+</script>
+<script type="text/javascript" src="http://localhost:11006/516bc9f7d90241c1bf59a92b6e475ad1/browserLink" async="async"></script>
+<!-- End Browser Link -->
+
+</body>
+</html>

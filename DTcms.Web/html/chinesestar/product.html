@@ -21,9 +21,16 @@
             </a>
             <div class="nav right">
                 <ul class="clearfix">
-                    <li class="selected"><a  href="/index.html">首页</a></li>
+                    <li><a  href="/index.html">首页</a></li>
                     <li><a  href="/about.html">关于我们</a></li>
-                    <li><a  href="/product.html">产品中心</a></li>
+                    <li>
+                        <a>产品中心</a>
+                        <div class="drop-down">
+                            <a href="">排课吧</a>
+                            <a href="">教师成长档案</a>
+                            <a href="">智慧校园</a>
+                        </div>
+                    </li>
                     <li><a  href="/companynews.html">企业新闻</a></li>
                     <li><a href="/case.html">成功案例</a></li>
                 </ul>
@@ -32,15 +39,15 @@
     </div>
 </div>
 <script>
-    var href = window.location.href;
-    $('.nav ul li').each(function () {
+    //var href = window.location.href;
+    //$('.nav ul li').each(function () {
 
-        itemhref = $(this).children('a').attr('href');
-        itemhref = itemhref.slice(0, itemhref.lastIndexOf('.'))
-        if (href.indexOf(itemhref) > 1) {
-            $(this).addClass('selected').siblings().removeClass('selected');
-        }
-    })
+    //    itemhref = $(this).children('a').attr('href');
+    //    itemhref = itemhref.slice(0, itemhref.lastIndexOf('.'))
+    //    if (href.indexOf(itemhref) > 1) {
+    //        $(this).addClass('selected').siblings().removeClass('selected');
+    //    }
+    //})
 </script>
 <!--/Header-->
     <div class="main">
@@ -50,7 +57,7 @@
         <div style="margin:0 auto;padding:150px 0px;text-align:center;font-size:24px;">网站建设中</div>
     </div>
 <!--Footer-->
-<div class="footer clearfix">
+<div class="footer">
   <div class="footer-header">
       <div class="w1200 clearfix">
           <div class="footer-content left">
@@ -79,9 +86,9 @@
 
 <!-- Visual Studio Browser Link -->
 <script type="application/json" id="__browserLink_initializationData">
-    {"appName":"Unknown","requestId":"57a8bcd1093c4fd7a4ce56ada03f323c"}
+    {"appName":"Unknown","requestId":"16488ff9e3a7440a82591efad240ec86"}
 </script>
-<script type="text/javascript" src="http://localhost:36110/da24f701c246411baeb7b527c516c26f/browserLink" async="async"></script>
+<script type="text/javascript" src="http://localhost:32461/083b53d0d83c40cf8356cb83b35ab362/browserLink" async="async"></script>
 <!-- End Browser Link -->
 
 </body>

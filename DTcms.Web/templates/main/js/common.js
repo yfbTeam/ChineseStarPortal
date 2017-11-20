@@ -11,8 +11,11 @@ $(function () {
         }
     }
     $(window).resize(initHegiht);
-    initHegiht()
+    initHegiht();
+    
+   
 })
+
 /* 
 *作者：一些事情
 *时间：2015-4-17
