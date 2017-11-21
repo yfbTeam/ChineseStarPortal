@@ -44,7 +44,7 @@
         <ul class="clearfix w1200">
             <%set DataTable products=get_article_list("index", 53, 3, "status=0")%>
             <%foreach(DataRow dr in products.Rows)%>
-            <li class="animate-box">
+            <li>
                 <div class="icon"><img src="{dr[img_url]}" /></div>
                 <p class="productName">{dr[title]}</p>
                 <div class="descration">{dr[zhaiyao]}</div>
@@ -95,7 +95,7 @@
             <%foreach(DataRow dr in cases.Rows)%>
             <li >
                 <a href="<%linkurl("case_show",{dr[id]})%>
-                    " target="_blank" class="animate-box">
+                    " target="_blank" class="animate-box1">
                     <div><img src="{dr[img_url]}" /></div>
                 </a>
             </li>
@@ -117,59 +117,14 @@
 <%template src="_footer.html"%>
 <!--/Footer-->
     <script type="text/javascript" charset="utf-8" src="<%templateskin%>/js/index.js"></script>
-    <script>
-        function contentWayPoint() {
-        
-        $('.animate-box').waypoint(function (direction) {
-            $('body .animate-box').removeClass('fadeInUp fadeInDown fadeIn animated')
-            if (direction === 'down' && !$(this.element).hasClass('animated')) {
-                $(this.element).addClass('item-animate');
-              
-                setTimeout(function () {
-
-                    $('body .animate-box.item-animate').each(function (k) {
-                        var el = $(this);
-                        setTimeout(function () {
-                           
-                            if(k==11||k==12||k==13||k==14||k==15||k==16) {
-                                el.addClass('fadeIn animated');
-                            } else {
-                                el.addClass('fadeInUp animated');
-                            }
-                           
-                            el.removeClass('item-animate');
-                        }, k * 200, 'easeInOutExpo');
-                    });
-
-                }, 100);
-
-            } else if (direction == 'up') {
-                
-                $(this.element).addClass('item-animate');
-
-                setTimeout(function () {
-
-                    $('body .animate-box.item-animate').each(function (k) {
-                        var el = $(this);
-                        setTimeout(function () {
-                            if (k == 11 || k == 12 || k == 13 || k == 14 || k == 15 || k == 16) {
-                                el.addClass('fadeIn animated');
-                            } else {
-                                el.addClass('fadeInDown animated');
-                            }
-                            el.removeClass('item-animate');
-                        }, k * 200, 'easeInOutExpo');
-                    });
-
-                }, 100);
-            }
-
-        }, { offset: '60%' });
-        };
-        $(function () {
-            contentWayPoint();
-        })
     
+    <script>
+        
+        $(function () {
+            contentWayPoint('.animate-box', 'fadeInUp animated');
+            contentWayPoint('.animate-box1', 'fadeIn animated');
+        })
+
     </script>
 </body>
 </html>

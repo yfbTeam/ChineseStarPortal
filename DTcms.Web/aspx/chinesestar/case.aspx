@@ -9,8 +9,8 @@ override protected void OnInit(EventArgs e)
 {
 
 	/* 
-		This page was created by DTcms Template Engine at 2017/11/20 18:56:01.
-		本页面代码由DTcms模板引擎生成于 2017/11/20 18:56:01. 
+		This page was created by DTcms Template Engine at 2017/11/21 12:09:01.
+		本页面代码由DTcms模板引擎生成于 2017/11/21 12:09:01. 
 	*/
 
 	base.OnInit(e);
@@ -25,12 +25,17 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append(Utils.ObjectToStr(site.seo_description));
 	templateBuilder.Append("\" />\r\n    <link href=\"");
 	templateBuilder.Append("/templates/main");
-	templateBuilder.Append("/css/layout.css\" rel=\"stylesheet\" type=\"text/css\" />\r\n    <script type=\"text/javascript\" charset=\"utf-8\" src=\"");
+	templateBuilder.Append("/css/layout.css\" rel=\"stylesheet\" type=\"text/css\" />\r\n    <link href=\"");
+	templateBuilder.Append("/templates/main");
+	templateBuilder.Append("/css/animate.css\" rel=\"stylesheet\" type=\"text/css\" />\r\n    <script type=\"text/javascript\" charset=\"utf-8\" src=\"");
 	templateBuilder.Append(Utils.ObjectToStr(config.webpath));
 	templateBuilder.Append("scripts/jquery/jquery-1.11.2.min.js\"></");
 	templateBuilder.Append("script>\r\n    <script type=\"text/javascript\" charset=\"utf-8\" src=\"");
 	templateBuilder.Append("/templates/main");
 	templateBuilder.Append("/js/jquery.flexslider-min.js\"></");
+	templateBuilder.Append("script>\r\n    <script type=\"text/javascript\" charset=\"utf-8\" src=\"");
+	templateBuilder.Append("/templates/main");
+	templateBuilder.Append("/js/jquery.waypoints.min.js\"></");
 	templateBuilder.Append("script>\r\n    <script type=\"text/javascript\" charset=\"utf-8\" src=\"");
 	templateBuilder.Append("/templates/main");
 	templateBuilder.Append("/js/common.js\"></");
@@ -69,7 +74,7 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("\r\n            <li>\r\n                <a href=\"");
 	templateBuilder.Append(linkurl("case_show",Utils.ObjectToStr(dr["id"])));
 
-	templateBuilder.Append("\" target=\"_blank\">\r\n                    <div><img src=\"" + Utils.ObjectToStr(dr["img_url"]) + "\" alt=\"\" /></div>\r\n                    <p>" + Utils.ObjectToStr(dr["zhaiyao"]) + "</p>\r\n                </a>\r\n            </li>\r\n            ");
+	templateBuilder.Append("\" target=\"_blank\" class=\"animate-box\">\r\n                    <div><img src=\"" + Utils.ObjectToStr(dr["img_url"]) + "\" alt=\"\" /></div>\r\n                    <p>" + Utils.ObjectToStr(dr["zhaiyao"]) + "</p>\r\n                </a>\r\n            </li>\r\n            ");
 	}	//end for if
 
 	templateBuilder.Append("\r\n        </ul>\r\n    </div>\r\n<!--Footer-->\r\n");
@@ -111,7 +116,8 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("\r\n  </div>\r\n</div>");
 
 
-	templateBuilder.Append("\r\n<!--/Footer-->\r\n</body>\r\n</html>\r\n");
+	templateBuilder.Append("\r\n<!--/Footer-->\r\n    <script>\r\n        $(function () {\r\n            contentWayPoint('.animate-box', 'fadeIn animated','80%');\r\n        })\r\n    </");
+	templateBuilder.Append("script>\r\n</body>\r\n</html>\r\n");
 	Response.Write(templateBuilder.ToString());
 }
 </script>

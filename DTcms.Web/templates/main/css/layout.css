@@ -25,6 +25,9 @@ input::-moz-focus-inner,button::-moz-focus-inner{ border:0;padding:0;outline:0; 
 .left{ float:left; }
 .right{ float:right; }
 img{max-width:100%;}
+.animate-box,.animate-box1{
+    opacity:0;
+}
 /*站点样式*/
 /*底部样式*/
 .footer{width:100%;height:270px;}
@@ -61,9 +64,7 @@ width:150px;height:150px;
 .wechat  p {
     height:30px;color:#fff;line-height:30px;
 }
-/*.animate-box{
-    opacity:0
-}*/
+
 /*头部样式*/
 .header{
     width:100%;height:80px;
@@ -78,7 +79,7 @@ width:150px;height:150px;
     width:120px;height:80px;float:left;margin-left:50px;position:relative;
 }
 .nav>ul>li>a{
-    display:block;width:100%;height:80px;font-size:16px;color:#333333;text-align:center;line-height:80px;
+    display:block;width:100%;height:80px;font-size:16px;color:#333333;text-align:center;line-height:80px;cursor:pointer;
 }
 .nav>ul>li:hover>a{
     color:#fff;background:#6CA8D1;
@@ -131,7 +132,17 @@ width:150px;height:150px;
 }
 
 .productCenter ul li{
-    width:290px;height:320px;margin:25px 15px 40px 15px;float:left;background:#f3f5f7;border-radius:5px;padding:40px;
+    width:290px;height:320px;margin:25px 15px 40px 15px;float:left;background:#f3f5f7;border-radius:5px;padding:40px; animation-name: fadeInUp; animation-duration: 1s;
+  animation-fill-mode: both;
+}
+.productCenter ul li:nth-child(1){
+    animation-delay:200ms
+}
+.productCenter ul li:nth-child(2){
+    animation-delay:400ms
+}
+.productCenter ul li:nth-child(3){
+    animation-delay:600ms
 }
 .productCenter .icon{
     width:90px;height:90px;border-radius:50%;overflow:hidden;margin:0 auto;
@@ -144,6 +155,19 @@ width:150px;height:150px;
 }
 .productCenter .login{
     width:126px;height:38px;border-radius:3px;background:#666666;display:block;margin:0 auto;color:#fff;line-height:38px;text-align:center;font-size:16px;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    /*transform: translate3d(0, 100%, 0);*/
+    -webkit-transform: translate3d(0, 50px, 0);
+    transform: translate3d(0, 50px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 /*用户数据*/
 .userData{

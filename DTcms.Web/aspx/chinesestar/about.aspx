@@ -9,8 +9,8 @@ override protected void OnInit(EventArgs e)
 {
 
 	/* 
-		This page was created by DTcms Template Engine at 2017/11/20 18:56:01.
-		本页面代码由DTcms模板引擎生成于 2017/11/20 18:56:01. 
+		This page was created by DTcms Template Engine at 2017/11/21 12:09:01.
+		本页面代码由DTcms模板引擎生成于 2017/11/21 12:09:01. 
 	*/
 
 	base.OnInit(e);
@@ -110,7 +110,7 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("\r\n  </div>\r\n</div>");
 
 
-	templateBuilder.Append("\r\n<!--/Footer-->\r\n    <script>\r\n        function contentWayPoint() {\r\n\r\n        $('.animate-box').waypoint(function (direction) {\r\n            $('body .animate-box').removeClass('fadeInUp fadeInDown animated')\r\n            if (direction === 'down' && !$(this.element).hasClass('animated')) {\r\n                $(this.element).addClass('item-animate');\r\n\r\n                setTimeout(function () {\r\n\r\n                    $('body .animate-box.item-animate').each(function (k) {\r\n                        var el = $(this);\r\n                        setTimeout(function () {\r\n\r\n                            el.addClass('fadeInUp animated');\r\n\r\n                            el.removeClass('item-animate');\r\n                        }, k * 200, 'easeInOutExpo');\r\n                    });\r\n\r\n                }, 100);\r\n\r\n            } else if (direction == 'up') {\r\n\r\n                $(this.element).addClass('item-animate');\r\n\r\n                setTimeout(function () {\r\n\r\n                    $('body .animate-box.item-animate').each(function (k) {\r\n                        var el = $(this);\r\n                        setTimeout(function () {\r\n                            el.addClass('fadeInDown animated');\r\n                            el.removeClass('item-animate');\r\n                        }, k * 200, 'easeInOutExpo');\r\n                    });\r\n\r\n                }, 100);\r\n            }\r\n\r\n        }, { offset: '60%' });\r\n        };\r\n        $(function () {\r\n            contentWayPoint();\r\n        })\r\n\r\n    </");
+	templateBuilder.Append("\r\n<!--/Footer-->\r\n   \r\n    <script>\r\n        \r\n        $(function () {\r\n            contentWayPoint('.animate-box', 'fadeInUp animated');\r\n        })\r\n\r\n    </");
 	templateBuilder.Append("script>\r\n</body>\r\n</html>\r\n");
 	Response.Write(templateBuilder.ToString());
 }

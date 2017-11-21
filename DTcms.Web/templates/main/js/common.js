@@ -15,7 +15,31 @@ $(function () {
     
    
 })
+function contentWayPoint(obj, animate,offset) {
 
+    $(obj).waypoint(function (direction) {
+
+        if (direction === 'down' && !$(this.element).hasClass('animated')) {
+
+            //$('body .animate-box').removeClass('fadeInUp animated')
+            $(this.element).addClass('item-animate');
+            setTimeout(function () {
+
+                $('body ' + obj + '.item-animate').each(function (k) {
+                    var el = $(this);
+                    setTimeout(function () {
+
+                        el.addClass(animate);
+
+                        el.removeClass('item-animate');
+                    }, k * 200, 'easeInOutExpo');
+                });
+
+            }, 100);
+
+        }
+    }, { offset: offset||'85%' });
+};
 /* 
 *作者：一些事情
 *时间：2015-4-17

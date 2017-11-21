@@ -7,10 +7,12 @@
     <meta name="keywords" content="华人启星" />
     <meta name="description" content="华人启星" />
     <link href="/templates/main/css/layout.css" rel="stylesheet" type="text/css" />
-    <link href="/templates/main/css/animate.css" rel="stylesheet" type="text/css" />
+    <!--<link href="/templates/main/css/animate.css" rel="stylesheet" type="text/css" />-->
+    <link href="/templates/main/css/aos.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" charset="utf-8" src="/scripts/jquery/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" charset="utf-8" src="/templates/main/js/jquery.flexslider-min.js"></script>
-    <script type="text/javascript" charset="utf-8" src="/templates/main/js/jquery.waypoints.min.js"></script>
+    <!--<script type="text/javascript" charset="utf-8" src="/templates/main/js/jquery.waypoints.min.js"></script>-->
+   
     <script type="text/javascript" charset="utf-8" src="/templates/main/js/common.js"></script>
    
     <script type="text/javascript">
@@ -81,21 +83,21 @@
         <h1 class="title pt30">产品中心</h1>
         <ul class="clearfix w1200">
             
-            <li class="animate-box">
+            <li aos="fade-up" aos-easing="ease" aos-delay="400">
                 <div class="icon"><img src="/upload/201709/27/201709271557335513.png" /></div>
                 <p class="productName">排课吧云平台</p>
                 <div class="descration">帮助各校适应分类考试、综合评价、多元录取的新招考模式，个性化解决排选课难题，为教务减负，让学生更自主。</div>
                 <a href="http://192.168.1.141:9999" target="_blank" class="login" >立即体验</a>
             </li>
             
-            <li class="animate-box">
+            <li aos="fade-up" aos-easing="ease" aos-delay="400">
                 <div class="icon"><img src="/upload/201709/27/201709271559198804.png" /></div>
                 <p class="productName">教师成长档案</p>
                 <div class="descration">让教师成长档案管理电子化，教师考评更加科学公正，是教师成长的规划师、管理的参考表，更是教师互相学习的好平台。</div>
                 <a href="" target="_blank" class="login" >立即体验</a>
             </li>
             
-            <li class="animate-box">
+            <li aos="fade-up" aos-easing="ease" aos-delay="400">
                 <div class="icon"><img src="/upload/201709/27/201709271559467911.png" /></div>
                 <p class="productName">智慧校园</p>
                 <div class="descration">解决教学、行政管理、资源管理等问题，连接众多学校达到资源整合与共享，帮助学校减少统一管理难度，实现信息化。</div>
@@ -254,64 +256,71 @@
 </div>
 <!--/Footer-->
     <script type="text/javascript" charset="utf-8" src="/templates/main/js/index.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/templates/main/js/aos.js"></script>
     <script>
-        function contentWayPoint() {
+		AOS.init({
+			easing: 'ease-out-back',
+			duration: 1000
+		});
+    </script>
+    <script>
+        //function contentWayPoint() {
         
-        $('.animate-box').waypoint(function (direction) {
-            $('body .animate-box').removeClass('fadeInUp fadeInDown fadeIn animated')
-            if (direction === 'down' && !$(this.element).hasClass('animated')) {
-                $(this.element).addClass('item-animate');
+        //$('.animate-box').waypoint(function (direction) {
+        //    $('body .animate-box').removeClass('fadeInUp fadeInDown fadeIn animated')
+        //    if (direction === 'down' && !$(this.element).hasClass('animated')) {
+        //        $(this.element).addClass('item-animate');
               
-                setTimeout(function () {
+        //        setTimeout(function () {
 
-                    $('body .animate-box.item-animate').each(function (k) {
-                        var el = $(this);
-                        setTimeout(function () {
+        //            $('body .animate-box.item-animate').each(function (k) {
+        //                var el = $(this);
+        //                setTimeout(function () {
                            
-                            if(k==11||k==12||k==13||k==14||k==15||k==16) {
-                                el.addClass('fadeIn animated');
-                            } else {
-                                el.addClass('fadeInUp animated');
-                            }
+        //                    if(k==11||k==12||k==13||k==14||k==15||k==16) {
+        //                        el.addClass('fadeIn animated');
+        //                    } else {
+        //                        el.addClass('fadeInUp animated');
+        //                    }
                            
-                            el.removeClass('item-animate');
-                        }, k * 200, 'easeInOutExpo');
-                    });
+        //                    el.removeClass('item-animate');
+        //                }, k * 200, 'easeInOutExpo');
+        //            });
 
-                }, 100);
+        //        }, 100);
 
-            } else if (direction == 'up') {
+        //    } else if (direction == 'up') {
                 
-                $(this.element).addClass('item-animate');
+        //        $(this.element).addClass('item-animate');
 
-                setTimeout(function () {
+        //        setTimeout(function () {
 
-                    $('body .animate-box.item-animate').each(function (k) {
-                        var el = $(this);
-                        setTimeout(function () {
-                            if (k == 11 || k == 12 || k == 13 || k == 14 || k == 15 || k == 16) {
-                                el.addClass('fadeIn animated');
-                            } else {
-                                el.addClass('fadeInDown animated');
-                            }
-                            el.removeClass('item-animate');
-                        }, k * 200, 'easeInOutExpo');
-                    });
+        //            $('body .animate-box.item-animate').each(function (k) {
+        //                var el = $(this);
+        //                setTimeout(function () {
+        //                    if (k == 11 || k == 12 || k == 13 || k == 14 || k == 15 || k == 16) {
+        //                        el.addClass('fadeIn animated');
+        //                    } else {
+        //                        el.addClass('fadeInDown animated');
+        //                    }
+        //                    el.removeClass('item-animate');
+        //                }, k * 200, 'easeInOutExpo');
+        //            });
 
-                }, 100);
-            }
+        //        }, 100);
+        //    }
 
-        }, { offset: '60%' });
-        };
-        $(function () {
-            contentWayPoint();
-        })
+        //}, { offset: '60%' });
+        //};
+        //$(function () {
+        //    contentWayPoint();
+        //})
     
     </script>
 
 <!-- Visual Studio Browser Link -->
 <script type="application/json" id="__browserLink_initializationData">
-    {"appName":"Unknown","requestId":"eee582d47923486f82689c5782442e74"}
+    {"appName":"Unknown","requestId":"04ce32c5efd74051b172217232dda9a8"}
 </script>
 <script type="text/javascript" src="http://localhost:32461/083b53d0d83c40cf8356cb83b35ab362/browserLink" async="async"></script>
 <!-- End Browser Link -->

@@ -9,8 +9,8 @@ override protected void OnInit(EventArgs e)
 {
 
 	/* 
-		This page was created by DTcms Template Engine at 2017/11/20 18:56:01.
-		本页面代码由DTcms模板引擎生成于 2017/11/20 18:56:01. 
+		This page was created by DTcms Template Engine at 2017/11/21 12:09:01.
+		本页面代码由DTcms模板引擎生成于 2017/11/21 12:09:01. 
 	*/
 
 	base.OnInit(e);
@@ -79,7 +79,7 @@ override protected void OnInit(EventArgs e)
 	foreach(DataRow dr in products.Rows)
 	{
 
-	templateBuilder.Append("\r\n            <li class=\"animate-box\">\r\n                <div class=\"icon\"><img src=\"" + Utils.ObjectToStr(dr["img_url"]) + "\" /></div>\r\n                <p class=\"productName\">" + Utils.ObjectToStr(dr["title"]) + "</p>\r\n                <div class=\"descration\">" + Utils.ObjectToStr(dr["zhaiyao"]) + "</div>\r\n                <a href=\"" + Utils.ObjectToStr(dr["link_url"]) + "\" target=\"_blank\" class=\"login\" >立即体验</a>\r\n            </li>\r\n            ");
+	templateBuilder.Append("\r\n            <li>\r\n                <div class=\"icon\"><img src=\"" + Utils.ObjectToStr(dr["img_url"]) + "\" /></div>\r\n                <p class=\"productName\">" + Utils.ObjectToStr(dr["title"]) + "</p>\r\n                <div class=\"descration\">" + Utils.ObjectToStr(dr["zhaiyao"]) + "</div>\r\n                <a href=\"" + Utils.ObjectToStr(dr["link_url"]) + "\" target=\"_blank\" class=\"login\" >立即体验</a>\r\n            </li>\r\n            ");
 	}	//end for if
 
 	templateBuilder.Append("\r\n        </ul>\r\n    </div>\r\n    <div class=\"userData\">\r\n        <h1 class=\"title pt30\">用户数据</h1>\r\n        <ul class=\"clearfix w1200\">\r\n            ");
@@ -100,7 +100,7 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("\r\n            <li >\r\n                <a href=\"");
 	templateBuilder.Append(linkurl("case_show",Utils.ObjectToStr(dr["id"])));
 
-	templateBuilder.Append("\r\n                    \" target=\"_blank\" class=\"animate-box\">\r\n                    <div><img src=\"" + Utils.ObjectToStr(dr["img_url"]) + "\" /></div>\r\n                </a>\r\n            </li>\r\n            ");
+	templateBuilder.Append("\r\n                    \" target=\"_blank\" class=\"animate-box1\">\r\n                    <div><img src=\"" + Utils.ObjectToStr(dr["img_url"]) + "\" /></div>\r\n                </a>\r\n            </li>\r\n            ");
 	}	//end for if
 
 	templateBuilder.Append("\r\n        </ul>\r\n        <div class=\"more w1200\"><a target=\"_blank\" href=\"");
@@ -157,7 +157,7 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("\r\n<!--/Footer-->\r\n    <script type=\"text/javascript\" charset=\"utf-8\" src=\"");
 	templateBuilder.Append("/templates/main");
 	templateBuilder.Append("/js/index.js\"></");
-	templateBuilder.Append("script>\r\n    <script>\r\n        function contentWayPoint() {\r\n        \r\n        $('.animate-box').waypoint(function (direction) {\r\n            $('body .animate-box').removeClass('fadeInUp fadeInDown fadeIn animated')\r\n            if (direction === 'down' && !$(this.element).hasClass('animated')) {\r\n                $(this.element).addClass('item-animate');\r\n              \r\n                setTimeout(function () {\r\n\r\n                    $('body .animate-box.item-animate').each(function (k) {\r\n                        var el = $(this);\r\n                        setTimeout(function () {\r\n                           \r\n                            if(k==11||k==12||k==13||k==14||k==15||k==16) {\r\n                                el.addClass('fadeIn animated');\r\n                            } else {\r\n                                el.addClass('fadeInUp animated');\r\n                            }\r\n                           \r\n                            el.removeClass('item-animate');\r\n                        }, k * 200, 'easeInOutExpo');\r\n                    });\r\n\r\n                }, 100);\r\n\r\n            } else if (direction == 'up') {\r\n                \r\n                $(this.element).addClass('item-animate');\r\n\r\n                setTimeout(function () {\r\n\r\n                    $('body .animate-box.item-animate').each(function (k) {\r\n                        var el = $(this);\r\n                        setTimeout(function () {\r\n                            if (k == 11 || k == 12 || k == 13 || k == 14 || k == 15 || k == 16) {\r\n                                el.addClass('fadeIn animated');\r\n                            } else {\r\n                                el.addClass('fadeInDown animated');\r\n                            }\r\n                            el.removeClass('item-animate');\r\n                        }, k * 200, 'easeInOutExpo');\r\n                    });\r\n\r\n                }, 100);\r\n            }\r\n\r\n        }, { offset: '60%' });\r\n        };\r\n        $(function () {\r\n            contentWayPoint();\r\n        })\r\n    \r\n    </");
+	templateBuilder.Append("script>\r\n    \r\n    <script>\r\n        \r\n        $(function () {\r\n            contentWayPoint('.animate-box', 'fadeInUp animated');\r\n            contentWayPoint('.animate-box1', 'fadeIn animated');\r\n        })\r\n\r\n    </");
 	templateBuilder.Append("script>\r\n</body>\r\n</html>\r\n");
 	Response.Write(templateBuilder.ToString());
 }
