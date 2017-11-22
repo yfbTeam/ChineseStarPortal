@@ -489,6 +489,8 @@
     <Content Include="templates\main\images\banner2.jpg" />
     <Content Include="templates\main\images\banner3.jpg" />
     <Content Include="templates\main\images\banner_01.jpg" />
+    <Content Include="templates\main\images\banner_zi.png" />
+    <Content Include="templates\main\images\banyuan_03.png" />
     <Content Include="templates\main\images\cart-arrow.gif" />
     <Content Include="templates\main\images\case.jpg" />
     <Content Include="templates\main\images\case_bg.jpg" />
@@ -501,6 +503,7 @@
     <Content Include="templates\main\images\data3.png" />
     <Content Include="templates\main\images\delivery.png" />
     <Content Include="templates\main\images\dian.png" />
+    <Content Include="templates\main\images\dian1.png" />
     <Content Include="templates\main\images\dong_03.jpg" />
     <Content Include="templates\main\images\dong_07.jpg" />
     <Content Include="templates\main\images\icon-tips.png" />
@@ -513,6 +516,11 @@
     <Content Include="templates\main\images\news-bg_02.jpg" />
     <Content Include="templates\main\images\news_bg.jpg" />
     <Content Include="templates\main\images\next.png" />
+    <Content Include="templates\main\images\paikeba_05.png" />
+    <Content Include="templates\main\images\paikeba_01.png" />
+    <Content Include="templates\main\images\paikeba_02.png" />
+    <Content Include="templates\main\images\paikeba_03.png" />
+    <Content Include="templates\main\images\paikeba_04.png" />
     <Content Include="templates\main\images\pic-bg.png" />
     <Content Include="templates\main\images\prev.png" />
     <Content Include="templates\main\images\product_01.png" />
@@ -522,10 +530,14 @@
     <Content Include="templates\main\images\server.png" />
     <Content Include="templates\main\images\slider.png" />
     <Content Include="templates\main\images\sprite.gif" />
+    <Content Include="templates\main\images\sprite2.png" />
     <Content Include="templates\main\images\ss_03.jpg" />
     <Content Include="templates\main\images\user-avatar.png" />
     <Content Include="templates\main\images\user.png" />
+    <Content Include="templates\main\images\yun.png" />
     <Content Include="templates\main\index.html" />
+    <Content Include="templates\main\css\aos.css" />
+    <Content Include="templates\main\js\aos.js" />
     <Content Include="templates\main\js\avatar.js" />
     <Content Include="templates\main\js\cart.js" />
     <Content Include="templates\main\js\common.js" />

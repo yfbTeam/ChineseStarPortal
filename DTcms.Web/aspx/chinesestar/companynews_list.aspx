@@ -9,8 +9,8 @@ override protected void OnInit(EventArgs e)
 {
 
 	/* 
-		This page was created by DTcms Template Engine at 2017/11/21 12:09:01.
-		本页面代码由DTcms模板引擎生成于 2017/11/21 12:09:01. 
+		This page was created by DTcms Template Engine at 2017/11/21 18:51:00.
+		本页面代码由DTcms模板引擎生成于 2017/11/21 18:51:00. 
 	*/
 
 	base.OnInit(e);
@@ -50,7 +50,10 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("\">首页</a></li>\r\n                    <li><a  href=\"");
 	templateBuilder.Append(linkurl("about"));
 
-	templateBuilder.Append("\">关于我们</a></li>\r\n                    <li>\r\n                        <a>产品中心</a>\r\n                        <div class=\"drop-down\">\r\n                            <a href=\"\">排课吧</a>\r\n                            <a href=\"\">教师成长档案</a>\r\n                            <a href=\"\">智慧校园</a>\r\n                        </div>\r\n                    </li>\r\n                    <li><a  href=\"");
+	templateBuilder.Append("\">关于我们</a></li>\r\n                    <li>\r\n                        <a>产品中心</a>\r\n                        <div class=\"drop-down\">\r\n                            <a href=\"");
+	templateBuilder.Append(linkurl("product"));
+
+	templateBuilder.Append("\">排课吧</a>\r\n                            <a href=\"\">教师成长档案</a>\r\n                            <a href=\"\">智慧校园</a>\r\n                        </div>\r\n                    </li>\r\n                    <li><a  href=\"");
 	templateBuilder.Append(linkurl("companynews"));
 
 	templateBuilder.Append("\">企业新闻</a></li>\r\n                    <li><a href=\"");
