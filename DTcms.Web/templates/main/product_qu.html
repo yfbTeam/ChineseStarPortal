@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="renderer" content="webkit" />
+    <title>{site.seo_title}</title>
+    <meta name="keywords" content="{site.seo_keyword}" />
+    <meta name="description" content="{site.seo_description}" />
+    <link href="<%templateskin%>/css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="<%templateskin%>/css/animate.css" rel="stylesheet" type="text/css" />
+    <link href="<%templateskin%>/css/aos.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" charset="utf-8" src="{config.webpath}scripts/jquery/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="<%templateskin%>/js/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="<%templateskin%>/js/common.js"></script>
+
+</head>
+<body>
+    <!--Header-->
+    <%template src="_header.html"%>
+    <!--/Header-->
+    <div class="main">
+        <div class="case_bg pr">
+            <img src="<%templateskin%>/images/qu_02.png"/>
+            <div class="zi w1200">
+                <img src="<%templateskin%>/images/qu_zi1.png" class="qu_zi1" aos-delay="200" aos="fade-up"/>
+                <img src="<%templateskin%>/images/qu_zi2.png" class="qu_zi2" aos-delay="400" aos="fade-up"/>
+            </div>
+        </div>
+        <div style="background:#fff;">
+            <h1 class="title">平台特色</h1>
+            <div class="ul_feature w1200 mt20">
+                <ul class="clearfix">
+                    <li aos-delay="600" aos="fade-up">
+                        <div>
+                            <div class="head_feature">
+
+                                <h1>多维数据共享与交互</h1>
+                                <p>瓦解信息孤岛，实现数据的便捷共享与交互</p>
+                            </div>
+                            <div class="head_body">
+                                学生信息、教师信息、课程信息、教学设施、教学资产、学生选课数据、学生成绩、考勤信息、一卡通信息、图书馆借还书数据等各类数据统一接口，实现数据便捷共享与交互，易于扩充、升级和维护。
+                            </div>
+                        </div>
+                    </li>
+                    <li aos-delay="800" aos="fade-up">
+                        <div>
+                            <div class="head_feature">
+                                <h1>统一身份认证单点登录</h1>
+                                <p>打通系统验证，登录一个账号即可随心访问应用系统</p>
+                            </div>
+                            <div class="head_body">
+                                可将已有系统与新系统无缝对接，让信息化办公无需登录多个账号、无需切换多个系统，一个账号即可访问多个系统，一个平台满足多个场景需求，快捷体验智慧校园的便利。
+                            </div>
+                        </div>
+                    </li>
+                    <li aos-delay="1000" aos="fade-up">
+                        <div>
+                            <div class="head_feature">
+                                <h1>应用商店让定制更轻松</h1>
+                                <p>多元系统应用，定制、组合，灵活应对教学管理需求</p>
+                            </div>
+                            <div class="head_body">
+                                融合先进教育技术研发多款云应用，汇集成应用商店。可实现软件定制化调用，灵活应对中高考制度变化、德育管理、教务管理及教学质量工程建设等问题。
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="strength">
+            <h1 class="title1 pt30">系统优势</h1>
+            <div class="strength_ul w1200">
+                <ul class="clearfix">
+                    <li>
+                        <i aos-delay="200" aos="fade-up"></i>
+                        <p aos-delay="400" aos="fade-up">理论先进<br />专业性强</p>
+                    </li>
+                    <li>
+                        <i aos-delay="600" aos="fade-up"></i>
+                        <p aos-delay="800" aos="fade-up">业务精细&nbsp;&nbsp;操作简单<br />模块易于拆分</p>
+                    </li>
+                    <li>
+                        <i aos-delay="1000" aos="fade-up"></i>
+                        <p aos-delay="1200" aos="fade-up">采用分布式部署<br />具有高度的内聚性和透明性</p>
+                    </li>
+                    <li>
+                        <i aos-delay="1400" aos="fade-up"></i>
+                        <p aos-delay="1600" aos="fade-up">为学校教学活动提供<br />一个展望外界的窗口</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="module">
+            <h1 class="title1 pt30">模块随心配</h1>
+            <div class="w1200 mt20 clearfix">
+                <div class="module_left">
+
+                </div>
+                <div class="module_right"></div>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <%template src="_footer.html"%>
+    <script type="text/javascript" charset="utf-8" src="<%templateskin%>/js/aos.js"></script>
+    <!--/Footer-->
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 1000,
+            once:false
+        });
+    </script>
+</body>
+</html>

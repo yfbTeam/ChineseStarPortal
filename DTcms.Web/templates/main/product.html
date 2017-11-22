@@ -16,8 +16,12 @@
     <script type="text/javascript">
         $(function(){
             $(".flexSlider").flexslider({
-		        directionNav: false,
-		        pauseOnAction: false
+                animation: "slide",
+                directionNav: true,
+                controlNav: false,
+                pauseOnAction: false,
+                prevText: "<img src='<%templateskin%>/images/prev.png'/>",           //String: Set the text for the "previous" directionNav item
+                nextText: "<img src='<%templateskin%>/images/next.png'/>",
 	        });
         });
     </script>

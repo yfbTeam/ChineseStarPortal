@@ -9,8 +9,8 @@ override protected void OnInit(EventArgs e)
 {
 
 	/* 
-		This page was created by DTcms Template Engine at 2017/11/21 18:51:00.
-		本页面代码由DTcms模板引擎生成于 2017/11/21 18:51:00. 
+		This page was created by DTcms Template Engine at 2017/11/22 14:58:31.
+		本页面代码由DTcms模板引擎生成于 2017/11/22 14:58:31. 
 	*/
 
 	base.OnInit(e);
@@ -27,7 +27,9 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("/templates/main");
 	templateBuilder.Append("/css/layout.css\" rel=\"stylesheet\" type=\"text/css\" />\r\n    <link href=\"");
 	templateBuilder.Append("/templates/main");
-	templateBuilder.Append("/css/animate.css\" rel=\"stylesheet\" type=\"text/css\" />\r\n    <script type=\"text/javascript\" charset=\"utf-8\" src=\"");
+	templateBuilder.Append("/css/animate.css\" rel=\"stylesheet\" type=\"text/css\" />\r\n    <link href=\"");
+	templateBuilder.Append("/templates/main");
+	templateBuilder.Append("/css/aos.css\" rel=\"stylesheet\" type=\"text/css\" />\r\n    <script type=\"text/javascript\" charset=\"utf-8\" src=\"");
 	templateBuilder.Append(Utils.ObjectToStr(config.webpath));
 	templateBuilder.Append("scripts/jquery/jquery-1.11.2.min.js\"></");
 	templateBuilder.Append("script>\r\n    <script type=\"text/javascript\" charset=\"utf-8\" src=\"");
@@ -56,7 +58,10 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("\">关于我们</a></li>\r\n                    <li>\r\n                        <a>产品中心</a>\r\n                        <div class=\"drop-down\">\r\n                            <a href=\"");
 	templateBuilder.Append(linkurl("product"));
 
-	templateBuilder.Append("\">排课吧</a>\r\n                            <a href=\"\">教师成长档案</a>\r\n                            <a href=\"\">智慧校园</a>\r\n                        </div>\r\n                    </li>\r\n                    <li><a  href=\"");
+	templateBuilder.Append("\">排课吧</a>\r\n                            <a href=\"\">教师成长档案</a>\r\n                            <a href=\"");
+	templateBuilder.Append(linkurl("product_qu"));
+
+	templateBuilder.Append("\">区域教育大数据平台</a>\r\n                        </div>\r\n                    </li>\r\n                    <li><a  href=\"");
 	templateBuilder.Append(linkurl("companynews"));
 
 	templateBuilder.Append("\">企业新闻</a></li>\r\n                    <li><a href=\"");
@@ -66,9 +71,11 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("script>");
 
 
-	templateBuilder.Append("\r\n<!--/Header-->\r\n    <div class=\"main\">\r\n        <div class=\"case_bg\">\r\n            <img src=\"");
+	templateBuilder.Append("\r\n<!--/Header-->\r\n    <div class=\"main\">\r\n        <div class=\"case_bg pr\">\r\n            <img src=\"");
 	templateBuilder.Append("/templates/main");
-	templateBuilder.Append("/images/case_bg.jpg\" alt=\"\" />\r\n        </div>\r\n        <ul class=\"w1200 clearfix case_ul mt30 mb30\">\r\n            ");
+	templateBuilder.Append("/images/case_bg.png\" alt=\"\" />\r\n            <div class=\"zi w1200\">\r\n                    <img src=\"");
+	templateBuilder.Append("/templates/main");
+	templateBuilder.Append("/images/case_zi.png\" alt=\"\"  aos-delay=\"200\" aos=\"fade-up\" class=\"case_zi\"/>\r\n            </div>\r\n        </div>\r\n        <ul class=\"w1200 clearfix case_ul mt30 mb30\">\r\n            ");
 	DataTable successCase = get_article_list("case", 55, "status=0");
 
 	foreach(DataRow dr in successCase.Rows)
@@ -119,7 +126,10 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("\r\n  </div>\r\n</div>");
 
 
-	templateBuilder.Append("\r\n<!--/Footer-->\r\n    <script>\r\n        $(function () {\r\n            contentWayPoint('.animate-box', 'fadeIn animated','80%');\r\n        })\r\n    </");
+	templateBuilder.Append("\r\n<!--/Footer-->\r\n    <script type=\"text/javascript\" charset=\"utf-8\" src=\"");
+	templateBuilder.Append("/templates/main");
+	templateBuilder.Append("/js/aos.js\"></");
+	templateBuilder.Append("script>\r\n    <script>\r\n        AOS.init({\r\n            easing: 'ease-out-back',\r\n            duration: 1000,\r\n            once: false\r\n        });\r\n        $(function () {\r\n            contentWayPoint('.animate-box', 'fadeIn animated','80%');\r\n        })\r\n    </");
 	templateBuilder.Append("script>\r\n</body>\r\n</html>\r\n");
 	Response.Write(templateBuilder.ToString());
 }

@@ -8,6 +8,7 @@
     <meta name="description" content="{site.seo_description}" />
     <link href="<%templateskin%>/css/layout.css" rel="stylesheet" type="text/css" />
     <link href="<%templateskin%>/css/animate.css" rel="stylesheet" type="text/css" />
+    <link href="<%templateskin%>/css/aos.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" charset="utf-8" src="{config.webpath}scripts/jquery/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" charset="utf-8" src="<%templateskin%>/js/jquery.flexslider-min.js"></script>
     <script type="text/javascript" charset="utf-8" src="<%templateskin%>/js/jquery.waypoints.min.js"></script>
@@ -26,8 +27,11 @@
 <%template src="_header.html"%>
 <!--/Header-->
     <div class="main">
-        <div class="case_bg">
-            <img src="<%templateskin%>/images/case_bg.jpg" alt="" />
+        <div class="case_bg pr">
+            <img src="<%templateskin%>/images/case_bg.png" alt="" />
+            <div class="zi w1200">
+                    <img src="<%templateskin%>/images/case_zi.png" alt=""  aos-delay="200" aos="fade-up" class="case_zi"/>
+            </div>
         </div>
         <ul class="w1200 clearfix case_ul mt30 mb30">
             <%set DataTable successCase=get_article_list("case", 55, "status=0")%>
@@ -44,7 +48,13 @@
 <!--Footer-->
 <%template src="_footer.html"%>
 <!--/Footer-->
+    <script type="text/javascript" charset="utf-8" src="<%templateskin%>/js/aos.js"></script>
     <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 1000,
+            once: false
+        });
         $(function () {
             contentWayPoint('.animate-box', 'fadeIn animated','80%');
         })
