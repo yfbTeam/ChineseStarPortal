@@ -1,24 +1,26 @@
 ﻿<div class="header">
     <div class="header-wrap">
-        <div class="w1200 clearfix">
-            <a class="logo left" href="<%linkurl("Index")%>">
-                <img src="<%= site.logo%>" />
-            </a>
-            <div class="nav right">
-                <ul class="clearfix">
-                    <li><a  href="<%linkurl("index")%>">首页</a></li>
-                    <li><a  href="<%linkurl("about")%>">关于我们</a></li>
-                    <li>
-                        <a>产品中心</a>
-                        <div class="drop-down">
-                            <a href="<%linkurl("product")%>">排课吧</a>
-                            <a href="">教师成长档案</a>
-                            <a href="<%linkurl("product_qu")%>">区域教育大数据平台</a>
-                        </div>
-                    </li>
-                    <li><a  href="<%linkurl("companynews")%>">企业新闻</a></li>
-                    <li><a href="<%linkurl("case")%>">成功案例</a></li>
-                </ul>
+        <div class="container">
+            <div class="row">
+                <a class="logo col-lg-2 col-xl-2" href="<%linkurl("Index")%>">
+                    <img src="<%= site.logo%>" />
+                </a>
+                <div class="nav col-lg-10 col-xl-10">
+                    <ul class="clearfix right">
+                        <li><a href="<%linkurl("index")%>">首页</a></li>
+                        <li><a href="<%linkurl("about")%>">关于我们</a></li>
+                        <li>
+                            <a>产品中心</a>
+                            <div class="drop-down">
+                                <a href="<%linkurl("product")%>">排课吧</a>
+                                <a href="">教师成长档案</a>
+                                <a href="<%linkurl("product_qu")%>">区域教育大数据平台</a>
+                            </div>
+                        </li>
+                        <li><a href="<%linkurl("companynews")%>">企业新闻</a></li>
+                        <li><a href="<%linkurl("case")%>">成功案例</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

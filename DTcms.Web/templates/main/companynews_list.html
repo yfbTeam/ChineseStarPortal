@@ -5,10 +5,11 @@
     <title>{model.title} - {site.name}</title>
     <meta name="keywords" content="{model.seo_keywords}" />
     <meta name="description" content="{model.seo_description}" />
-    <link href="{config.webpath}css/pagination.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link href="<%templateskin%>/css/layout.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" charset="utf-8" src="{config.webpath}scripts/jquery/jquery-1.11.2.min.js"></script>
-    <script type="text/javascript" charset="utf-8" src="<%templateskin%>/js/common.js"></script>
+    <link href="<%templateskin%>/css/bootstrap-grid.min.css" rel="stylesheet" type="text/css" />
+    <link href="<%templateskin%>/css/animate.css" rel="stylesheet" type="text/css" />
+    <link href="<%templateskin%>/css/aos.css" rel="stylesheet" type="text/css" />  
 </head>
 
 <body>
@@ -21,12 +22,12 @@
             <img src="<%templateskin%>/images/news-bg_02.jpg" alt="" />
         </div>
         <div class="ntitle">
-            <div class="w1200">
+            <div class="container">
                 <%set string category_nav=get_category_menu("companynews_list", category_id)%>
                 <span>当前位置：<a href="<%linkurl("companynews")%>" style="color:#2293cb;">企业新闻</a>{category_nav}</span>
             </div>
         </div>
-        <div class="list-auto w1200">
+        <div class="list-auto container">
             <ul class="n-list">
                 <%set DataTable newsList=get_article_list(channel, category_id, pagesize, page, "status=0", out totalcount, out pagelist, "news_list", category_id, "__id__")%><!--取得一个分页DataTable-->
                 <%foreach(DataRow dr in newsList.Rows)%>
@@ -57,5 +58,12 @@
     <!--Footer-->
     <%template src="_footer.html"%>
     <!--/Footer-->
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script type="text/javascript" charset="utf-8" src="<%templateskin%>/js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="<%templateskin%>/js/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="<%templateskin%>/js/common.js"></script>
+    <script type="text/javascript" charset="utf-8" src="<%templateskin%>/js/aos.js"></script>
 </body>
 </html>

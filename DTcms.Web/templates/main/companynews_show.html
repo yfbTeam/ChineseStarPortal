@@ -6,9 +6,11 @@
     <title>{model.title} - {category_title} - {site.name}</title>
     <meta content="{model.seo_keywords}" name="keywords" />
     <meta content="{model.seo_description}" name="description" />
-    <link href="<%templateskin%>/css/layout.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" charset="utf-8" src="{config.webpath}scripts/jquery/jquery-1.11.2.min.js"></script>
-    <script type="text/javascript" charset="utf-8" src="<%templateskin%>/js/common.js"></script>
+    <<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<link href="<%templateskin%>/css/layout.css" rel="stylesheet" type="text/css" />
+<link href="<%templateskin%>/css/bootstrap-grid.min.css" rel="stylesheet" type="text/css" />
+<link href="<%templateskin%>/css/animate.css" rel="stylesheet" type="text/css" />
+<link href="<%templateskin%>/css/aos.css" rel="stylesheet" type="text/css" />  
 </head>
 
 <body>
@@ -21,13 +23,13 @@
             <img src="<%templateskin%>/images/news-bg_02.jpg" alt="" />
         </div>
         <div class="ntitle">
-            <div class="w1200">
+            <div class="container">
                
                 <span>当前位置：<a href="<%linkurl("companynews")%>" style="color:#2293cb;">企业新闻</a> &gt; <a>新闻详情</a></span>
             </div>
         </div>
         <!--左边-->
-        <div class="list-auto w1200" style="padding:20px 0px;">
+        <div class="list-auto container" style="padding:20px 15px;">
             <div class="meta">
                 <h1>{model.title}</h1>
                 <p class="meta-info">
@@ -47,5 +49,12 @@
     <!--Footer-->
     <%template src="_footer.html"%>
     <!--/Footer-->
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script type="text/javascript" charset="utf-8" src="<%templateskin%>/js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="<%templateskin%>/js/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="<%templateskin%>/js/common.js"></script>
+    <script type="text/javascript" charset="utf-8" src="<%templateskin%>/js/aos.js"></script>
 </body>
 </html>
