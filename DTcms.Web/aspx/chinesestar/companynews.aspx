@@ -9,8 +9,8 @@ override protected void OnInit(EventArgs e)
 {
 
 	/* 
-		This page was created by DTcms Template Engine at 2017/11/23 11:27:30.
-		本页面代码由DTcms模板引擎生成于 2017/11/23 11:27:30. 
+		This page was created by DTcms Template Engine at 2017/11/23 12:54:18.
+		本页面代码由DTcms模板引擎生成于 2017/11/23 12:54:18. 
 	*/
 
 	base.OnInit(e);
@@ -63,7 +63,7 @@ override protected void OnInit(EventArgs e)
 
 	templateBuilder.Append("\r\n<!--/Header-->\r\n<div class=\"main\">\r\n    <div class=\"case_bg\">\r\n        <img src=\"");
 	templateBuilder.Append("/templates/main");
-	templateBuilder.Append("/images/news_bg.jpg\" alt=\"\" />\r\n    </div>\r\n    <div class=\"pb75\">\r\n        <h1 class=\"title pt30\">企业动态</h1>\r\n        <div class=\"container clearfix mt30\">\r\n            <div class=\"row\">\r\n                <div class=\"news_left col-lg-6 col-xl-6 animate-box\">\r\n                    ");
+	templateBuilder.Append("/images/news_bg.jpg\" alt=\"\" />\r\n    </div>\r\n    <div class=\"pb75\">\r\n        <h1 class=\"title pt30\">企业动态</h1>\r\n        <div class=\"container clearfix mt30\">\r\n            <div class=\"row\">\r\n                <div class=\"news_left col-lg-6 col-xl-6\" aos-delay=\"200\" aos=\"fade-up\">\r\n                    ");
 	DataTable companynews1 = get_article_list("companynews", 57, 1, "status=0");
 
 	foreach(DataRow dr in companynews1.Rows)
@@ -89,7 +89,7 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("\r\n\r\n                        <h2>" + Utils.ObjectToStr(dr["title"]) + "</h2>\r\n                        <div class=\"desc\">\r\n                            " + Utils.ObjectToStr(dr["zhaiyao"]) + "\r\n                        </div>\r\n                    </a>\r\n                    ");
 	}	//end for if
 
-	templateBuilder.Append("\r\n\r\n                </div>\r\n                <div class=\"news_right col-lg-6 col-xl-6 animate-box\">\r\n                    <ul>\r\n                        ");
+	templateBuilder.Append("\r\n\r\n                </div>\r\n                <div class=\"news_right col-lg-6 col-xl-6\">\r\n                    <ul>\r\n                        ");
 	DataTable companynews2 = get_article_list("companynews", 57, 4, "status=0");
 
 	int hotdr1__loop__id=0;
@@ -98,7 +98,10 @@ override protected void OnInit(EventArgs e)
 		hotdr1__loop__id++;
 
 
-	templateBuilder.Append("\r\n                        <li>\r\n                            <a href=\"");
+	templateBuilder.Append("\r\n                        <li aos-delay=\"");
+	templateBuilder.Append(hotdr1__loop__id.ToString());
+
+	templateBuilder.Append("00\" aos=\"fade-up\">\r\n                            <a href=\"");
 	templateBuilder.Append(linkurl("companynews_show",Utils.ObjectToStr(hotdr1["id"])));
 
 	templateBuilder.Append("\r\n                                \" target=\"_blank\" class=\"clearfix\">\r\n                                <span class=\"left num\">0");
@@ -109,10 +112,10 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("</span>\r\n                                    </p>\r\n                                    <p class=\"desc\">" + Utils.ObjectToStr(hotdr1["zhaiyao"]) + "</p>\r\n                                </div>\r\n                            </a>\r\n                        </li>\r\n                        ");
 	}	//end for if
 
-	templateBuilder.Append("\r\n                    </ul>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div class=\"more container animate-box\"><a target=\"_blank\" href=\"");
+	templateBuilder.Append("\r\n                    </ul>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div class=\"more container \" aos-delay=\"200\" aos=\"fade-up\"><a target=\"_blank\" href=\"");
 	templateBuilder.Append(linkurl("companynews_list",57));
 
-	templateBuilder.Append("\">查看更多</a></div>\r\n    </div>\r\n    <div class=\"pb75\" style=\"background:#f2f2f4;\">\r\n        <h1 class=\"title pt30\">产品动态</h1>\r\n        <div class=\"container clearfix mt30\">\r\n            <div class=\"row\">\r\n                <div class=\"news_left col-lg-6 col-xl-6 animate-box\">\r\n                    ");
+	templateBuilder.Append("\">查看更多</a></div>\r\n    </div>\r\n    <div class=\"pb75\" style=\"background:#f2f2f4;\">\r\n        <h1 class=\"title pt30\">产品动态</h1>\r\n        <div class=\"container clearfix mt30\">\r\n            <div class=\"row\">\r\n                <div class=\"news_left col-lg-6 col-xl-6\" aos-delay=\"200\" aos=\"fade-up\">\r\n                    ");
 	DataTable productnews1 = get_article_list("companynews", 58, 1, "status=0");
 
 	foreach(DataRow dr in productnews1.Rows)
@@ -138,7 +141,7 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("\r\n                        <h2>" + Utils.ObjectToStr(dr["title"]) + "</h2>\r\n                        <div class=\"desc\">\r\n                            " + Utils.ObjectToStr(dr["zhaiyao"]) + "\r\n                        </div>\r\n                        ");
 	}	//end for if
 
-	templateBuilder.Append("\r\n                    </a>\r\n                </div>\r\n                <div class=\"news_right col-lg-6 col-xl-6 news_right1 animate-box\">\r\n                    <ul>\r\n                        ");
+	templateBuilder.Append("\r\n                    </a>\r\n                </div>\r\n                <div class=\"news_right col-lg-6 col-xl-6 news_right1\">\r\n                    <ul>\r\n                        ");
 	DataTable productnews2 = get_article_list("companynews", 58, 4, "status=0");
 
 	int hotdr2__loop__id=0;
@@ -147,7 +150,10 @@ override protected void OnInit(EventArgs e)
 		hotdr2__loop__id++;
 
 
-	templateBuilder.Append("\r\n                        <li>\r\n                            <a href=\"");
+	templateBuilder.Append("\r\n                        <li aos-delay=\"");
+	templateBuilder.Append(hotdr1__loop__id.ToString());
+
+	templateBuilder.Append("00\" aos=\"fade-up\">\r\n                            <a href=\"");
 	templateBuilder.Append(linkurl("companynews_show",Utils.ObjectToStr(hotdr2["id"])));
 
 	templateBuilder.Append("\r\n                                \" target=\"_blank\" class=\"clearfix\">\r\n                                <span class=\"left num\">0");
@@ -158,7 +164,7 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("</span>\r\n                                    </p>\r\n                                    <p class=\"desc\">" + Utils.ObjectToStr(hotdr2["zhaiyao"]) + "</p>\r\n                                </div>\r\n                            </a>\r\n                        </li>\r\n                        ");
 	}	//end for if
 
-	templateBuilder.Append("\r\n                    </ul>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div class=\"more container animate-box\"><a target=\"_blank\" href=\"");
+	templateBuilder.Append("\r\n                    </ul>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div class=\"more container\" aos-delay=\"200\" aos=\"fade-up\"><a target=\"_blank\" href=\"");
 	templateBuilder.Append(linkurl("companynews_list",58));
 
 	templateBuilder.Append("\">查看更多</a></div>\r\n    </div>\r\n</div>\r\n<!--Footer-->\r\n");
@@ -215,7 +221,7 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("script>\r\n    <script type=\"text/javascript\" charset=\"utf-8\" src=\"");
 	templateBuilder.Append("/templates/main");
 	templateBuilder.Append("/js/aos.js\"></");
-	templateBuilder.Append("script>\r\n<!--/Footer-->\r\n    <script>\r\n        $(function () {\r\n            contentWayPoint('.animate-box', 'fadeInUp animated','90%');\r\n        })\r\n    </");
+	templateBuilder.Append("script>\r\n<!--/Footer-->\r\n    <script>\r\n        AOS.init({\r\n            easing: 'ease-out-back',\r\n            duration: 1000,\r\n            once: false\r\n        });\r\n    </");
 	templateBuilder.Append("script>\r\n</body>\r\n</html>\r\n");
 	Response.Write(templateBuilder.ToString());
 }

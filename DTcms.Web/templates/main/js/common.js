@@ -12,8 +12,6 @@ $(function () {
     }
     $(window).resize(initHegiht);
     initHegiht();
-    
-   
 })
 function contentWayPoint(obj, animate,offset) {
 
@@ -40,6 +38,9 @@ function contentWayPoint(obj, animate,offset) {
         }
     }, { offset: offset||'85%' });
 };
+function ComputedDelay(id,delay) {
+    return Number(id) * Number(delay)
+}
 /* 
 *作者：一些事情
 *时间：2015-4-17

@@ -91,7 +91,7 @@ width:150px;height:150px;
     display:block;
 }
 .drop-down{
-    position:absolute;width:100%;top:100%;background:#579DCF;z-index:999;display:none;
+    position:absolute;width:100%;top:100%;background:#6CA8D1;z-index:999;display:none;
 }
 .drop-down a{
     height:40px;display:block;line-height:40px;color:#fff;text-align:center;font-size:16px;
@@ -468,7 +468,7 @@ Characteristic_left{
     width:50%;
 }
 .Characteristic_right{
-    background:url(../images/banyuan_03.png) no-repeat;height:472px;position:absolute;left:420px;width:65%;top:-32px;
+    background:url(../images/banyuan_03.png) no-repeat;height:472px;position:absolute;left:420px;width:70%;top:-32px;
 }
 .Characteristic_right ul{
     margin-top:15px;
@@ -486,25 +486,25 @@ Characteristic_left{
     margin-left:70px;
 }
 .Characteristic_right ul li:nth-child(2){
-    margin-left:114px;
+    margin-left:116px;
 }
 .Characteristic_right ul li:nth-child(3){
-    margin-left:143px;
+    margin-left:145px;
 }
 .Characteristic_right ul li:nth-child(4){
-    margin-left:154px;
+    margin-left:156px;
 }
 .Characteristic_right ul li:nth-child(5){
-    margin-left:154px;
+    margin-left:156px;
 }
 .Characteristic_right ul li:nth-child(6){
-    margin-left:140px;
+    margin-left:142px;
 }
 .Characteristic_right ul li:nth-child(7){
-    margin-left:111px;
+    margin-left:113px;
 }
 .Characteristic_right ul li:nth-child(8){
-    margin-left:58px;
+    margin-left:62px;
 }
 .Function{
     width:100%;height:690px;background:url(../images/paikeba_04.png) no-repeat center center;background-size:cover;overflow:hidden;

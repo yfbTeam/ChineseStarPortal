@@ -30,7 +30,7 @@
         <h1 class="title pt30">企业动态</h1>
         <div class="container clearfix mt30">
             <div class="row">
-                <div class="news_left col-lg-6 col-xl-6 animate-box">
+                <div class="news_left col-lg-6 col-xl-6" aos-delay="200" aos="fade-up">
                     <%set DataTable companynews1=get_article_list("companynews", 57, 1, "status=0")%>
                     <%foreach(DataRow dr in companynews1.Rows)%>
                     <a href="<%linkurl("companynews_show",{dr[id]})%>
@@ -53,11 +53,11 @@
                     <%/foreach%>
 
                 </div>
-                <div class="news_right col-lg-6 col-xl-6 animate-box">
+                <div class="news_right col-lg-6 col-xl-6">
                     <ul>
                         <%set DataTable companynews2=get_article_list("companynews", 57, 4, "status=0")%>
                         <%loop hotdr1 companynews2%>
-                        <li>
+                        <li aos-delay="<%= hotdr1__loop__id%>00" aos="fade-up">
                             <a href="<%linkurl("companynews_show",{hotdr1[id]})%>
                                 " target="_blank" class="clearfix">
                                 <span class="left num">0<%= hotdr1__loop__id%></span>
@@ -75,13 +75,13 @@
                 </div>
             </div>
         </div>
-        <div class="more container animate-box"><a target="_blank" href="<%linkurl("companynews_list",{57})%>">查看更多</a></div>
+        <div class="more container " aos-delay="200" aos="fade-up"><a target="_blank" href="<%linkurl("companynews_list",{57})%>">查看更多</a></div>
     </div>
     <div class="pb75" style="background:#f2f2f4;">
         <h1 class="title pt30">产品动态</h1>
         <div class="container clearfix mt30">
             <div class="row">
-                <div class="news_left col-lg-6 col-xl-6 animate-box">
+                <div class="news_left col-lg-6 col-xl-6" aos-delay="200" aos="fade-up">
                     <%set DataTable productnews1=get_article_list("companynews", 58, 1, "status=0")%>
                     <%foreach(DataRow dr in productnews1.Rows)%>
                     <a href="<%linkurl("companynews_show",{dr[id]})%>
@@ -102,11 +102,11 @@
                         <%/foreach%>
                     </a>
                 </div>
-                <div class="news_right col-lg-6 col-xl-6 news_right1 animate-box">
+                <div class="news_right col-lg-6 col-xl-6 news_right1">
                     <ul>
                         <%set DataTable productnews2=get_article_list("companynews", 58, 4, "status=0")%>
                         <%loop hotdr2 productnews2%>
-                        <li>
+                        <li aos-delay="<%= hotdr1__loop__id%>00" aos="fade-up">
                             <a href="<%linkurl("companynews_show",{hotdr2[id]})%>
                                 " target="_blank" class="clearfix">
                                 <span class="left num">0<%=hotdr2__loop__id%></span>
@@ -124,7 +124,7 @@
                 </div>
             </div>
         </div>
-        <div class="more container animate-box"><a target="_blank" href="<%linkurl("companynews_list",{58})%>">查看更多</a></div>
+        <div class="more container" aos-delay="200" aos="fade-up"><a target="_blank" href="<%linkurl("companynews_list",{58})%>">查看更多</a></div>
     </div>
 </div>
 <!--Footer-->
@@ -138,9 +138,11 @@
     <script type="text/javascript" charset="utf-8" src="<%templateskin%>/js/aos.js"></script>
 <!--/Footer-->
     <script>
-        $(function () {
-            contentWayPoint('.animate-box', 'fadeInUp animated','90%');
-        })
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 1000,
+            once: false
+        });
     </script>
 </body>
 </html>
