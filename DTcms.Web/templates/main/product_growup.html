@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="renderer" content="webkit" />
+    <title>{site.seo_title}</title>
+    <meta name="keywords" content="{site.seo_keyword}" />
+    <meta name="description" content="{site.seo_description}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="<%templateskin%>/css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="<%templateskin%>/css/bootstrap-grid.min.css" rel="stylesheet" type="text/css" />
+    <link href="<%templateskin%>/css/animate.css" rel="stylesheet" type="text/css" />
+    <link href="<%templateskin%>/css/aos.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <!--Header-->
+    <%template src="_header.html"%>
+    <!--/Header-->
+    <div class="main">
+        <div class="case_bg pr">
+            <img src="<%templateskin%>/images/growup_01.png" />
+            <div class="zi container">
+                <img src="<%templateskin%>/images/growup_title.png" class="col-lg-4 col-xl-4 growup_zi1" style="position:absolute"  aos-delay="200" aos="fade-up" />
+                <img src="<%templateskin%>/images/growup_title2.png" class="col-lg-8 col-xl-8 growup_zi2" style="position:absolute" aos-delay="400" aos="fade-up"/>
+                <div class="row" style="margin-top:26%">
+                    <div class="col-lg-6 col-xl-6">
+                        <button type="button" class="btn btn1 right" style="margin-right:40px;" aos-delay="600" aos="fade-right">教学业绩管理</button>
+                    </div>
+                    <div class="col-lg-6 col-xl-6">
+                        <button type="button" class="btn btn2 left" style="margin-left:40px;" aos-delay="600" aos="fade-left">教学质量评价</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <%template src="_footer.html"%>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script type="text/javascript" charset="utf-8" src="<%templateskin%>/js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="<%templateskin%>/js/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="<%templateskin%>/js/common.js"></script>
+    <script type="text/javascript" charset="utf-8" src="<%templateskin%>/js/aos.js"></script>
+    <!--/Footer-->
+    <script>
+
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 1000,
+            once:false
+        });
+    </script>
+</body>
+</html>
