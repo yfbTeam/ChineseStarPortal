@@ -18,8 +18,11 @@
     <!--/Header-->
 
     <div class="main">
-        <div class="news-bg">
-            <img src="<%templateskin%>/images/news-bg_02.jpg" alt="" />
+        <div class="case_bg pr">
+            <img src="<%templateskin%>/images/news_bg_02.png" alt="" />
+            <div class="zi container">
+                <img src="<%templateskin%>/images/news.png" alt="" aos-delay="200" aos="fade-up" class="case_zi" />
+            </div>
         </div>
         <div class="ntitle">
             <div class="container">
@@ -65,5 +68,12 @@
     <script type="text/javascript" charset="utf-8" src="<%templateskin%>/js/jquery.waypoints.min.js"></script>
     <script type="text/javascript" charset="utf-8" src="<%templateskin%>/js/common.js"></script>
     <script type="text/javascript" charset="utf-8" src="<%templateskin%>/js/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 1000,
+            once: false
+        });
+    </script>
 </body>
 </html>

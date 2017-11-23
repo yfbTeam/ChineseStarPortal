@@ -9,8 +9,8 @@ override protected void OnInit(EventArgs e)
 {
 
 	/* 
-		This page was created by DTcms Template Engine at 2017/11/23 12:54:18.
-		本页面代码由DTcms模板引擎生成于 2017/11/23 12:54:18. 
+		This page was created by DTcms Template Engine at 2017/11/23 15:10:55.
+		本页面代码由DTcms模板引擎生成于 2017/11/23 15:10:55. 
 	*/
 
 	base.OnInit(e);
@@ -61,9 +61,11 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("script>");
 
 
-	templateBuilder.Append("\r\n<!--/Header-->\r\n<div class=\"main\">\r\n    <div class=\"case_bg\">\r\n        <img src=\"");
+	templateBuilder.Append("\r\n<!--/Header-->\r\n<div class=\"main\">\r\n    <div class=\"case_bg pr\">\r\n        <img src=\"");
 	templateBuilder.Append("/templates/main");
-	templateBuilder.Append("/images/news_bg.jpg\" alt=\"\" />\r\n    </div>\r\n    <div class=\"pb75\">\r\n        <h1 class=\"title pt30\">企业动态</h1>\r\n        <div class=\"container clearfix mt30\">\r\n            <div class=\"row\">\r\n                <div class=\"news_left col-lg-6 col-xl-6\" aos-delay=\"200\" aos=\"fade-up\">\r\n                    ");
+	templateBuilder.Append("/images/news_bg_02.png\" alt=\"\" />\r\n        <div class=\"zi container\">\r\n            <img src=\"");
+	templateBuilder.Append("/templates/main");
+	templateBuilder.Append("/images/news.png\" alt=\"\" aos-delay=\"200\" aos=\"fade-up\" class=\"case_zi\" />\r\n        </div>\r\n    </div>\r\n    <div class=\"pb75\">\r\n        <h1 class=\"title pt30\">企业动态</h1>\r\n        <div class=\"container clearfix mt30\">\r\n            <div class=\"row\">\r\n                <div class=\"news_left col-lg-6 col-xl-6\" aos-delay=\"200\" aos=\"fade-up\">\r\n                    ");
 	DataTable companynews1 = get_article_list("companynews", 57, 1, "status=0");
 
 	foreach(DataRow dr in companynews1.Rows)

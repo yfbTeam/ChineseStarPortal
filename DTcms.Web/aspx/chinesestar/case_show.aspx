@@ -9,8 +9,8 @@ override protected void OnInit(EventArgs e)
 {
 
 	/* 
-		This page was created by DTcms Template Engine at 2017/11/23 12:54:18.
-		本页面代码由DTcms模板引擎生成于 2017/11/23 12:54:18. 
+		This page was created by DTcms Template Engine at 2017/11/23 15:10:55.
+		本页面代码由DTcms模板引擎生成于 2017/11/23 15:10:55. 
 	*/
 
 	base.OnInit(e);
@@ -68,9 +68,11 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("script>");
 
 
-	templateBuilder.Append("\r\n    <!--/Header-->\r\n\r\n    <div class=\"main\">\r\n        <div class=\"news-bg\">\r\n            <img src=\"");
+	templateBuilder.Append("\r\n    <!--/Header-->\r\n\r\n    <div class=\"main\">\r\n        <div class=\"case_bg pr\">\r\n            <img src=\"");
 	templateBuilder.Append("/templates/main");
-	templateBuilder.Append("/images/news-bg_02.jpg\" alt=\"\" />\r\n        </div>\r\n        <div class=\"ntitle\">\r\n            <div class=\"container\">\r\n\r\n                <span>当前位置：<a href=\"");
+	templateBuilder.Append("/images/case_bg.png\" alt=\"\" />\r\n            <div class=\"zi container\">\r\n                <img src=\"");
+	templateBuilder.Append("/templates/main");
+	templateBuilder.Append("/images/case_zi.png\" alt=\"\" aos-delay=\"200\" aos=\"fade-up\" class=\"case_zi\" />\r\n            </div>\r\n        </div>\r\n        <div class=\"ntitle\">\r\n            <div class=\"container\">\r\n\r\n                <span>当前位置：<a href=\"");
 	templateBuilder.Append(linkurl("case"));
 
 	templateBuilder.Append("\" style=\"color:#2293cb;\">成功案例</a> &gt; <a>案例详情</a></span>\r\n            </div>\r\n        </div>\r\n        <!--左边-->\r\n        <div class=\"list-auto container\" style=\"padding:20px 15px;\">\r\n            <div class=\"meta\">\r\n                <h1>");
@@ -140,6 +142,7 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("script>\r\n    <script type=\"text/javascript\" charset=\"utf-8\" src=\"");
 	templateBuilder.Append("/templates/main");
 	templateBuilder.Append("/js/aos.js\"></");
+	templateBuilder.Append("script>\r\n    <script>\r\n        AOS.init({\r\n            easing: 'ease-out-back',\r\n            duration: 1000,\r\n            once: false\r\n        });\r\n    </");
 	templateBuilder.Append("script>\r\n</body>\r\n</html>");
 	Response.Write(templateBuilder.ToString());
 }
