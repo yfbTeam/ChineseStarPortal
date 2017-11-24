@@ -1,7 +1,0 @@
-C:\project\work\ChineseStarPortal\DTcms.DBUtility\bin\Release\DTcms.DBUtility.dll
-C:\project\work\ChineseStarPortal\DTcms.DBUtility\bin\Release\DTcms.DBUtility.pdb
-C:\project\work\ChineseStarPortal\DTcms.DBUtility\bin\Release\DTcms.Common.dll
-C:\project\work\ChineseStarPortal\DTcms.DBUtility\bin\Release\DTcms.Common.pdb
-C:\project\work\ChineseStarPortal\DTcms.DBUtility\obj\Release\DTcms.DBUtility.csprojResolveAssemblyReference.cache
-C:\project\work\ChineseStarPortal\DTcms.DBUtility\obj\Release\DTcms.DBUtility.dll
-C:\project\work\ChineseStarPortal\DTcms.DBUtility\obj\Release\DTcms.DBUtility.pdb

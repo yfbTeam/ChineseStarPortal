@@ -1,5 +1,0 @@
-C:\project\work\ChineseStarPortal\DTcms.Common\bin\Release\DTcms.Common.dll
-C:\project\work\ChineseStarPortal\DTcms.Common\bin\Release\DTcms.Common.pdb
-C:\project\work\ChineseStarPortal\DTcms.Common\obj\Release\DTcms.Common.csprojResolveAssemblyReference.cache
-C:\project\work\ChineseStarPortal\DTcms.Common\obj\Release\DTcms.Common.dll
-C:\project\work\ChineseStarPortal\DTcms.Common\obj\Release\DTcms.Common.pdb
