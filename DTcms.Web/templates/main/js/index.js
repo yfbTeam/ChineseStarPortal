@@ -88,7 +88,6 @@ $('#count-number').data('countToOptions', {
 });
 $(window).waypoint(function () {
     $('.number').each(count);
-
 })
 // start all the timers
 
