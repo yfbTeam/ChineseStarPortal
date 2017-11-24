@@ -86,9 +86,12 @@ $('#count-number').data('countToOptions', {
         return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
     }
 });
+$(window).waypoint(function () {
+    $('.number').each(count);
 
+})
 // start all the timers
-$('.number').each(count);
+
 
 function count(options) {
     var $this = $(this);

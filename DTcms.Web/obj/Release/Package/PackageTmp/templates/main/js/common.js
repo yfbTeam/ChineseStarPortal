@@ -6,13 +6,48 @@ $(function () {
     function initHegiht() {
         var header = $('.header'), footer = $('.footer'), winHeight = $(window).height();;
         if (header || footer) {
-            var curHegiht = winHeight - header.height() - footer.height() - 17 + 'px';
+            var curHegiht = winHeight - header.height() - footer.height() + 'px';
             $('.main').css({ 'minHeight': curHegiht })
         }
     }
     $(window).resize(initHegiht);
-    initHegiht()
+    initHegiht();
 })
+function hover(obj, animate) {
+    $(obj).hover(function () {
+        $(this).addClass(animate)
+    }, function () {
+        $(this).removeClass(animate)
+    })
+}
+function contentWayPoint(obj, animate,offset) {
+
+    $(obj).waypoint(function (direction) {
+
+        if (direction === 'down' && !$(this.element).hasClass('animated')) {
+
+            //$('body .animate-box').removeClass('fadeInUp animated')
+            $(this.element).addClass('item-animate');
+            setTimeout(function () {
+
+                $('body ' + obj + '.item-animate').each(function (k) {
+                    var el = $(this);
+                    setTimeout(function () {
+
+                        el.addClass(animate);
+
+                        el.removeClass('item-animate');
+                    }, k * 200, 'easeInOutExpo');
+                });
+
+            }, 100);
+
+        }
+    }, { offset: offset||'85%' });
+};
+function ComputedDelay(id,delay) {
+    return Number(id) * Number(delay)
+}
 /* 
 *作者：一些事情
 *时间：2015-4-17

@@ -417,6 +417,7 @@
     <Content Include="editor\themes\qq\qq.css" />
     <Content Include="editor\themes\simple\simple.css" />
     <Content Include="favicon.ico" />
+    <Content Include="html\chinesestar\login.html" />
     <Content Include="images\oauth\feixin.png" />
     <Content Include="images\oauth\kaixin.png" />
     <Content Include="images\oauth\qq.png" />
@@ -481,6 +482,7 @@
     <Content Include="templates\main\css\lightbox.css" />
     <Content Include="templates\main\css\style.css" />
     <Content Include="templates\main\error.html" />
+    <Content Include="templates\main\images\1.png" />
     <Content Include="templates\main\images\about-bg_02.png" />
     <Content Include="templates\main\images\about.jpg" />
     <Content Include="templates\main\images\about.png" />
@@ -1194,7 +1196,6 @@
     <Content Include="xmlconfig\urls.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="html\chinesestar\" />
     <Folder Include="plugins\" />
   </ItemGroup>
   <ItemGroup>

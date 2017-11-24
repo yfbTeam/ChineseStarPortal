@@ -752,3 +752,32 @@ Characteristic_left{
 .btn2{
     background:rgba(90,190,86,1);box-shadow:0px 0px 20px rgba(90,190,86,0.8);
 }
+.sort{
+    padding-bottom:20px;
+}
+.sort img{
+    margin:50px auto 0px auto;display:block;
+}
+
+.sort p{
+    font-size:22px;color:#484961;line-height:55px;text-align:center;
+}
+.growuo_title{
+    border-bottom:1px solid #b2b3b5;height:25px;
+}
+.growuo_title span{
+    height:30px;display:block;text-align:center;color:#b2b3b5;font-size:22px;background:#fff;position:absolute;left:0;top:0;bottom:0;margin:5px auto auto auto;right:0;font-weight:normal;
+}
+.growup_module .row{
+    padding:80px 0px;
+}
+
+.growup_module h3{
+    font-size:32px;color:#2293cb;font-weight:normal;line-height:55px;margin-top:20px;
+}
+.growup_module p{
+    line-height:40px;color:#666666;font-size:18px;
+}
+.cursor{
+    cursor:pointer;
+}

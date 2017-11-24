@@ -9,8 +9,8 @@ override protected void OnInit(EventArgs e)
 {
 
 	/* 
-		This page was created by DTcms Template Engine at 2017/11/23 16:57:36.
-		本页面代码由DTcms模板引擎生成于 2017/11/23 16:57:36. 
+		This page was created by DTcms Template Engine at 2017/11/24 12:12:37.
+		本页面代码由DTcms模板引擎生成于 2017/11/24 12:12:37. 
 	*/
 
 	base.OnInit(e);
@@ -175,7 +175,7 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("script>\r\n    <script type=\"text/javascript\" charset=\"utf-8\" src=\"");
 	templateBuilder.Append("/templates/main");
 	templateBuilder.Append("/js/index.js\"></");
-	templateBuilder.Append("script>\r\n    \r\n    <script>\r\n\r\n        $(function () {\r\n	        $(\".focusbox\").flexslider({\r\n		        directionNav: false,\r\n		        pauseOnAction: false\r\n	        });\r\n            contentWayPoint('.animate-box', 'fadeInUp animated');\r\n            contentWayPoint('.animate-box1', 'fadeIn animated');\r\n        })\r\n\r\n    </");
+	templateBuilder.Append("script>\r\n    \r\n    <script>\r\n\r\n        $(function () {\r\n	        $(\".focusbox\").flexslider({\r\n		        directionNav: false,\r\n		        pauseOnAction: false\r\n	        });\r\n            contentWayPoint('.animate-box', 'fadeInUp animated');\r\n            contentWayPoint('.animate-box1', 'fadeIn animated');\r\n           \r\n        })\r\n\r\n    </");
 	templateBuilder.Append("script>\r\n</body>\r\n</html>\r\n");
 	Response.Write(templateBuilder.ToString());
 }

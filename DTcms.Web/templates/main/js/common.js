@@ -13,6 +13,13 @@ $(function () {
     $(window).resize(initHegiht);
     initHegiht();
 })
+function hover(obj, animate) {
+    $(obj).hover(function () {
+        $(this).addClass(animate)
+    }, function () {
+        $(this).removeClass(animate)
+    })
+}
 function contentWayPoint(obj, animate,offset) {
 
     $(obj).waypoint(function (direction) {
