@@ -9,8 +9,8 @@ override protected void OnInit(EventArgs e)
 {
 
 	/* 
-		This page was created by DTcms Template Engine at 2017/11/24 12:12:37.
-		本页面代码由DTcms模板引擎生成于 2017/11/24 12:12:37. 
+		This page was created by DTcms Template Engine at 2017/12/1 13:06:11.
+		本页面代码由DTcms模板引擎生成于 2017/12/1 13:06:11. 
 	*/
 
 	base.OnInit(e);
@@ -46,13 +46,13 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("script>\r\n<script type=\"text/javascript\">\r\n$(function(){\r\n	tabs('#oauthTabs','click');\r\n	//初始化表单1\r\n	AjaxInitForm('#bindForm', '#btnSubmit1', 0, '#turl');\r\n	//初始化表单2\r\n	AjaxInitForm('#oauthForm', '#btnSubmit2', 0, '#turl');\r\n});\r\n</");
 	templateBuilder.Append("script>\r\n</head>\r\n\r\n<body>\r\n<!--Header-->\r\n");
 
-	templateBuilder.Append("<div class=\"header\">\r\n    <div class=\"header-wrap\">\r\n        <div class=\"container\">\r\n            <div class=\"row\">\r\n                <a class=\"logo col-lg-2 col-xl-2\" href=\"");
+	templateBuilder.Append("<div class=\"header\">\r\n    <div class=\"header-wrap\">\r\n        <div class=\"container\">\r\n            <div class=\"row\">\r\n                <a class=\"logo col-lg-2 col-xl-2 col-10\" href=\"");
 	templateBuilder.Append(linkurl("Index"));
 
 	templateBuilder.Append("\">\r\n                    <img src=\"");
 	templateBuilder.Append(site.logo.ToString());
 
-	templateBuilder.Append("\" />\r\n                </a>\r\n                <div class=\"nav col-lg-10 col-xl-10\">\r\n                    <ul class=\"clearfix right\">\r\n                        <li><a href=\"");
+	templateBuilder.Append("\" />\r\n                </a>\r\n                <div class=\"toggle col-2\"></div>\r\n                <div class=\"nav col-lg-10 col-xl-10\">\r\n                    <ul class=\"clearfix right\">\r\n                        <li><a href=\"");
 	templateBuilder.Append(linkurl("index"));
 
 	templateBuilder.Append("\">首页</a></li>\r\n                        <li><a href=\"");
@@ -85,7 +85,7 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append(Utils.ObjectToStr(turl));
 	templateBuilder.Append("\" />\r\n    </div>\r\n    \r\n  </div>\r\n</div>\r\n\r\n<!--Footer-->\r\n");
 
-	templateBuilder.Append("<div class=\"footer\">\r\n  <div class=\"footer-header\">\r\n      <div class=\"container clearfix\">\r\n          <div class=\"row\">\r\n              <div class=\"footer-content col-lg-4 col-xl-4 \">\r\n                  <div class=\"nav-footer clearfix\">\r\n                      <a href=\"");
+	templateBuilder.Append("<div class=\"footer\">\r\n  <div class=\"footer-header\">\r\n      <div class=\"container clearfix\">\r\n          <div class=\"row\">\r\n              <div class=\"footer-content col-lg-4 col-xl-4 col-md-4\">\r\n                  <div class=\"nav-footer clearfix\">\r\n                      <a href=\"");
 	templateBuilder.Append(linkurl("index"));
 
 	templateBuilder.Append("\">首页</a>\r\n                      <a href=\"");
@@ -100,11 +100,11 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("\">企业新闻</a>\r\n                      <a href=\"");
 	templateBuilder.Append(linkurl("case"));
 
-	templateBuilder.Append("\">成功案例</a>\r\n                  </div>\r\n              </div>\r\n              <div class=\"footer-content  col-lg-4 col-xl-4 footer-logo \">\r\n                  <img src=\"");
+	templateBuilder.Append("\">成功案例</a>\r\n                  </div>\r\n              </div>\r\n              <div class=\"footer-content  col-lg-4 col-xl-4 footer-logo col-md-4\">\r\n                  <img src=\"");
 	templateBuilder.Append("/templates/main");
-	templateBuilder.Append("/images/logo1.png\" />\r\n              </div>\r\n              <div class=\"footer-content  col-lg-4 col-xl-4 wechat\">\r\n                  <img src=\"");
+	templateBuilder.Append("/images/logo1.png\" />\r\n              </div>\r\n              <div class=\"footer-content  col-lg-4 col-xl-4 wechat col-md-4\">\r\n                  <img src=\"");
 	templateBuilder.Append("/templates/main");
-	templateBuilder.Append("/images/code.jpg\" />\r\n                  <p>微信公众号</p>\r\n              </div>\r\n          </div>\r\n      </div>\r\n  </div>\r\n  <div class=\"footer-footer\">\r\n      ");
+	templateBuilder.Append("/images/code.jpg\" />\r\n                  <p>微信公众号</p>\r\n              </div>\r\n          </div>\r\n      </div>\r\n  </div>\r\n  <div class=\"footer-footer \">\r\n      <div class=\"container\">\r\n          ");
 	templateBuilder.Append(site.copyright.ToString());
 
 	templateBuilder.Append("<span>|</span>地址：");
@@ -119,7 +119,7 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("<span>|</span>传真：");
 	templateBuilder.Append(site.fax.ToString());
 
-	templateBuilder.Append("\r\n  </div>\r\n</div>");
+	templateBuilder.Append("\r\n      </div>\r\n  </div>\r\n</div>");
 
 
 	templateBuilder.Append("\r\n<!--/Footer-->\r\n</body>\r\n</html>");

@@ -44,10 +44,10 @@ img{max-width:100%;}
     padding:0px 10px;
 }
 .nav-footer{
-    margin-top:28px;width:196px;margin-left:76px;
+   
 }
 .nav-footer a{
-    color:#fff;display:block;float:left;line-height:40px;margin-left:50px;width:48px;
+    color:#fff;display:block;float:left;line-height:40px;width:48px;margin:0px 28px;
 }
 .nav-footer a:hover{
     text-decoration:underline;
@@ -64,8 +64,16 @@ width:150px;height:150px;
 .wechat  p {
     height:30px;color:#fff;line-height:30px;
 }
-
+@media (max-width: 768px) { 
+    .footer-header{display:none;}
+    .nav{
+        display:none;
+    }
+}
 /*头部样式*/
+.toggle{
+    display:none;
+}
 .header{
     width:100%;height:80px;
 }
@@ -101,9 +109,9 @@ width:150px;height:150px;
 }
 /*幻灯片样式*/
 .banner{
-    width:100%;height:400px;position:relative;
+    width:100%;height:auto;position:relative;overflow:hidden;
 }
-.focusbox{ position:absolute; top:0; right:0; bottom:0; left:0;  overflow:hidden; _position:relative; }
+.focusbox{ overflow:hidden; _position:relative; }
 .focusbox .slides{ position:relative; display:block; width:100%; height:100%; zoom:1; overflow:hidden; }
 .focusbox .slides:after{ content:"."; display:block; height:0; clear:both; visibility:hidden; }
 .focusbox .slides li{ width:100%; height:100%; overflow:hidden; }
@@ -133,7 +141,7 @@ width:150px;height:150px;
 
 .productCenter ul li>div{
     background:#f3f5f7;border-radius:5px; animation-name: fadeInUp; animation-duration: 1s;padding:40px 20px;
-  animation-fill-mode: both;
+  animation-fill-mode: both;margin-bottom:20px;
 }
 .productCenter ul li:nth-child(1){
     animation-delay:200ms
@@ -171,7 +179,7 @@ width:150px;height:150px;
 }
 /*用户数据*/
 .userData{
-    min-height:445px;width:100%;background:url(../images/data.jpg) no-repeat center;background-size:100% auto;
+    min-height:445px;width:100%;background:url(../images/data.jpg) no-repeat center;background-size:100% 100%;
 }
 .title{
     height:100px;font-size:36px;color:#333333;text-align:center;background:url(../images/dian.png) no-repeat center bottom;font-weight:normal;padding-top:30px;
@@ -218,20 +226,23 @@ width:150px;height:150px;
 }
 /*case*/
 .case{
-    width:100%;height:575px;background:url(../images/case.jpg) no-repeat center;background-size:100% auto;
+    width:100%;background:url(../images/case.jpg) no-repeat center;background-size:100% 100%;padding-bottom:70px;
 }
 .case_bg>img{
     width:100%;
 }
+.case_ul{
+    border-top:1px solid #c4c4c4;
+    border-left:1px solid #c4c4c4;
+    margin-top:30px;
+}
 .case_ul li {
-    width: 33.3%;
-    float: left;
-    box-sizing: border-box;
-    border-bottom: 1px solid #c4c4c4;
-    border-right: 1px solid #c4c4c4;
+   
     min-height: 178px;
     overflow: hidden;
-    
+    box-sizing:border-box;
+    border-right:1px solid #c4c4c4;
+    border-bottom:1px solid #c4c4c4;
 }
 .case_ul li a{
     display:block;width:100%; min-height: 178px;
@@ -245,10 +256,10 @@ width:150px;height:150px;
 .case_ul li p{
     line-height:30px;font-size:14px;color:#666;padding:0px 15px;
 }
-.case_ul li:nth-child(3n){
+/*.case_ul li:nth-child(3n){
     border-right:none;
-}
-.case_ul li:nth-child(1), .case_ul li:nth-child(2), .case_ul li:nth-child(3) {border-top:1px solid #c4c4c4;}
+}*/
+/*.case_ul li:nth-child(1), .case_ul li:nth-child(2), .case_ul li:nth-child(3) {border-top:1px solid #c4c4c4;}*/
 .more{
     height:19px;border-bottom:1px solid #fff;position:relative;top:25px;
 }

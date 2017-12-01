@@ -2,7 +2,7 @@
   <div class="footer-header">
       <div class="container clearfix">
           <div class="row">
-              <div class="footer-content col-lg-4 col-xl-4 ">
+              <div class="footer-content col-lg-4 col-xl-4 col-md-4">
                   <div class="nav-footer clearfix">
                       <a href="<%linkurl("index")%>">首页</a>
                       <a href="<%linkurl("about")%>">关于我们</a>
@@ -11,17 +11,19 @@
                       <a href="<%linkurl("case")%>">成功案例</a>
                   </div>
               </div>
-              <div class="footer-content  col-lg-4 col-xl-4 footer-logo ">
+              <div class="footer-content  col-lg-4 col-xl-4 footer-logo col-md-4">
                   <img src="<%templateskin%>/images/logo1.png" />
               </div>
-              <div class="footer-content  col-lg-4 col-xl-4 wechat">
+              <div class="footer-content  col-lg-4 col-xl-4 wechat col-md-4">
                   <img src="<%templateskin%>/images/code.jpg" />
                   <p>微信公众号</p>
               </div>
           </div>
       </div>
   </div>
-  <div class="footer-footer">
-      <%=site.copyright%><span>|</span>地址：<%= site.address%><span>|</span>邮编：<%= site.email%><span>|</span>联系电话：<%= site.tel%><span>|</span>传真：<%= site.fax%>
+  <div class="footer-footer ">
+      <div class="container">
+          <%=site.copyright%><span>|</span>地址：<%= site.address%><span>|</span>邮编：<%= site.email%><span>|</span>联系电话：<%= site.tel%><span>|</span>传真：<%= site.fax%>
+      </div>
   </div>
 </div>

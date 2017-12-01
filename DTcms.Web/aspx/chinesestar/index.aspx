@@ -9,8 +9,8 @@ override protected void OnInit(EventArgs e)
 {
 
 	/* 
-		This page was created by DTcms Template Engine at 2017/11/24 12:12:37.
-		本页面代码由DTcms模板引擎生成于 2017/11/24 12:12:37. 
+		This page was created by DTcms Template Engine at 2017/12/1 13:06:11.
+		本页面代码由DTcms模板引擎生成于 2017/12/1 13:06:11. 
 	*/
 
 	base.OnInit(e);
@@ -33,13 +33,13 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("/templates/main");
 	templateBuilder.Append("/css/aos.css\" rel=\"stylesheet\" type=\"text/css\" />   \r\n</head>\r\n<body>\r\n<!--Header-->\r\n");
 
-	templateBuilder.Append("<div class=\"header\">\r\n    <div class=\"header-wrap\">\r\n        <div class=\"container\">\r\n            <div class=\"row\">\r\n                <a class=\"logo col-lg-2 col-xl-2\" href=\"");
+	templateBuilder.Append("<div class=\"header\">\r\n    <div class=\"header-wrap\">\r\n        <div class=\"container\">\r\n            <div class=\"row\">\r\n                <a class=\"logo col-lg-2 col-xl-2 col-10\" href=\"");
 	templateBuilder.Append(linkurl("Index"));
 
 	templateBuilder.Append("\">\r\n                    <img src=\"");
 	templateBuilder.Append(site.logo.ToString());
 
-	templateBuilder.Append("\" />\r\n                </a>\r\n                <div class=\"nav col-lg-10 col-xl-10\">\r\n                    <ul class=\"clearfix right\">\r\n                        <li><a href=\"");
+	templateBuilder.Append("\" />\r\n                </a>\r\n                <div class=\"toggle col-2\"></div>\r\n                <div class=\"nav col-lg-10 col-xl-10\">\r\n                    <ul class=\"clearfix right\">\r\n                        <li><a href=\"");
 	templateBuilder.Append(linkurl("index"));
 
 	templateBuilder.Append("\">首页</a></li>\r\n                        <li><a href=\"");
@@ -88,22 +88,22 @@ override protected void OnInit(EventArgs e)
 	foreach(DataRow dr in userData.Rows)
 	{
 
-	templateBuilder.Append("\r\n                <li class=\"animate-box col-lg-4 col-xl-4\">\r\n                    <div class=\"icon\"><img src=\"" + Utils.ObjectToStr(dr["img_url"]) + "\" /></div>\r\n                    <div class=\"number timer\" id=\"count-number\" data-to=\"" + Utils.ObjectToStr(dr["zhaiyao"]) + "\" data-speed=\"1500\">" + Utils.ObjectToStr(dr["zhaiyao"]) + "</div>\r\n                    <div class=\"name\">" + Utils.ObjectToStr(dr["title"]) + "</div>\r\n                </li>\r\n                ");
+	templateBuilder.Append("\r\n                <li class=\"animate-box col-lg-4 col-xl-4 col-12\">\r\n                    <div class=\"icon\"><img src=\"" + Utils.ObjectToStr(dr["img_url"]) + "\" /></div>\r\n                    <div class=\"number timer\" id=\"count-number\" data-to=\"" + Utils.ObjectToStr(dr["zhaiyao"]) + "\" data-speed=\"1500\">" + Utils.ObjectToStr(dr["zhaiyao"]) + "</div>\r\n                    <div class=\"name\">" + Utils.ObjectToStr(dr["title"]) + "</div>\r\n                </li>\r\n                ");
 	}	//end for if
 
-	templateBuilder.Append("\r\n            </ul>\r\n        </div>\r\n    </div>\r\n    <div class=\"server\">\r\n        <h1 class=\"title pt30\">核心服务</h1>\r\n        <div class=\"container\">\r\n            <div class=\"descration animate-box\">以提升教育信息化和打造教育数据云平台为主导，<br />注重对创新教育理念的探索，致力于打造服务学校教育教学工作的“智慧型软件产品”，已拥有多项国家级自主研发技术和产品专利，<br />目前产品已应用于全国各地基础教育学校及高等院校。</div>\r\n            <ul class=\"clearfix row mt20 mb20\">\r\n                <li class=\"animate-box col-lg-3 col-xl-3\">\r\n                    <div class=\"icon icon1\"></div>\r\n                    <p class=\"name\">为教务减负增效</p>\r\n                </li>\r\n                <li class=\"animate-box col-lg-3 col-xl-3\">\r\n                    <div class=\"icon icon2\"></div>\r\n                    <p class=\"name\">让教室智能有趣</p>\r\n                </li>\r\n                <li class=\"animate-box col-lg-3 col-xl-3\">\r\n                    <div class=\"icon icon3\"></div>\r\n                    <p class=\"name\">带学生快乐成长</p>\r\n                </li>\r\n                <li class=\"animate-box col-lg-3 col-xl-3\">\r\n                    <div class=\"icon icon4\"></div>\r\n                    <p class=\"name\">助学校快速发展</p>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n    <div class=\"case\">\r\n        <h1 class=\"title\">成功案例</h1>\r\n        <div class=\"container\">\r\n            <ul class=\"case_ul row clearfix mt30\">\r\n                ");
+	templateBuilder.Append("\r\n            </ul>\r\n        </div>\r\n    </div>\r\n    <div class=\"server\">\r\n        <h1 class=\"title pt30\">核心服务</h1>\r\n        <div class=\"container\">\r\n            <div class=\"descration animate-box\">以提升教育信息化和打造教育数据云平台为主导，<br />注重对创新教育理念的探索，致力于打造服务学校教育教学工作的“智慧型软件产品”，已拥有多项国家级自主研发技术和产品专利，<br />目前产品已应用于全国各地基础教育学校及高等院校。</div>\r\n            <ul class=\"clearfix row mt20 mb20\">\r\n                <li class=\"animate-box col-lg-3 col-xl-3 col-6\">\r\n                    <div class=\"icon icon1\"></div>\r\n                    <p class=\"name\">为教务减负增效</p>\r\n                </li>\r\n                <li class=\"animate-box col-lg-3 col-xl-3 col-6\">\r\n                    <div class=\"icon icon2\"></div>\r\n                    <p class=\"name\">让教室智能有趣</p>\r\n                </li>\r\n                <li class=\"animate-box col-lg-3 col-xl-3 col-6\">\r\n                    <div class=\"icon icon3\"></div>\r\n                    <p class=\"name\">带学生快乐成长</p>\r\n                </li>\r\n                <li class=\"animate-box col-lg-3 col-xl-3 col-6\">\r\n                    <div class=\"icon icon4\"></div>\r\n                    <p class=\"name\">助学校快速发展</p>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n    <div class=\"case\">\r\n        <h1 class=\"title\">成功案例</h1>\r\n        <div class=\"container\">\r\n                <ul class=\"case_ul row\">\r\n                    ");
 	DataTable cases = get_article_list("case", 55, 6, "status=0");
 
 	foreach(DataRow dr in cases.Rows)
 	{
 
-	templateBuilder.Append("\r\n                <li class=\"col-lg-4 col-xl-4\">\r\n                    <a href=\"");
+	templateBuilder.Append("\r\n                    <li class=\"col-lg-4 col-xl-4 col-6\">\r\n                        <a href=\"");
 	templateBuilder.Append(linkurl("case_show",Utils.ObjectToStr(dr["id"])));
 
-	templateBuilder.Append("\r\n                        \" target=\"_blank\" class=\"animate-box1\">\r\n                        <div><img src=\"" + Utils.ObjectToStr(dr["img_url"]) + "\" /></div>\r\n                    </a>\r\n                </li>\r\n                ");
+	templateBuilder.Append("\r\n                            \" target=\"_blank\" class=\"animate-box1\">\r\n                            <div><img src=\"" + Utils.ObjectToStr(dr["img_url"]) + "\" /></div>\r\n                        </a>\r\n                    </li>\r\n                    ");
 	}	//end for if
 
-	templateBuilder.Append("\r\n            </ul>\r\n        </div>\r\n        <div class=\"more container\"><a target=\"_blank\" href=\"");
+	templateBuilder.Append("\r\n                </ul>\r\n        </div>\r\n        <div class=\"more container\"><a target=\"_blank\" href=\"");
 	templateBuilder.Append(linkurl("case"));
 
 	templateBuilder.Append("\" >查看更多</a></div>\r\n    </div>\r\n    <div class=\"partner\">\r\n        <h1 class=\"title pt30\">合作伙伴</h1>\r\n        <div class=\"container\">\r\n            <ul class=\"row clearfix\">\r\n                ");
@@ -112,12 +112,12 @@ override protected void OnInit(EventArgs e)
 	foreach(DataRow dr in linkList.Rows)
 	{
 
-	templateBuilder.Append("\r\n                <li class=\"col-lg-2 col-xl-2\"><a target=\"_blank\" href=\"" + Utils.ObjectToStr(dr["site_url"]) + "\" title=\"" + Utils.ObjectToStr(dr["title"]) + "\"><img src=\"" + Utils.ObjectToStr(dr["img_url"]) + "\" /></a></li>\r\n                ");
+	templateBuilder.Append("\r\n                <li class=\"col-lg-2 col-xl-2 col-6\"><a target=\"_blank\" href=\"" + Utils.ObjectToStr(dr["site_url"]) + "\" title=\"" + Utils.ObjectToStr(dr["title"]) + "\"><img src=\"" + Utils.ObjectToStr(dr["img_url"]) + "\" /></a></li>\r\n                ");
 	}	//end for if
 
 	templateBuilder.Append("\r\n            </ul>\r\n        </div>\r\n    </div>\r\n</div>\r\n<!--Footer-->\r\n");
 
-	templateBuilder.Append("<div class=\"footer\">\r\n  <div class=\"footer-header\">\r\n      <div class=\"container clearfix\">\r\n          <div class=\"row\">\r\n              <div class=\"footer-content col-lg-4 col-xl-4 \">\r\n                  <div class=\"nav-footer clearfix\">\r\n                      <a href=\"");
+	templateBuilder.Append("<div class=\"footer\">\r\n  <div class=\"footer-header\">\r\n      <div class=\"container clearfix\">\r\n          <div class=\"row\">\r\n              <div class=\"footer-content col-lg-4 col-xl-4 col-md-4\">\r\n                  <div class=\"nav-footer clearfix\">\r\n                      <a href=\"");
 	templateBuilder.Append(linkurl("index"));
 
 	templateBuilder.Append("\">首页</a>\r\n                      <a href=\"");
@@ -132,11 +132,11 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("\">企业新闻</a>\r\n                      <a href=\"");
 	templateBuilder.Append(linkurl("case"));
 
-	templateBuilder.Append("\">成功案例</a>\r\n                  </div>\r\n              </div>\r\n              <div class=\"footer-content  col-lg-4 col-xl-4 footer-logo \">\r\n                  <img src=\"");
+	templateBuilder.Append("\">成功案例</a>\r\n                  </div>\r\n              </div>\r\n              <div class=\"footer-content  col-lg-4 col-xl-4 footer-logo col-md-4\">\r\n                  <img src=\"");
 	templateBuilder.Append("/templates/main");
-	templateBuilder.Append("/images/logo1.png\" />\r\n              </div>\r\n              <div class=\"footer-content  col-lg-4 col-xl-4 wechat\">\r\n                  <img src=\"");
+	templateBuilder.Append("/images/logo1.png\" />\r\n              </div>\r\n              <div class=\"footer-content  col-lg-4 col-xl-4 wechat col-md-4\">\r\n                  <img src=\"");
 	templateBuilder.Append("/templates/main");
-	templateBuilder.Append("/images/code.jpg\" />\r\n                  <p>微信公众号</p>\r\n              </div>\r\n          </div>\r\n      </div>\r\n  </div>\r\n  <div class=\"footer-footer\">\r\n      ");
+	templateBuilder.Append("/images/code.jpg\" />\r\n                  <p>微信公众号</p>\r\n              </div>\r\n          </div>\r\n      </div>\r\n  </div>\r\n  <div class=\"footer-footer \">\r\n      <div class=\"container\">\r\n          ");
 	templateBuilder.Append(site.copyright.ToString());
 
 	templateBuilder.Append("<span>|</span>地址：");
@@ -151,7 +151,7 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("<span>|</span>传真：");
 	templateBuilder.Append(site.fax.ToString());
 
-	templateBuilder.Append("\r\n  </div>\r\n</div>");
+	templateBuilder.Append("\r\n      </div>\r\n  </div>\r\n</div>");
 
 
 	templateBuilder.Append("\r\n<!--/Footer-->\r\n    <script src=\"https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js\" integrity=\"sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN\" crossorigin=\"anonymous\"></");

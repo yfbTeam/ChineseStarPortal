@@ -53,7 +53,7 @@
             <ul class="clearfix row">
                 <%set DataTable userData=get_article_list("index", 54, 3, "status=0")%>
                 <%foreach(DataRow dr in userData.Rows)%>
-                <li class="animate-box col-lg-4 col-xl-4">
+                <li class="animate-box col-lg-4 col-xl-4 col-12">
                     <div class="icon"><img src="{dr[img_url]}" /></div>
                     <div class="number timer" id="count-number" data-to="{dr[zhaiyao]}" data-speed="1500">{dr[zhaiyao]}</div>
                     <div class="name">{dr[title]}</div>
@@ -67,19 +67,19 @@
         <div class="container">
             <div class="descration animate-box">以提升教育信息化和打造教育数据云平台为主导，<br />注重对创新教育理念的探索，致力于打造服务学校教育教学工作的“智慧型软件产品”，已拥有多项国家级自主研发技术和产品专利，<br />目前产品已应用于全国各地基础教育学校及高等院校。</div>
             <ul class="clearfix row mt20 mb20">
-                <li class="animate-box col-lg-3 col-xl-3">
+                <li class="animate-box col-lg-3 col-xl-3 col-6">
                     <div class="icon icon1"></div>
                     <p class="name">为教务减负增效</p>
                 </li>
-                <li class="animate-box col-lg-3 col-xl-3">
+                <li class="animate-box col-lg-3 col-xl-3 col-6">
                     <div class="icon icon2"></div>
                     <p class="name">让教室智能有趣</p>
                 </li>
-                <li class="animate-box col-lg-3 col-xl-3">
+                <li class="animate-box col-lg-3 col-xl-3 col-6">
                     <div class="icon icon3"></div>
                     <p class="name">带学生快乐成长</p>
                 </li>
-                <li class="animate-box col-lg-3 col-xl-3">
+                <li class="animate-box col-lg-3 col-xl-3 col-6">
                     <div class="icon icon4"></div>
                     <p class="name">助学校快速发展</p>
                 </li>
@@ -89,17 +89,17 @@
     <div class="case">
         <h1 class="title">成功案例</h1>
         <div class="container">
-            <ul class="case_ul row clearfix mt30">
-                <%set DataTable cases=get_article_list("case", 55, 6, "status=0")%>
-                <%foreach(DataRow dr in cases.Rows)%>
-                <li class="col-lg-4 col-xl-4">
-                    <a href="<%linkurl("case_show",{dr[id]})%>
-                        " target="_blank" class="animate-box1">
-                        <div><img src="{dr[img_url]}" /></div>
-                    </a>
-                </li>
-                <%/foreach%>
-            </ul>
+                <ul class="case_ul row">
+                    <%set DataTable cases=get_article_list("case", 55, 6, "status=0")%>
+                    <%foreach(DataRow dr in cases.Rows)%>
+                    <li class="col-lg-4 col-xl-4 col-6">
+                        <a href="<%linkurl("case_show",{dr[id]})%>
+                            " target="_blank" class="animate-box1">
+                            <div><img src="{dr[img_url]}" /></div>
+                        </a>
+                    </li>
+                    <%/foreach%>
+                </ul>
         </div>
         <div class="more container"><a target="_blank" href="<%linkurl("case")%>" >查看更多</a></div>
     </div>
@@ -109,7 +109,7 @@
             <ul class="row clearfix">
                 <%set DataTable linkList=get_plugin_method("DTcms.Web.Plugin.Link", "link", "get_link_list", 12, "is_lock=0 and is_image=1 and is_red=1")%>
                 <%foreach(DataRow dr in linkList.Rows)%>
-                <li class="col-lg-2 col-xl-2"><a target="_blank" href="{dr[site_url]}" title="{dr[title]}"><img src="{dr[img_url]}" /></a></li>
+                <li class="col-lg-2 col-xl-2 col-6"><a target="_blank" href="{dr[site_url]}" title="{dr[title]}"><img src="{dr[img_url]}" /></a></li>
                 <%/foreach%>
             </ul>
         </div>

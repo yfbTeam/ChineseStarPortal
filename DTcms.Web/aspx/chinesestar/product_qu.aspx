@@ -9,8 +9,8 @@ override protected void OnInit(EventArgs e)
 {
 
 	/* 
-		This page was created by DTcms Template Engine at 2017/11/24 12:12:37.
-		本页面代码由DTcms模板引擎生成于 2017/11/24 12:12:37. 
+		This page was created by DTcms Template Engine at 2017/12/1 13:06:11.
+		本页面代码由DTcms模板引擎生成于 2017/12/1 13:06:11. 
 	*/
 
 	base.OnInit(e);
@@ -33,13 +33,13 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("/templates/main");
 	templateBuilder.Append("/css/aos.css\" rel=\"stylesheet\" type=\"text/css\" />\r\n</head>\r\n<body>\r\n    <!--Header-->\r\n    ");
 
-	templateBuilder.Append("<div class=\"header\">\r\n    <div class=\"header-wrap\">\r\n        <div class=\"container\">\r\n            <div class=\"row\">\r\n                <a class=\"logo col-lg-2 col-xl-2\" href=\"");
+	templateBuilder.Append("<div class=\"header\">\r\n    <div class=\"header-wrap\">\r\n        <div class=\"container\">\r\n            <div class=\"row\">\r\n                <a class=\"logo col-lg-2 col-xl-2 col-10\" href=\"");
 	templateBuilder.Append(linkurl("Index"));
 
 	templateBuilder.Append("\">\r\n                    <img src=\"");
 	templateBuilder.Append(site.logo.ToString());
 
-	templateBuilder.Append("\" />\r\n                </a>\r\n                <div class=\"nav col-lg-10 col-xl-10\">\r\n                    <ul class=\"clearfix right\">\r\n                        <li><a href=\"");
+	templateBuilder.Append("\" />\r\n                </a>\r\n                <div class=\"toggle col-2\"></div>\r\n                <div class=\"nav col-lg-10 col-xl-10\">\r\n                    <ul class=\"clearfix right\">\r\n                        <li><a href=\"");
 	templateBuilder.Append(linkurl("index"));
 
 	templateBuilder.Append("\">首页</a></li>\r\n                        <li><a href=\"");
@@ -76,7 +76,7 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("/templates/main");
 	templateBuilder.Append("/images/qu1_07.png\" aos-delay=\"200\" aos=\"fade-up\"/></div>\r\n                    <ul class=\"col-lg-3 col-xl-3 analysis_ul2\">\r\n                        <li style=\"width:326px;\" aos-delay=\"200\" aos=\"fade-left\">\r\n                            <h2>科学分析  精准决策</h2>\r\n                            <p>多接口、多维度数据获取与智能分析，深挖数据背后的秘密，为教育行业各角色提供决策依据。</p>\r\n                        </li>\r\n                        <li style=\"width:270px;\" aos-delay=\"400\" aos=\"fade-left\">\r\n                            <h2>自主学习</h2>\r\n                            <p>将课堂、考试、评价等数字化，让学习不再受时空限制</p>\r\n                        </li>\r\n                        <li style=\"width:270px;\" aos-delay=\"600\" aos=\"fade-left\">\r\n                            <h2>教师成长档案</h2>\r\n                            <p>涵盖教师各项信息，为教师以后的发展提供了宝贵的数据基础</p>\r\n                        </li>\r\n                        <li style=\"width:270px;\" aos-delay=\"800\" aos=\"fade-left\">\r\n                            <h2>德育成长</h2>\r\n                            <p>在线评价学生学习、生活及校园活动等多项表现，促进学生全面发展</p>\r\n                        </li>\r\n                    </ul>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <!--Footer-->\r\n    ");
 
-	templateBuilder.Append("<div class=\"footer\">\r\n  <div class=\"footer-header\">\r\n      <div class=\"container clearfix\">\r\n          <div class=\"row\">\r\n              <div class=\"footer-content col-lg-4 col-xl-4 \">\r\n                  <div class=\"nav-footer clearfix\">\r\n                      <a href=\"");
+	templateBuilder.Append("<div class=\"footer\">\r\n  <div class=\"footer-header\">\r\n      <div class=\"container clearfix\">\r\n          <div class=\"row\">\r\n              <div class=\"footer-content col-lg-4 col-xl-4 col-md-4\">\r\n                  <div class=\"nav-footer clearfix\">\r\n                      <a href=\"");
 	templateBuilder.Append(linkurl("index"));
 
 	templateBuilder.Append("\">首页</a>\r\n                      <a href=\"");
@@ -91,11 +91,11 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("\">企业新闻</a>\r\n                      <a href=\"");
 	templateBuilder.Append(linkurl("case"));
 
-	templateBuilder.Append("\">成功案例</a>\r\n                  </div>\r\n              </div>\r\n              <div class=\"footer-content  col-lg-4 col-xl-4 footer-logo \">\r\n                  <img src=\"");
+	templateBuilder.Append("\">成功案例</a>\r\n                  </div>\r\n              </div>\r\n              <div class=\"footer-content  col-lg-4 col-xl-4 footer-logo col-md-4\">\r\n                  <img src=\"");
 	templateBuilder.Append("/templates/main");
-	templateBuilder.Append("/images/logo1.png\" />\r\n              </div>\r\n              <div class=\"footer-content  col-lg-4 col-xl-4 wechat\">\r\n                  <img src=\"");
+	templateBuilder.Append("/images/logo1.png\" />\r\n              </div>\r\n              <div class=\"footer-content  col-lg-4 col-xl-4 wechat col-md-4\">\r\n                  <img src=\"");
 	templateBuilder.Append("/templates/main");
-	templateBuilder.Append("/images/code.jpg\" />\r\n                  <p>微信公众号</p>\r\n              </div>\r\n          </div>\r\n      </div>\r\n  </div>\r\n  <div class=\"footer-footer\">\r\n      ");
+	templateBuilder.Append("/images/code.jpg\" />\r\n                  <p>微信公众号</p>\r\n              </div>\r\n          </div>\r\n      </div>\r\n  </div>\r\n  <div class=\"footer-footer \">\r\n      <div class=\"container\">\r\n          ");
 	templateBuilder.Append(site.copyright.ToString());
 
 	templateBuilder.Append("<span>|</span>地址：");
@@ -110,7 +110,7 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("<span>|</span>传真：");
 	templateBuilder.Append(site.fax.ToString());
 
-	templateBuilder.Append("\r\n  </div>\r\n</div>");
+	templateBuilder.Append("\r\n      </div>\r\n  </div>\r\n</div>");
 
 
 	templateBuilder.Append("\r\n    <script src=\"https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js\" integrity=\"sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN\" crossorigin=\"anonymous\"></");
