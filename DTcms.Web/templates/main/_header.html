@@ -2,11 +2,12 @@
     <div class="header-wrap">
         <div class="container">
             <div class="row">
-                <a class="logo col-lg-2 col-xl-2 col-10" href="<%linkurl("Index")%>">
+                <a class="logo col-lg-2 col-xl-2 col-9" href="<%linkurl("index")%>">
                     <img src="<%= site.logo%>" />
                 </a>
-                <div class="toggle col-2"></div>
-                <div class="nav col-lg-10 col-xl-10">
+                <div class="toggle col-3"><i class="icon_menu"></i></div>
+                <div class="a col-4"></div>
+                <div class="nav col-lg-10 col-xl-10 col-8">
                     <ul class="clearfix right">
                         <li><a href="<%linkurl("index")%>">首页</a></li>
                         <li><a href="<%linkurl("about")%>">关于我们</a></li>
@@ -27,6 +28,13 @@
     </div>
 </div>
 <script>
+    $('.toggle').click(function () {
+        if ($('.nav').is(':hidden')) {
+            $('.nav').show();
+        } else {
+            $('.nav').hide();
+        }
+    })
     //var href = window.location.href;
     //$('.nav ul li').each(function () {
 

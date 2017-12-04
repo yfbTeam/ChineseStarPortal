@@ -9,8 +9,8 @@ override protected void OnInit(EventArgs e)
 {
 
 	/* 
-		This page was created by DTcms Template Engine at 2017/12/1 13:06:11.
-		本页面代码由DTcms模板引擎生成于 2017/12/1 13:06:11. 
+		This page was created by DTcms Template Engine at 2017/12/4 10:50:39.
+		本页面代码由DTcms模板引擎生成于 2017/12/4 10:50:39. 
 	*/
 
 	base.OnInit(e);
@@ -34,15 +34,18 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("/templates/main");
 	templateBuilder.Append("/css/animate.css\" rel=\"stylesheet\" type=\"text/css\" />\r\n    <link href=\"");
 	templateBuilder.Append("/templates/main");
-	templateBuilder.Append("/css/aos.css\" rel=\"stylesheet\" type=\"text/css\" />  \r\n</head>\r\n\r\n<body>\r\n    <!--Header-->\r\n    ");
+	templateBuilder.Append("/css/aos.css\" rel=\"stylesheet\" type=\"text/css\" />  \r\n    <script type=\"text/javascript\" charset=\"utf-8\" src=\"");
+	templateBuilder.Append(Utils.ObjectToStr(config.webpath));
+	templateBuilder.Append("scripts/jquery/jquery-1.11.2.min.js\"></");
+	templateBuilder.Append("script>\r\n</head>\r\n\r\n<body>\r\n    <!--Header-->\r\n    ");
 
-	templateBuilder.Append("<div class=\"header\">\r\n    <div class=\"header-wrap\">\r\n        <div class=\"container\">\r\n            <div class=\"row\">\r\n                <a class=\"logo col-lg-2 col-xl-2 col-10\" href=\"");
-	templateBuilder.Append(linkurl("Index"));
+	templateBuilder.Append("<div class=\"header\">\r\n    <div class=\"header-wrap\">\r\n        <div class=\"container\">\r\n            <div class=\"row\">\r\n                <a class=\"logo col-lg-2 col-xl-2 col-9\" href=\"");
+	templateBuilder.Append(linkurl("index"));
 
 	templateBuilder.Append("\">\r\n                    <img src=\"");
 	templateBuilder.Append(site.logo.ToString());
 
-	templateBuilder.Append("\" />\r\n                </a>\r\n                <div class=\"toggle col-2\"></div>\r\n                <div class=\"nav col-lg-10 col-xl-10\">\r\n                    <ul class=\"clearfix right\">\r\n                        <li><a href=\"");
+	templateBuilder.Append("\" />\r\n                </a>\r\n                <div class=\"toggle col-3\"><i class=\"icon_menu\"></i></div>\r\n                <div class=\"a col-4\"></div>\r\n                <div class=\"nav col-lg-10 col-xl-10 col-8\">\r\n                    <ul class=\"clearfix right\">\r\n                        <li><a href=\"");
 	templateBuilder.Append(linkurl("index"));
 
 	templateBuilder.Append("\">首页</a></li>\r\n                        <li><a href=\"");
@@ -63,7 +66,7 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("\">企业新闻</a></li>\r\n                        <li><a href=\"");
 	templateBuilder.Append(linkurl("case"));
 
-	templateBuilder.Append("\">成功案例</a></li>\r\n                    </ul>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n<script>\r\n    //var href = window.location.href;\r\n    //$('.nav ul li').each(function () {\r\n\r\n    //    itemhref = $(this).children('a').attr('href');\r\n    //    itemhref = itemhref.slice(0, itemhref.lastIndexOf('.'))\r\n    //    if (href.indexOf(itemhref) > 1) {\r\n    //        $(this).addClass('selected').siblings().removeClass('selected');\r\n    //    }\r\n    //})\r\n</");
+	templateBuilder.Append("\">成功案例</a></li>\r\n                    </ul>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n<script>\r\n    $('.toggle').click(function () {\r\n        if ($('.nav').is(':hidden')) {\r\n            $('.nav').show();\r\n        } else {\r\n            $('.nav').hide();\r\n        }\r\n    })\r\n    //var href = window.location.href;\r\n    //$('.nav ul li').each(function () {\r\n\r\n    //    itemhref = $(this).children('a').attr('href');\r\n    //    itemhref = itemhref.slice(0, itemhref.lastIndexOf('.'))\r\n    //    if (href.indexOf(itemhref) > 1) {\r\n    //        $(this).addClass('selected').siblings().removeClass('selected');\r\n    //    }\r\n    //})\r\n</");
 	templateBuilder.Append("script>");
 
 

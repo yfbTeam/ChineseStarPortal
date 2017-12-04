@@ -64,49 +64,105 @@ width:150px;height:150px;
 .wechat  p {
     height:30px;color:#fff;line-height:30px;
 }
-@media (max-width: 768px) { 
+@media screen and (max-width: 768px) { 
+
     .footer-header{display:none;}
+    .header,.header-wrap{
+        height:60px;
+    }
+    .icon_menu{
+        width: 42px;
+        height: 42px;
+        background: url(../images/skin_icons.png) 11px -239px no-repeat;
+        display:block;
+        margin:9px auto;
+    }
     .nav{
+        display:none;background:#fff;right:0px;align-self:flex-end
+    }
+    .nav>ul>li{
+        width:100%;line-height:40px;font-size:16px;
+    }
+    .nav>ul>li>a{
+        display:block;width:100%;height:40px;
+    }
+    .nav>ul{
+        float:none;
+    }
+    .toggle,.a{
+        display:block;
+    }
+    .logo{
+        margin:10px 0px;
+    }
+    .drop-down a{
+        height:40px;display:block;line-height:40px
+    }
+    .nav>ul>li.selected a{
+         color:#fff;background:#6CA8D1;
+    }
+    .company_img{
+        width:100%;
+    }
+    .company_img img{border:3px solid #4da9d5;padding:10px;}
+     
+   
+}
+@media screen and (min-width: 768px) {
+    .toggle,.a{
         display:none;
     }
+    .header,.header-wrap{
+        height:80px;
+    }
+    .logo{margin:20px 0px;}
+   .nav>ul>li{
+        min-width:150px;height:80px;float:left;position:relative;
+    }
+    .nav>ul>li>a{
+        display:block;width:100%;height:80px;font-size:16px;color:#333333;text-align:center;line-height:80px;cursor:pointer;
+    }
+    .nav>ul>li:hover>a{
+        color:#fff;background:#6CA8D1;
+    }
+    .nav>ul>li.selected>a{
+         color:#fff;background:#6CA8D1;
+    }
+    .nav>ul>li:hover .drop-down{
+        display:block;
+    }
+    .drop-down{
+        position:absolute;width:100%;top:100%;background:#6CA8D1;z-index:999;display:none;
+    }
+    .drop-down a{
+        height:40px;display:block;line-height:40px;color:#fff;text-align:center;font-size:16px;
+    }
+    .drop-down a:hover{
+        background:#fff;color:#579DCF;
+    }
+    .company_img{
+        height:294px;border:3px solid #4da9d5;position:relative;
+    }
+    .company_img img{
+        width:110%;height:294px;border-radius:3px;overflow:hidden;margin-top:15px;position:absolute;
+    }
+    .company_desc p{
+        padding-left:15px; font-size:16px;color:#333;line-height:39px;text-indent:2em;
+    }
 }
+
 /*头部样式*/
-.toggle{
-    display:none;
-}
+
 .header{
-    width:100%;height:80px;
+    width:100%;
 }
 .header-wrap{
-    width:100%;height:80px;position:fixed; top:0; left:0;  z-index:300;background:#fff;
+    width:100%;position:fixed; top:0; left:0;  z-index:300;background:#fff;
 }
 .logo{
-    width:145px;height:40px;margin:20px 0px;display:block;
+    width:145px;height:40px;display:block;
 }
-.nav>ul>li{
-    min-width:150px;height:80px;float:left;position:relative;
-}
-.nav>ul>li>a{
-    display:block;width:100%;height:80px;font-size:16px;color:#333333;text-align:center;line-height:80px;cursor:pointer;
-}
-.nav>ul>li:hover>a{
-    color:#fff;background:#6CA8D1;
-}
-.nav>ul>li.selected>a{
-     color:#fff;background:#6CA8D1;
-}
-.nav>ul>li:hover .drop-down{
-    display:block;
-}
-.drop-down{
-    position:absolute;width:100%;top:100%;background:#6CA8D1;z-index:999;display:none;
-}
-.drop-down a{
-    height:40px;display:block;line-height:40px;color:#fff;text-align:center;font-size:16px;
-}
-.drop-down a:hover{
-    background:#fff;color:#579DCF;
-}
+
 /*幻灯片样式*/
 .banner{
     width:100%;height:auto;position:relative;overflow:hidden;
@@ -288,18 +344,8 @@ width:150px;height:150px;
 .mt20{
     margin-top:20px;
 }
-.company_img{
-    height:294px;border:3px solid #4da9d5;position:relative;
-}
-.company_img img{
-    width:110%;height:294px;border-radius:3px;overflow:hidden;margin-top:15px;position:absolute;
-}
-.company_desc{
-    
-}
-.company_desc p{
-    font-size:16px;color:#333;line-height:39px;text-indent:2em;padding-left:15px;
-}
+
+
 .zizhi{
     width:100%;background:url(../images/as_04.jpg) no-repeat center; text-align:center;background-size:100% auto;
 }
