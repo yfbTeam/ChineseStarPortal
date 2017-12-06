@@ -93,7 +93,7 @@
             <h1 class="title">模块随心配</h1>
             <div class="container mt20 clearfix">
                 <div class="row">
-                    <div class="module_left col-lg-9 col-xl-9">
+                    <div class="module_left col-lg-8 col-xl-8">
                         <ul class="clearfix">
                             <li aos-delay="200" aos="fade-right"><i></i><p>统一身份认证平台</p></li>
                             <li aos-delay="400" aos="fade-right"><i></i><p>教师成长档案</p></li>
@@ -107,11 +107,13 @@
                             <li aos-delay="2000" aos="fade-right"><i></i><p>考试系统</p></li>
                         </ul>
                     </div>
-                    <div class="module_right col-lg-3 col-xl-3">
-                        <div aos-delay="2200" aos="fade-left">
-                            华人启星<span>（chinese-star.cn）</span>祝您成功开启DT时代教育新的一页。资讯与合作>
+                    <div class="col-lg-4 col-xl-4">
+                        <div class="module_right">
+                            <div aos-delay="2200" aos="fade-left">
+                                华人启星<span>（chinese-star.cn）</span>祝您成功开启DT时代教育新的一页。资讯与合作>
+                            </div>
+                            <a href="javascript:;" class="go" aos-delay="2400" aos="fade-left"></a>
                         </div>
-                        <a href="javascript:;" class="go" aos-delay="2400" aos="fade-left"></a>
                     </div>
                 </div>
             </div>
@@ -176,7 +178,8 @@
         AOS.init({
             easing: 'ease-out-back',
             duration: 1000,
-            once:false
+            once: false,
+            disable: 'mobile'
         });
     </script>
 </body>

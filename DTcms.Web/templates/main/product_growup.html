@@ -21,14 +21,16 @@
         <div class="case_bg pr">
             <img src="<%templateskin%>/images/growup_01.png" />
             <div class="zi container">
-                <img src="<%templateskin%>/images/growup_title.png" class="col-lg-4 col-xl-4 growup_zi1" style="position:absolute"  aos-delay="200" aos="fade-up" />
-                <img src="<%templateskin%>/images/growup_title2.png" class="col-lg-8 col-xl-8 growup_zi2" style="position:absolute" aos-delay="400" aos="fade-up"/>
-                <div class="row" style="margin-top:26%">
-                    <div class="col-lg-6 col-xl-6">
-                        <button type="button" class="btn btn1 right cursor" style="margin-right:40px;" aos-delay="600" aos="fade-right">教学业绩管理</button>
-                    </div>
-                    <div class="col-lg-6 col-xl-6">
-                        <button type="button" class="btn btn2 left cursor" style="margin-left:40px;" aos-delay="600" aos="fade-left">教学质量评价</button>
+                <img src="<%templateskin%>/images/growup_title.png" class="col-lg-4 col-xl-4 col-4 growup_zi1" style="position:absolute"  aos-delay="200" aos="fade-up" />
+                <img src="<%templateskin%>/images/growup_title2.png" class="col-lg-8 col-xl-8 col-4 growup_zi2" style="position:absolute" aos-delay="400" aos="fade-up"/>
+                <div class="buttons" style="width:100%;">
+                    <div class="row">
+                        <div class="col-lg-6 col-xl-6 col-6">
+                            <button type="button" class="btn btn1 right cursor" style="margin-right:40px;" aos-delay="600" aos="fade-right">教学业绩管理</button>
+                        </div>
+                        <div class="col-lg-6 col-xl-6 col-6">
+                            <button type="button" class="btn btn2 left cursor" style="margin-left:40px;" aos-delay="600" aos="fade-left">教学质量评价</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -85,7 +87,7 @@
                         
                     </div>
                     <div class="col-lg-6">
-                        <img src="<%templateskin%>/images/growup_06.png" style="margin-left:20%;" aos-delay="400" aos="fade-left"/>
+                        <img src="<%templateskin%>/images/growup_06.png" class="sd" aos-delay="400" aos="fade-left"/>
                     </div>
                 </div>
             </div>
@@ -126,7 +128,7 @@
                         <p aos-delay="400" aos="fade-right">管理者可通过系统分类维护教师的教学成果及教学业绩，实现对教师教学业绩数据的统计，通过权限的管理及各项任务的分配，完成对教师教学质量多方位评价结果的收集，从而为教学管理的各项决策提供依据。</p>
                     </div>
                     <div class="col-lg-6">
-                        <img src="<%templateskin%>/images/growup_08.png" style="margin-left:20%;" aos-delay="400" aos="fade-left"/>
+                        <img src="<%templateskin%>/images/growup_08.png" class="sd" aos-delay="400" aos="fade-left"/>
                     </div>
                 </div>
             </div>
@@ -147,7 +149,8 @@
         AOS.init({
             easing: 'ease-out-back',
             duration: 1000,
-            once:false
+            once: false,
+            disable: 'mobile'
         });
         $(function () {
             hover('.sort .row>div', 'animated bounce');
