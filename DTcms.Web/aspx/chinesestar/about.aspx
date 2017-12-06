@@ -9,8 +9,8 @@ override protected void OnInit(EventArgs e)
 {
 
 	/* 
-		This page was created by DTcms Template Engine at 2017/12/4 10:50:39.
-		本页面代码由DTcms模板引擎生成于 2017/12/4 10:50:39. 
+		This page was created by DTcms Template Engine at 2017/12/6 11:25:33.
+		本页面代码由DTcms模板引擎生成于 2017/12/6 11:25:33. 
 	*/
 
 	base.OnInit(e);
@@ -71,7 +71,7 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("/templates/main");
 	templateBuilder.Append("/images/about-bg_02.png\" alt=\"\" />\r\n            <div class=\"zi container\">\r\n                <img src=\"");
 	templateBuilder.Append("/templates/main");
-	templateBuilder.Append("/images/about.png\" alt=\"\" aos-delay=\"200\" aos=\"fade-up\" class=\"case_zi\" />\r\n            </div>\r\n        </div>\r\n        <div class=\"jianjie\">\r\n            <h1 class=\"title\">公司简介</h1>\r\n            <div class=\"container clearfix mt20\" style=\"padding-bottom:20px;\">\r\n                <div class=\"row\">\r\n                    <div class=\"company_img col-lg-5 col-xl-5 col-12\" aos-delay=\"400\" aos=\"fade-right\">\r\n                        <img src=\"");
+	templateBuilder.Append("/images/about.png\" alt=\"\" aos-delay=\"200\" aos=\"fade-up\" class=\"case_zi col-8  col-lg-8 col-xl-8\" />\r\n            </div>\r\n        </div>\r\n        <div class=\"jianjie\">\r\n            <h1 class=\"title\">公司简介</h1>\r\n            <div class=\"container clearfix mt20\" style=\"padding-bottom:20px;\">\r\n                <div class=\"row\">\r\n                    <div class=\"company_img col-lg-5 col-xl-5 col-12\" aos-delay=\"400\" aos=\"fade-right\">\r\n                        <img src=\"");
 	templateBuilder.Append("/templates/main");
 	templateBuilder.Append("/images/company_img.jpg\" alt=\"\" />\r\n                    </div>\r\n                    <div class=\"company_desc col-lg-7 col-xl-7 col-12\" aos-delay=\"600\" aos=\"fade-left\">\r\n                        <p>北京华人启星科技有限公司位于北京丰台科技园区诺德中心，汇集了一批多年扎根教育体制改革、“想为教育做点什么”的高精尖人才、首席框架师及来自教育教学一线的管理者，致力于为教育行业提供个性化的综合应用解决方案。不断深化智能校园建设，增加研发投入，凭借专业技术水平和大量国家专利优势，已圆满完成一系列创新型教学项目，触及全国各地多个行业，逐渐形成集科研、生产、经销、咨询、培训、服务为一体的专业型团队。</p>\r\n                        <p>深耕细作，开启未来，华人启星将与合作伙伴携手搭建多层次的交流平台，继续贯彻“以技术为依托向各行业拓展，以北京市场为中心向全国市场拓展”的发展理念，让新思路、新理念真正落地，以卓越的信誉和品牌树立行业典范。</p>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div class=\"zizhi\">\r\n            <h1 class=\"title pt30\">荣誉资质</h1>\r\n            <div class=\"zhi_img container mt20 \"  style=\"padding-bottom:20px;\">\r\n                <img src=\"");
 	templateBuilder.Append("/templates/main");
@@ -128,7 +128,7 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("script>\r\n    <script type=\"text/javascript\" charset=\"utf-8\" src=\"");
 	templateBuilder.Append("/templates/main");
 	templateBuilder.Append("/js/aos.js\"></");
-	templateBuilder.Append("script>\r\n    \r\n    <script>\r\n        \r\n        AOS.init({\r\n            easing: 'ease-out-back',\r\n            duration: 1000,\r\n            once: false\r\n        });\r\n    </");
+	templateBuilder.Append("script>\r\n    \r\n    <script>\r\n        \r\n        AOS.init({\r\n            easing: 'ease-out-back',\r\n            duration: 1000,\r\n            once: false,\r\n            disable: 'mobile'\r\n\r\n        });\r\n    </");
 	templateBuilder.Append("script>\r\n</body>\r\n</html>\r\n");
 	Response.Write(templateBuilder.ToString());
 }

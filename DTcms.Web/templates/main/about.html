@@ -21,7 +21,7 @@
         <div class="case_bg pr">
             <img src="<%templateskin%>/images/about-bg_02.png" alt="" />
             <div class="zi container">
-                <img src="<%templateskin%>/images/about.png" alt="" aos-delay="200" aos="fade-up" class="case_zi" />
+                <img src="<%templateskin%>/images/about.png" alt="" aos-delay="200" aos="fade-up" class="case_zi col-8  col-lg-8 col-xl-8" />
             </div>
         </div>
         <div class="jianjie">
@@ -66,7 +66,9 @@
         AOS.init({
             easing: 'ease-out-back',
             duration: 1000,
-            once: false
+            once: false,
+            disable: 'mobile'
+
         });
     </script>
 </body>

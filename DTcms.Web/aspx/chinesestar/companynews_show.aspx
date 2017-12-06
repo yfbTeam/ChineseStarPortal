@@ -9,8 +9,8 @@ override protected void OnInit(EventArgs e)
 {
 
 	/* 
-		This page was created by DTcms Template Engine at 2017/12/4 10:50:39.
-		本页面代码由DTcms模板引擎生成于 2017/12/4 10:50:39. 
+		This page was created by DTcms Template Engine at 2017/12/6 11:25:33.
+		本页面代码由DTcms模板引擎生成于 2017/12/6 11:25:33. 
 	*/
 
 	base.OnInit(e);
@@ -78,7 +78,7 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("/templates/main");
 	templateBuilder.Append("/images/news_bg_02.png\" alt=\"\" />\r\n            <div class=\"zi container\">\r\n                <img src=\"");
 	templateBuilder.Append("/templates/main");
-	templateBuilder.Append("/images/news.png\" alt=\"\" aos-delay=\"200\" aos=\"fade-up\" class=\"case_zi\" />\r\n            </div>\r\n        </div>\r\n        <div class=\"ntitle\">\r\n            <div class=\"container\">\r\n               \r\n                <span>当前位置：<a href=\"");
+	templateBuilder.Append("/images/news.png\" alt=\"\" aos-delay=\"200\" aos=\"fade-up\" class=\"case_zi col-5 col-lg-4 col-xl-4\" />\r\n            </div>\r\n        </div>\r\n        <div class=\"ntitle\">\r\n            <div class=\"container\">\r\n               \r\n                <span>当前位置：<a href=\"");
 	templateBuilder.Append(linkurl("companynews"));
 
 	templateBuilder.Append("\" style=\"color:#2293cb;\">企业新闻</a> &gt; <a>新闻详情</a></span>\r\n            </div>\r\n        </div>\r\n        <!--左边-->\r\n        <div class=\"list-auto container\" style=\"padding:20px 15px;\">\r\n            <div class=\"meta\">\r\n                <h1>");

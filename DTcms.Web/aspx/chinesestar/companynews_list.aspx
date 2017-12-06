@@ -9,8 +9,8 @@ override protected void OnInit(EventArgs e)
 {
 
 	/* 
-		This page was created by DTcms Template Engine at 2017/12/4 10:50:39.
-		本页面代码由DTcms模板引擎生成于 2017/12/4 10:50:39. 
+		This page was created by DTcms Template Engine at 2017/12/6 11:25:33.
+		本页面代码由DTcms模板引擎生成于 2017/12/6 11:25:33. 
 	*/
 
 	base.OnInit(e);
@@ -74,7 +74,7 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("/templates/main");
 	templateBuilder.Append("/images/news_bg_02.png\" alt=\"\" />\r\n            <div class=\"zi container\">\r\n                <img src=\"");
 	templateBuilder.Append("/templates/main");
-	templateBuilder.Append("/images/news.png\" alt=\"\" aos-delay=\"200\" aos=\"fade-up\" class=\"case_zi\" />\r\n            </div>\r\n        </div>\r\n        <div class=\"ntitle\">\r\n            <div class=\"container\">\r\n                ");
+	templateBuilder.Append("/images/news.png\" alt=\"\" aos-delay=\"200\" aos=\"fade-up\" class=\"case_zi col-5 col-lg-4 col-xl-4\" />\r\n            </div>\r\n        </div>\r\n        <div class=\"ntitle\">\r\n            <div class=\"container\">\r\n                ");
 	string category_nav = get_category_menu("companynews_list", category_id);
 
 	templateBuilder.Append("\r\n                <span>当前位置：<a href=\"");
@@ -92,21 +92,21 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("\r\n                <li>\r\n                    <a href=\"");
 	templateBuilder.Append(linkurl("companynews_show",Utils.ObjectToStr(dr["id"])));
 
-	templateBuilder.Append("\" target=\"_blank\">\r\n                        ");
+	templateBuilder.Append("\" target=\"_blank\" class=\"row\">\r\n                        ");
 	if (Utils.ObjectToStr(dr["img_url"])!="")
 	{
 
-	templateBuilder.Append("\r\n                        <b><img src=\"" + Utils.ObjectToStr(dr["img_url"]) + "\" /></b>\r\n                        ");
+	templateBuilder.Append("\r\n                        <b class=\"col-lg-3\"><img src=\"" + Utils.ObjectToStr(dr["img_url"]) + "\" /></b>\r\n                        ");
 	}
 	else
 	{
 
-	templateBuilder.Append("\r\n                        <b><img src=\"");
+	templateBuilder.Append("\r\n                        <b class=\"col-lg-3\"><img src=\"");
 	templateBuilder.Append("/templates/main");
 	templateBuilder.Append("/images/dong_07.jpg\" /></b>\r\n                        ");
 	}	//end for if
 
-	templateBuilder.Append("\r\n                        <div class=\"desc\">\r\n                            <h2 class=\"clearfix\"><span class=\"name\">" + Utils.ObjectToStr(dr["title"]) + "</span><span class=\"time\">");	templateBuilder.Append(Utils.ObjectToDateTime(Utils.ObjectToStr(dr["add_time"])).ToString("yyyy-MM-dd"));
+	templateBuilder.Append("\r\n                        <div class=\"desc col-lg-9\">\r\n                            <h2 class=\"clearfix\"><span class=\"name\">" + Utils.ObjectToStr(dr["title"]) + "</span><span class=\"time\">");	templateBuilder.Append(Utils.ObjectToDateTime(Utils.ObjectToStr(dr["add_time"])).ToString("yyyy-MM-dd"));
 
 	templateBuilder.Append("</span></h2>\r\n                            <div class=\"note\">\r\n                                " + Utils.ObjectToStr(dr["zhaiyao"]) + "\r\n                            </div>\r\n                        </div>\r\n                    </a>\r\n                </li>\r\n                ");
 	}	//end for if

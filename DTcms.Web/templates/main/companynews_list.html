@@ -22,7 +22,7 @@
         <div class="case_bg pr">
             <img src="<%templateskin%>/images/news_bg_02.png" alt="" />
             <div class="zi container">
-                <img src="<%templateskin%>/images/news.png" alt="" aos-delay="200" aos="fade-up" class="case_zi" />
+                <img src="<%templateskin%>/images/news.png" alt="" aos-delay="200" aos="fade-up" class="case_zi col-5 col-lg-4 col-xl-4" />
             </div>
         </div>
         <div class="ntitle">
@@ -36,13 +36,13 @@
                 <%set DataTable newsList=get_article_list(channel, category_id, pagesize, page, "status=0", out totalcount, out pagelist, "news_list", category_id, "__id__")%><!--取得一个分页DataTable-->
                 <%foreach(DataRow dr in newsList.Rows)%>
                 <li>
-                    <a href="<%linkurl("companynews_show",{dr[id]})%>" target="_blank">
+                    <a href="<%linkurl("companynews_show",{dr[id]})%>" target="_blank" class="row">
                         <%if({dr[img_url]}!="")%>
-                        <b><img src="{dr[img_url]}" /></b>
+                        <b class="col-lg-3"><img src="{dr[img_url]}" /></b>
                         <%else%>
-                        <b><img src="<%templateskin%>/images/dong_07.jpg" /></b>
+                        <b class="col-lg-3"><img src="<%templateskin%>/images/dong_07.jpg" /></b>
                         <%/if%>
-                        <div class="desc">
+                        <div class="desc col-lg-9">
                             <h2 class="clearfix"><span class="name">{dr[title]}</span><span class="time"><%datetostr({dr[add_time]},yyyy-MM-dd)%></span></h2>
                             <div class="note">
                                 {dr[zhaiyao]}

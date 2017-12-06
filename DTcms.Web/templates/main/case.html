@@ -29,14 +29,14 @@
         <div class="case_bg pr">
             <img src="<%templateskin%>/images/case_bg.png" alt="" />
             <div class="zi container">
-                    <img src="<%templateskin%>/images/case_zi.png" alt=""  aos-delay="200" aos="fade-up" class="case_zi"/>
+                    <img src="<%templateskin%>/images/case_zi.png" alt=""  aos-delay="200" aos="fade-up" class="case_zi col-5 col-lg-4 col-xl-4"/>
             </div>
         </div>
         <div class="container">
             <ul class="row clearfix case_ul mt30 mb30">
                 <%set DataTable successCase=get_article_list("case", 55, "status=0")%>
                 <%foreach(DataRow dr in successCase.Rows)%>
-                <li class="col-lg-4 col-xl-4">
+                <li class="col-lg-4 col-xl-4 col-6">
                     <a href="<%linkurl("case_show",{dr[id]})%>
                         " target="_blank" class="animate-box">
                         <div><img src="{dr[img_url]}" alt="" /></div>

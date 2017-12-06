@@ -9,8 +9,8 @@ override protected void OnInit(EventArgs e)
 {
 
 	/* 
-		This page was created by DTcms Template Engine at 2017/12/4 10:50:39.
-		本页面代码由DTcms模板引擎生成于 2017/12/4 10:50:39. 
+		This page was created by DTcms Template Engine at 2017/12/6 11:25:33.
+		本页面代码由DTcms模板引擎生成于 2017/12/6 11:25:33. 
 	*/
 
 	base.OnInit(e);
@@ -71,13 +71,13 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("/templates/main");
 	templateBuilder.Append("/images/case_bg.png\" alt=\"\" />\r\n            <div class=\"zi container\">\r\n                    <img src=\"");
 	templateBuilder.Append("/templates/main");
-	templateBuilder.Append("/images/case_zi.png\" alt=\"\"  aos-delay=\"200\" aos=\"fade-up\" class=\"case_zi\"/>\r\n            </div>\r\n        </div>\r\n        <div class=\"container\">\r\n            <ul class=\"row clearfix case_ul mt30 mb30\">\r\n                ");
+	templateBuilder.Append("/images/case_zi.png\" alt=\"\"  aos-delay=\"200\" aos=\"fade-up\" class=\"case_zi col-5 col-lg-4 col-xl-4\"/>\r\n            </div>\r\n        </div>\r\n        <div class=\"container\">\r\n            <ul class=\"row clearfix case_ul mt30 mb30\">\r\n                ");
 	DataTable successCase = get_article_list("case", 55, "status=0");
 
 	foreach(DataRow dr in successCase.Rows)
 	{
 
-	templateBuilder.Append("\r\n                <li class=\"col-lg-4 col-xl-4\">\r\n                    <a href=\"");
+	templateBuilder.Append("\r\n                <li class=\"col-lg-4 col-xl-4 col-6\">\r\n                    <a href=\"");
 	templateBuilder.Append(linkurl("case_show",Utils.ObjectToStr(dr["id"])));
 
 	templateBuilder.Append("\r\n                        \" target=\"_blank\" class=\"animate-box\">\r\n                        <div><img src=\"" + Utils.ObjectToStr(dr["img_url"]) + "\" alt=\"\" /></div>\r\n                        <p>" + Utils.ObjectToStr(dr["zhaiyao"]) + "</p>\r\n                    </a>\r\n                </li>\r\n                ");
